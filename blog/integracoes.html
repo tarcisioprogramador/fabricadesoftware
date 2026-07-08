@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrações e APIs Corporativas | Conecte seus Sistemas | Fábrica de Software</title>
+  <meta name="description" content="Integrações de sistemas empresariais: conecte CRM, ERP, gateways de pagamento, marketplaces e APIs. Automatize fluxos entre plataformas e elimine retrabalho.">
+  <meta name="keywords" content="integração de sistemas, APIs corporativas, integração CRM, integração ERP, webhooks, middleware">
+  <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/blog/integracoes">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif; color: #CBD5F5; background: #08080C;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    ::selection { background: #2563EB; color: #fff; }
+
+    :root {
+      --bg: #08080C; --bg-card: #12141E; --border: rgba(255,255,255,0.06);
+      --accent: #2563EB; --accent-hover: #3B82F6; --purple-neon: #9333EA;
+      --muted: #8B8FA3; --text: #CBD5F5; --white: #FFFFFF; --green: #22C55E;
+      --font-title: 'Inter', sans-serif; --font-body: 'DM Sans', sans-serif;
+      --radius: 12px; --radius-lg: 20px; --max-w: 800px; --nav-h: 72px;
+    }
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-title); font-weight: 600;
+      font-size: 0.9375rem; padding: 14px 32px;
+      border: none; border-radius: var(--radius); cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: var(--white); }
+    .btn-primary:hover { box-shadow: 0 8px 32px rgba(37,99,235,0.35); }
+    .btn-lg { padding: 18px 40px; font-size: 1.0625rem; }
+    .btn-whatsapp { background: #25D366; color: #fff; }
+    .btn-whatsapp:hover { box-shadow: 0 8px 32px rgba(37,211,102,0.35); }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent), var(--purple-neon));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: var(--nav-h); display: flex; align-items: center;
+      background: rgba(8,8,12,0.88); backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; }
+    .navbar-logo { font-family: var(--font-title); font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+    .navbar-logo span { color: var(--accent); }
+    .navbar-links { display: flex; align-items: center; gap: 32px; }
+    .navbar-links a { font-family: var(--font-title); font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.6); transition: color 0.3s ease; }
+    .navbar-links a:hover { color: var(--white); }
+
+    .article-header {
+      padding: calc(var(--nav-h) + 48px) 0 32px;
+      position: relative;
+    }
+    .article-header::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 40% at 50% 30%, rgba(37,99,235,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-header .container { position: relative; z-index: 1; }
+    .article-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-title); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-family: var(--font-title); font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 900; line-height: 1.08; color: var(--white); margin-bottom: 16px;
+    }
+    .article-header p {
+      font-size: 1.0625rem; color: var(--muted); max-width: 680px; line-height: 1.7;
+    }
+
+    .article-body { padding: 0 0 64px; }
+    .article-body .container { max-width: 720px; }
+    .article-body h2 {
+      font-family: var(--font-title); font-size: 1.5rem; font-weight: 700;
+      color: var(--white); margin: 48px 0 16px; line-height: 1.2;
+    }
+    .article-body h3 {
+      font-family: var(--font-title); font-size: 1.125rem; font-weight: 600;
+      color: var(--white); margin: 32px 0 12px;
+    }
+    .article-body p {
+      font-size: 1.0625rem; line-height: 1.8; color: var(--muted); margin-bottom: 16px;
+    }
+    .article-body ul { margin: 16px 0 24px; padding-left: 24px; }
+    .article-body ul li {
+      font-size: 1.0625rem; line-height: 1.7; color: var(--muted);
+      margin-bottom: 10px; list-style: none;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .article-body ul li::before {
+      content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+      color: var(--green); font-size: 0.875rem; margin-top: 4px;
+    }
+    .article-body .highlight-box {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px; margin: 32px 0;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(124,58,237,0.08));
+      border: 1px solid rgba(37,99,235,0.15);
+      border-radius: var(--radius-lg); padding: 48px 40px;
+      text-align: center; margin: 48px 0;
+    }
+    .cta-box h3 {
+      font-family: var(--font-title); font-size: 1.375rem; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .cta-box p {
+      font-size: 0.9375rem; color: var(--muted); max-width: 440px;
+      margin: 0 auto 24px; line-height: 1.6;
+    }
+
+    .footer {
+      padding: 32px 0; border-top: 1px solid var(--border);
+      text-align: center; font-size: 0.8125rem; color: rgba(255,255,255,0.3);
+    }
+    .footer a { color: var(--accent); }
+
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px;
+      width: 60px; height: 60px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 28px;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      z-index: 9999; transition: all 0.3s ease;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.5); color: #fff; }
+
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.8125rem; color: var(--muted); margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--muted); transition: color 0.3s ease; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { color: rgba(255,255,255,0.2); }
+
+    @media (max-width: 768px) {
+      .navbar-links { display: none; }
+      .article-body h2 { font-size: 1.25rem; }
+      .cta-box { padding: 32px 24px; }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="../servicos.html">Serviços</a>
+        <a href="https://wa.me/5521959349594" target="_blank" class="btn btn-primary btn-sm" style="padding:8px 20px;font-size:0.8125rem;">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <header class="article-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> <span>/</span>
+          <a href="../servicos.html">Serviços</a> <span>/</span>
+          <strong style="color:var(--white);">Integrações</strong>
+        </div>
+        <div class="article-badge"><i class="fas fa-puzzle-piece"></i> APIs Corporativas</div>
+        <h1>Integrações e APIs: Conecte Todos os Seus Sistemas e Elimine o Retrabalho de Uma Vez por Todas</h1>
+        <p>Seus sistemas conversam entre si ou você ainda vive de copiar e colar informações de uma plataforma para outra? Integrações inteligentes conectam seu ecossistema digital e fazem os dados fluírem sozinhos.</p>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <div class="container">
+
+        <h2>Seus sistemas ainda vivem em ilhas isoladas?</h2>
+        <p>Venda no site, mas precisa digitar o pedido manualmente no ERP? Cliente cadastra dados no CRM, mas sua equipe de marketing não tem acesso? Nota fiscal emitida em um sistema, mas o financeiro usa outro?</p>
+        <p>Esse cenário é mais comum do que parece — e mais custoso do que as empresas imaginam. Cada digitação manual é uma oportunidade de erro. Cada informação duplicada é retrabalho. Cada sistema desconectado é um processo mais lento.</p>
+        <p>O resultado: equipe sobrecarregada, dados inconsistentes, decisões atrasadas e clientes insatisfeitos.</p>
+
+        <h2>O que são integrações e APIs corporativas?</h2>
+        <p>Integração de sistemas é a ponte que conecta suas plataformas para que elas troquem informações automaticamente. APIs (Application Programming Interfaces) são os "tradutores" que permitem essa comunicação.</p>
+
+        <p>Criamos integrações robustas entre qualquer tipo de sistema:</p>
+
+        <ul>
+          <li><strong>CRM + ERP:</strong> dados de clientes e vendas sincronizados automaticamente</li>
+          <li><strong>E-commerce + ERP:</strong> pedidos, estoque e notas fiscais em tempo real</li>
+          <li><strong>Gateway de pagamento + sistemas:</strong> conciliação financeira automatizada</li>
+          <li><strong>Marketplaces + gestão:</strong> anúncios, pedidos e estoque centralizados</li>
+          <li><strong>APIs REST & Webhooks:</strong> comunicação em tempo real entre plataformas</li>
+        </ul>
+
+        <h2>Benefícios das integrações</h2>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-sync-alt" style="color:var(--accent);margin-right:8px;"></i> 1. Dados consistentes em tempo real</h3>
+          <p>Uma informação inserida uma única vez se propaga automaticamente para todos os sistemas. Sem duplicidade, sem divergência, sem retrabalho. A versão é sempre a correta.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-stopwatch" style="color:var(--accent);margin-right:8px;"></i> 2. Processos que fluem sozinhos</h3>
+          <p>Venda concluída no site? Pedido vai para o ERP, estoque é baixado, nota fiscal é emitida, cliente recebe e-mail de confirmação — tudo automático, sem intervenção manual.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-user-check" style="color:var(--accent);margin-right:8px;"></i> 3. Experiência do cliente superior</h3>
+          <p>Cliente não precisa repetir informações. Atendente vê o histórico completo. Suporte resolve mais rápido. Tudo porque os sistemas conversam entre si.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-chart-line" style="color:var(--accent);margin-right:8px;"></i> 4. Visão 360 do negócio</h3>
+          <p>Com todas as fontes de dados conectadas, você enxerga o negócio como um todo. Relatórios completos, insights cruzados, decisões baseadas em dados reais e atualizados.</p>
+        </div>
+
+        <h2>Como funciona o processo de integração</h2>
+
+        <ul>
+          <li><strong>1. Diagnóstico do ecossistema:</strong> mapeamos todos os sistemas e fluxos de dados</li>
+          <li><strong>2. Desenho da arquitetura:</strong> definimos a melhor estratégia de integração</li>
+          <li><strong>3. Desenvolvimento:</strong> construímos as pontes (APIs, webhooks, middleware)</li>
+          <li><strong>4. Testes:</strong> validamos cada fluxo com dados reais</li>
+          <li><strong>5. Monitoramento:</strong> acompanhamos e garantimos a estabilidade</li>
+        </ul>
+
+        <h2>Por que a Fábrica de Software?</h2>
+        <p>Somos especialistas em conectar sistemas. Trabalhamos com as principais plataformas do mercado (Bling, Tiny, RD Station, Salesforce, Shopify, WooCommerce, Mercado Livre) e também com sistemas legados e proprietários. Se tem API, a gente conecta.</p>
+
+        <div class="cta-box">
+          <h3>Conecte seus sistemas e pare de perder tempo</h3>
+          <p>Solicite um diagnóstico gratuito de integração. Vamos mostrar exatamente onde sua operação está perdendo tempo e como resolver.</p>
+          <a href="https://wa.me/5521959349594" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Quero integrar meus sistemas
+          </a>
+        </div>
+
+        <p style="text-align:center;font-size:0.875rem;color:var(--muted);">
+          <a href="../servicos.html" style="color:var(--accent);">← Voltar para todos os serviços</a>
+          <span style="margin:0 12px;">|</span>
+          <a href="saas.html" style="color:var(--accent);">Conheça Plataformas SaaS →</a>
+        </p>
+
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Fábrica de Software. Todos os direitos reservados. | <a href="../index.html">Home</a> | <a href="../servicos.html">Serviços</a></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5521959349594" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>

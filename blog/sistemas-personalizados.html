@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistemas Web Sob Medida para Empresas | Fábrica de Software</title>
+  <meta name="description" content="Sistemas personalizados para empresas: CRM, ERP, dashboards e plataformas de gestão feitos sob medida para suas regras de negócio. Automatize processos e escale sua operação.">
+  <meta name="keywords" content="sistemas personalizados, desenvolvimento de sistemas web, CRM sob medida, ERP, software empresarial">
+  <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistemas-personalizados">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif; color: #CBD5F5; background: #08080C;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    ::selection { background: #2563EB; color: #fff; }
+
+    :root {
+      --bg: #08080C; --bg-card: #12141E; --border: rgba(255,255,255,0.06);
+      --accent: #2563EB; --accent-hover: #3B82F6; --purple-neon: #9333EA;
+      --muted: #8B8FA3; --text: #CBD5F5; --white: #FFFFFF; --green: #22C55E;
+      --font-title: 'Inter', sans-serif; --font-body: 'DM Sans', sans-serif;
+      --radius: 12px; --radius-lg: 20px; --max-w: 800px; --nav-h: 72px;
+    }
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-family: var(--font-title); font-weight: 600;
+      font-size: 0.9375rem; padding: 14px 32px;
+      border: none; border-radius: var(--radius); cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: var(--white); }
+    .btn-primary:hover { box-shadow: 0 8px 32px rgba(37,99,235,0.35); }
+    .btn-lg { padding: 18px 40px; font-size: 1.0625rem; }
+    .btn-whatsapp { background: #25D366; color: #fff; }
+    .btn-whatsapp:hover { box-shadow: 0 8px 32px rgba(37,211,102,0.35); }
+
+    .gradient-text {
+      background: linear-gradient(135deg, var(--accent), var(--purple-neon));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: var(--nav-h); display: flex; align-items: center;
+      background: rgba(8,8,12,0.88); backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; }
+    .navbar-logo { font-family: var(--font-title); font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+    .navbar-logo span { color: var(--accent); }
+    .navbar-links { display: flex; align-items: center; gap: 32px; }
+    .navbar-links a { font-family: var(--font-title); font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.6); transition: color 0.3s ease; }
+    .navbar-links a:hover { color: var(--white); }
+
+    .article-header {
+      padding: calc(var(--nav-h) + 48px) 0 32px;
+      position: relative;
+    }
+    .article-header::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 40% at 50% 30%, rgba(37,99,235,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .article-header .container { position: relative; z-index: 1; }
+    .article-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--font-title); font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 2px; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .article-header h1 {
+      font-family: var(--font-title); font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 900; line-height: 1.08; color: var(--white); margin-bottom: 16px;
+    }
+    .article-header p {
+      font-size: 1.0625rem; color: var(--muted); max-width: 680px; line-height: 1.7;
+    }
+
+    .article-body { padding: 0 0 64px; }
+    .article-body .container { max-width: 720px; }
+    .article-body h2 {
+      font-family: var(--font-title); font-size: 1.5rem; font-weight: 700;
+      color: var(--white); margin: 48px 0 16px; line-height: 1.2;
+    }
+    .article-body h3 {
+      font-family: var(--font-title); font-size: 1.125rem; font-weight: 600;
+      color: var(--white); margin: 32px 0 12px;
+    }
+    .article-body p {
+      font-size: 1.0625rem; line-height: 1.8; color: var(--muted); margin-bottom: 16px;
+    }
+    .article-body ul { margin: 16px 0 24px; padding-left: 24px; }
+    .article-body ul li {
+      font-size: 1.0625rem; line-height: 1.7; color: var(--muted);
+      margin-bottom: 10px; list-style: none;
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .article-body ul li::before {
+      content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900;
+      color: var(--green); font-size: 0.875rem; margin-top: 4px;
+    }
+    .article-body .highlight-box {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px; margin: 32px 0;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(124,58,237,0.08));
+      border: 1px solid rgba(37,99,235,0.15);
+      border-radius: var(--radius-lg); padding: 48px 40px;
+      text-align: center; margin: 48px 0;
+    }
+    .cta-box h3 {
+      font-family: var(--font-title); font-size: 1.375rem; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .cta-box p {
+      font-size: 0.9375rem; color: var(--muted); max-width: 440px;
+      margin: 0 auto 24px; line-height: 1.6;
+    }
+
+    .footer {
+      padding: 32px 0; border-top: 1px solid var(--border);
+      text-align: center; font-size: 0.8125rem; color: rgba(255,255,255,0.3);
+    }
+    .footer a { color: var(--accent); }
+
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px;
+      width: 60px; height: 60px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 28px;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      z-index: 9999; transition: all 0.3s ease;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.5); color: #fff; }
+
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.8125rem; color: var(--muted); margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--muted); transition: color 0.3s ease; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { color: rgba(255,255,255,0.2); }
+
+    @media (max-width: 768px) {
+      .navbar-links { display: none; }
+      .article-body h2 { font-size: 1.25rem; }
+      .cta-box { padding: 32px 24px; }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="../servicos.html">Serviços</a>
+        <a href="https://wa.me/5521959349594" target="_blank" class="btn btn-primary btn-sm" style="padding:8px 20px;font-size:0.8125rem;">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </nav>
+
+  <article>
+    <header class="article-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a> <span>/</span>
+          <a href="../servicos.html">Serviços</a> <span>/</span>
+          <strong style="color:var(--white);">Sistemas Personalizados</strong>
+        </div>
+        <div class="article-badge"><i class="fas fa-server"></i> Desenvolvimento de Sistemas</div>
+        <h1>Sistemas Web Sob Medida: Automatize sua Gestão com um Software Feito Exclusivamente para o seu Negócio</h1>
+        <p>Planilhas infinitas, processos manuais, informações espalhadas — seu negócio merece um sistema inteligente que unifique tudo e faça sua equipe produzir muito mais em menos tempo.</p>
+      </div>
+    </header>
+
+    <div class="article-body">
+      <div class="container">
+
+        <h2>Sua empresa ainda depende de planilhas e processos manuais?</h2>
+        <p>Toda empresa começa com uma planilha. Depois vem outra, depois um sistema pronto que não se encaixa, depois mais uma planilha para complementar. Em pouco tempo você tem um Frankenstein digital: dados duplicados, retrabalho constante, informações desatualizadas e ninguém sabe qual versão é a correta.</p>
+        <p>Enquanto isso, seus concorrentes tomam decisões em segundos com dashboards em tempo real enquanto sua equipe perde horas consolidando dados manualmente.</p>
+        <p>Sistemas genéricos de prateleira raramente resolvem problemas reais. Eles foram feitos para atender todo mundo — e, por isso, não atendem ninguém perfeitamente.</p>
+
+        <h2>O que é um sistema web sob medida?</h2>
+        <p>É um software desenvolvido do zero exclusivamente para o seu negócio. Diferente de sistemas prontos (que você precisa se adaptar a eles), o sistema sob medida se adapta 100% às suas regras de negócio, processos e necessidades específicas.</p>
+
+        <p>Na Fábrica de Software, desenvolvemos:</p>
+
+        <ul>
+          <li><strong>CRMs personalizados:</strong> gestão de clientes do jeito que sua equipe precisa</li>
+          <li><strong>ERPs leves e modulares:</strong> controle financeiro, estoque, pedidos e fiscais</li>
+          <li><strong>Dashboards e painéis gerenciais:</strong> indicadores em tempo real para tomar decisões</li>
+          <li><strong>Plataformas de gestão:</strong> sistemas completos para processos complexos</li>
+          <li><strong>Portais do cliente:</strong> área exclusiva para seus clientes acompanharem serviços</li>
+        </ul>
+
+        <h2>Benefícios de um sistema personalizado</h2>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-bolt" style="color:var(--accent);margin-right:8px;"></i> 1. Produtividade multiplicada</h3>
+          <p>Processos que levavam horas passam a levar minutos. Cadastros, relatórios, integrações — tudo automatizado e centralizado. Sua equipe faz mais em menos tempo.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-shield-alt" style="color:var(--accent);margin-right:8px;"></i> 2. Segurança total dos dados</h3>
+          <p>Seus dados ficam sob seu controle. Sem dependência de plataformas de terceiros que podem mudar regras, aumentar preços ou sair do ar. Você é dono do seu software.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-expand-arrows-alt" style="color:var(--accent);margin-right:8px;"></i> 3. Escalabilidade real</h3>
+          <p>O sistema cresce com você. Precisa de uma nova funcionalidade? É adicionada. O volume de dados aumentou? A infraestrutura escala. Sem trocar de sistema, sem migração traumática.</p>
+        </div>
+
+        <div class="highlight-box">
+          <h3><i class="fas fa-chart-pie" style="color:var(--accent);margin-right:8px;"></i> 4. Decisões baseadas em dados</h3>
+          <p>Com dashboards customizados, você enxerga exatamente o que importa para o seu negócio. Indicadores atualizados em tempo real para decisões mais rápidas e precisas.</p>
+        </div>
+
+        <h2>Como funciona o desenvolvimento</h2>
+
+        <ul>
+          <li><strong>1. Mapeamento:</strong> entendemos profundamente seus processos e dores</li>
+          <li><strong>2. Arquitetura:</strong> desenhamos a solução técnica mais adequada</li>
+          <li><strong>3. Desenvolvimento ágil:</strong> entregas incrementais com validação constante</li>
+          <li><strong>4. Testes:</strong> validação de segurança, performance e usabilidade</li>
+          <li><strong>5. Deploy & Suporte:</strong> implantação, treinamento da equipe e suporte contínuo</li>
+        </ul>
+
+        <h2>Por que a Fábrica de Software?</h2>
+        <p>Tecnologia de ponta sem burocracia de agência. Você conversa diretamente com o time de desenvolvimento. Metodologia ágil, entregas rápidas e foco absoluto em resultado. Já entregamos sistemas para os mais diversos segmentos — de clínicas a indústrias, de startups a grandes operações.</p>
+
+        <div class="cta-box">
+          <h3>Sua empresa merece um sistema que funcione para você</h3>
+          <p>Solicite uma consultoria gratuita e descubra como um sistema sob medida pode transformar sua gestão.</p>
+          <a href="https://wa.me/5521959349594" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Quero automatizar minha gestão
+          </a>
+        </div>
+
+        <p style="text-align:center;font-size:0.875rem;color:var(--muted);">
+          <a href="../servicos.html" style="color:var(--accent);">← Voltar para todos os serviços</a>
+          <span style="margin:0 12px;">|</span>
+          <a href="automacao-ia.html" style="color:var(--accent);">Conheça Automação com IA →</a>
+        </p>
+
+      </div>
+    </div>
+  </article>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Fábrica de Software. Todos os direitos reservados. | <a href="../index.html">Home</a> | <a href="../servicos.html">Serviços</a></p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5521959349594" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
