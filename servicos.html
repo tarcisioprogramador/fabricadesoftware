@@ -238,6 +238,12 @@
       .cta-block { padding: 32px 16px; }
       .service-card { padding: 28px 20px; }
     }
+    @media (max-width: 380px) {
+      .page-header h1 { font-size: 1.1rem; }
+      .section-title { font-size: 1.1rem; }
+      .service-card { padding: 20px 16px; }
+      .service-card h3 { font-size: 1rem; }
+    }
 
     /* Light Theme Overrides */
     body.light-theme .navbar:not(.scrolled) { background: transparent; }
@@ -264,6 +270,10 @@
     body.light-theme .footer-bottom { border-top-color: rgba(0,0,0,0.08); color: rgba(0,0,0,0.25); }
     body.light-theme .nav-toggle span { background: #0F172A; }
     body.light-theme .navbar-links.open { background: rgba(255,255,255,0.98); }
+    @media (max-width: 768px) {
+      body.light-theme { --bg: #FFFFFF; --bg-card: #FFFFFF; }
+      body.light-theme .service-card { background: #FFFFFF !important; }
+    }
   </style>
 </head>
 <body>
