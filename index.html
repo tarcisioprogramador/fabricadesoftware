@@ -521,6 +521,126 @@
     }
     .plan-card .plan-features li i { color: var(--green); font-size: 0.75rem; }
 
+    /* SEO Section */
+    .seo-compare {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+      margin-top: 48px; max-width: 720px; margin-left: auto; margin-right: auto;
+    }
+    .seo-col {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px 28px;
+      transition: all 0.3s ease;
+    }
+    .seo-col:hover { border-color: rgba(37,99,235,0.2); transform: translateY(-3px); }
+    .seo-col.featured { border-color: rgba(37,211,102,0.2); position: relative; }
+    .seo-col.featured::before {
+      content: 'Recomendado'; position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+      background: #22C55E; color: #fff; font-family: var(--font-title); font-size: 0.625rem;
+      font-weight: 600; padding: 3px 14px; border-radius: 100px; letter-spacing: 1px;
+    }
+    .seo-col .icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.125rem; margin-bottom: 16px;
+    }
+    .seo-col:not(.featured) .icon { background: rgba(239,68,68,0.1); color: #EF4444; }
+    .seo-col.featured .icon { background: rgba(34,197,94,0.1); color: #22C55E; }
+    .seo-col h4 {
+      font-family: var(--font-title); font-size: 1rem; font-weight: 700;
+      color: var(--white); margin-bottom: 16px;
+    }
+    .seo-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .seo-col ul li {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 0.8125rem; color: var(--muted); line-height: 1.5;
+    }
+    .seo-col ul li i { font-size: 0.75rem; }
+    .seo-col ul li i.fa-check { color: #22C55E; }
+    .seo-col ul li i.fa-times { color: #EF4444; }
+    .seo-benefits {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 32px;
+    }
+    .seo-benefit {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px 24px;
+      transition: all 0.3s ease;
+    }
+    .seo-benefit:hover { border-color: rgba(37,99,235,0.2); transform: translateY(-3px); }
+    .seo-benefit .icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(37,99,235,0.1); color: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; margin-bottom: 12px;
+    }
+    .seo-benefit h4 {
+      font-family: var(--font-title); font-size: 0.9375rem; font-weight: 700;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .seo-benefit p { font-size: 0.8125rem; color: var(--muted); line-height: 1.7; }
+    .seo-services {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); padding: 48px 40px;
+      margin-top: 48px;
+    }
+    .seo-services-intro { text-align: center; margin-bottom: 36px; }
+    .seo-services-intro h3 {
+      font-family: var(--font-title); font-size: 1.25rem; font-weight: 700;
+      color: var(--white); margin-bottom: 8px;
+    }
+    .seo-services-intro p { font-size: 0.875rem; color: var(--muted); }
+    .seo-services-list {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 24px 32px;
+    }
+    .seo-service-item {
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .seo-service-item i {
+      color: #22C55E; font-size: 1rem; margin-top: 2px; flex-shrink: 0;
+    }
+    .seo-service-item strong {
+      font-family: var(--font-title); font-size: 0.875rem; font-weight: 600;
+      color: var(--white); display: block; margin-bottom: 2px;
+    }
+    .seo-service-item span { font-size: 0.8125rem; color: var(--muted); line-height: 1.6; }
+    .seo-cta-lead {
+      background: linear-gradient(135deg, rgba(37,99,235,0.06), rgba(124,58,237,0.04));
+      border: 1px solid rgba(37,99,235,0.12);
+      border-radius: var(--radius-xl); padding: 48px 40px;
+      margin-top: 48px;
+    }
+    .seo-cta-content {
+      display: flex; align-items: center; gap: 32px;
+      max-width: 700px; margin: 0 auto;
+    }
+    .seo-cta-icon {
+      width: 72px; height: 72px; border-radius: 18px;
+      background: linear-gradient(135deg, var(--accent), var(--purple-neon));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.75rem; color: #fff; flex-shrink: 0;
+    }
+    .seo-cta-content h4 {
+      font-family: var(--font-title); font-size: 1.0625rem; font-weight: 700;
+      color: var(--white); margin-bottom: 6px;
+    }
+    .seo-cta-content p { font-size: 0.8125rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    body.light-theme .seo-col h4 { color: #0F172A; }
+    body.light-theme .seo-benefit h4 { color: #0F172A; }
+    body.light-theme .seo-services-intro h3 { color: #0F172A; }
+    body.light-theme .seo-service-item strong { color: #0F172A; }
+    body.light-theme .seo-cta-content h4 { color: #0F172A; }
+    @media (max-width: 768px) {
+      .seo-compare { grid-template-columns: 1fr; }
+      .seo-services-list { grid-template-columns: 1fr; }
+      .seo-cta-content { flex-direction: column; text-align: center; }
+      .seo-services { padding: 32px 24px; }
+      .seo-cta-lead { padding: 32px 24px; }
+    }
+    @media (max-width: 480px) {
+      .seo-benefits { grid-template-columns: 1fr; }
+      .seo-col { padding: 24px 20px; }
+    }
+
     /* Depoimentos */
     .depo-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -834,6 +954,10 @@
       body.light-theme .diff-item { background: #FFFFFF; }
       body.light-theme .depo-card { background: #FFFFFF; }
       body.light-theme .plan-card { background: #FFFFFF; }
+      body.light-theme .seo-col { background: #FFFFFF; }
+      body.light-theme .seo-benefit { background: #FFFFFF; }
+      body.light-theme .seo-services { background: #FFFFFF; }
+      body.light-theme .seo-cta-lead { background: #FFFFFF; }
       body.light-theme .faq-item { background: #FFFFFF; }
       body.light-theme .stats-banner { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
       body.light-theme .lead-section { background: #FFFFFF; }
@@ -979,6 +1103,14 @@
           <p>Anúncios no Google Ads, Facebook, Instagram e Google Meu Negócio. Campanhas otimizadas que geram leads, vendas e visibilidade para seu negócio com ROI mensurável.</p>
           <div class="tags"><span>Google Ads</span><span>Facebook Ads</span><span>Instagram</span><span>Google Meu Negócio</span></div>
           <a href="blog/gestao-de-trafego.html" class="service-cta">Ver artigo completo <i class="fas fa-arrow-right"></i></a>
+          <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="service-cta" style="background:transparent;border:1px solid rgba(37,211,102,0.3);padding:8px 16px;font-size:0.75rem;color:#25D366;"><i class="fab fa-whatsapp"></i> Orçamento</a>
+        </article>
+        <article class="service-card" data-href="blog/seo-otimizacao-google.html">
+          <div class="icon"><i class="fas fa-search"></i></div>
+          <h3>Estratégia de Tráfego Orgânico (SEO)</h3>
+          <p>Apareça no Google sem pagar por clique. Otimização completa do seu site, blog estratégico, palavras-chave locais e construção de autoridade para atrair clientes todos os dias.</p>
+          <div class="tags"><span>SEO On-Page</span><span>SEO Técnico</span><span>Link Building</span><span>SEO Local</span></div>
+          <a href="blog/seo-otimizacao-google.html" class="service-cta">Ver artigo completo <i class="fas fa-arrow-right"></i></a>
           <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="service-cta" style="background:transparent;border:1px solid rgba(37,211,102,0.3);padding:8px 16px;font-size:0.75rem;color:#25D366;"><i class="fab fa-whatsapp"></i> Orçamento</a>
         </article>
       </div>
@@ -1173,6 +1305,170 @@
           </ul>
           <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-primary" style="width:100%; justify-content:center;">
             Solicitar Orçamento
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SEO SECTION ===== -->
+  <section class="section" id="seo">
+    <div class="container">
+      <div class="center">
+        <span class="section-label">Tráfego Orgânico</span>
+        <h2 class="section-title">Estratégia de <span class="gradient-text">Tráfego Orgânico (SEO)</span></h2>
+        <p class="section-sub">
+          Enquanto seus concorrentes pagam cada vez mais por anúncios, sua empresa pode aparecer no Google <strong style="color:var(--white);">todos os dias de graça</strong>. O segredo é uma estratégia de SEO bem executada — e a gente faz isso por você.
+        </p>
+      </div>
+
+      <div class="seo-compare">
+        <div class="seo-col">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h4>Tráfego Pago</h4>
+          <ul>
+            <li><i class="fas fa-times"></i> Resultados param quando você para de pagar</li>
+            <li><i class="fas fa-times"></i> Custo por clique aumenta com o tempo</li>
+            <li><i class="fas fa-times"></i> Concorrência cada vez maior</li>
+            <li><i class="fas fa-times"></i> ROI diminui gradualmente</li>
+          </ul>
+        </div>
+        <div class="seo-col featured">
+          <div class="icon"><i class="fas fa-tree"></i></div>
+          <h4>Tráfego Orgânico (SEO)</h4>
+          <ul>
+            <li><i class="fas fa-check"></i> Resultados acumulam com o tempo</li>
+            <li><i class="fas fa-check"></i> Zero reais por clique</li>
+            <li><i class="fas fa-check"></i> Menos concorrência orgânica que paga</li>
+            <li><i class="fas fa-check"></i> ROI tende ao infinito</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="center" style="margin-top: 64px;">
+        <h3 class="section-title" style="font-size:1.35rem;">Benefícios do SEO para seu negócio</h3>
+      </div>
+      <div class="seo-benefits">
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-search"></i></div>
+          <h4>Aparecer no Google sem pagar por clique</h4>
+          <p>Cada visita orgânica é gratuita. Você investe na otimização uma vez e colhe resultados por meses ou anos.</p>
+        </div>
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Tráfego constante todos os dias</h4>
+          <p>Um site bem otimizado recebe visitas 24 horas por dia, 7 dias por semana. Enquanto você dorme, seu site atrai clientes.</p>
+        </div>
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-shield-alt"></i></div>
+          <h4>Autoridade e confiança no mercado</h4>
+          <p>Empresas no topo do Google passam mais credibilidade. Clientes confiam mais em quem aparece organicamente.</p>
+        </div>
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-wallet"></i></div>
+          <h4>Redução de custo com anúncios</h4>
+          <p>Conforme o SEO gera resultados, você reduz o investimento em tráfego pago mantendo o mesmo volume de visitas.</p>
+        </div>
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-expand-arrows-alt"></i></div>
+          <h4>Escalabilidade real</h4>
+          <p>Mais conteúdo = mais palavras-chave = mais tráfego. Diferente de anúncios, escalar no SEO significa produzir conteúdo, não pagar mais.</p>
+        </div>
+        <div class="seo-benefit">
+          <div class="icon"><i class="fas fa-bolt"></i></div>
+          <h4>Vantagem competitiva duradoura</h4>
+          <p>Enquanto concorrentes disputam anúncios no leilão do Google, seu site conquista posições que ninguém tira.</p>
+        </div>
+      </div>
+
+      <div class="seo-services">
+        <div class="seo-services-intro">
+          <h3>O que está incluído na nossa estratégia de SEO</h3>
+          <p>Tudo que sua empresa precisa para dominar as buscas orgânicas no Google.</p>
+        </div>
+        <div class="seo-services-list">
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Otimização SEO completa</strong>
+              <span>Análise e ajuste de todos os fatores de ranqueamento do seu site</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Criação de blog estratégico</strong>
+              <span>Conteúdo otimizado para as palavras-chave que seus clientes pesquisam</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Palavras-chave locais (RJ)</strong>
+              <span>Apareça em buscas como "criação de site Rio de Janeiro" e variações locais</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>SEO técnico</strong>
+              <span>Velocidade, Core Web Vitals, mobile-first, dados estruturados e rastreabilidade</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Estrutura de site otimizada</strong>
+              <span>Arquitetura da informação pensada para ranqueamento e conversão</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Link building</strong>
+              <span>Construção de autoridade com backlinks reais de sites relevantes</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>SEO local</strong>
+              <span>Google Meu Negócio otimizado, citações locais e gestão de avaliações</span>
+            </div>
+          </div>
+          <div class="seo-service-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <strong>Relatórios mensais</strong>
+              <span>Posições no Google, tráfego, leads gerados e recomendações de melhoria</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="seo-cta-lead">
+        <div class="seo-cta-content">
+          <div class="seo-cta-icon"><i class="fas fa-file-pdf"></i></div>
+          <div>
+            <h4>Baixe grátis: Checklist "10 Passos para Colocar Seu Negócio no Topo do Google com SEO"</h4>
+            <p>Guia prático com os 10 passos essenciais para sua empresa aparecer no Google sem pagar por clique. Download imediato.</p>
+            <a href="checklist-seo.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i> Baixar PDF grátis
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="center" style="margin-top:48px;">
+        <p style="color:var(--muted);margin-bottom:24px;font-size:1.0625rem;max-width:600px;margin-left:auto;margin-right:auto;">
+          Quer aparecer no topo do Google? Solicite uma <strong style="color:var(--white);">análise gratuita de SEO</strong> para seu site.
+        </p>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+          <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Quero aparecer no Google
+          </a>
+          <a href="blog/seo-otimizacao-google.html" class="btn btn-primary btn-lg" style="background:transparent;border:1px solid var(--border);color:var(--white);">
+            Ler artigo completo <i class="fas fa-arrow-right"></i>
           </a>
         </div>
       </div>
