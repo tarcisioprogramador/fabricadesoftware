@@ -243,7 +243,12 @@
     @media (max-width: 768px) {
       body.light-theme .navbar-links { background: rgba(255,255,255,0.98); }
     }
-  </style>
+      @media (max-width: 768px) {
+      body.light-theme { --bg: #FFFFFF; --bg-card: #FFFFFF; }
+      body.light-theme .highlight-box { background: #FFFFFF !important; }
+      body.light-theme .cta-box { background: #FFFFFF !important; }
+      body.light-theme .article-body h2, body.light-theme .article-body h3 { color: #0F172A; }
+    }</style>
 </head>
 <body>
 

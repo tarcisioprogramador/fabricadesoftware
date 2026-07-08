@@ -146,7 +146,12 @@
     body.light-theme .footer { border-top-color: rgba(0,0,0,0.08); }
     body.light-theme .footer p { color: rgba(0,0,0,0.3); }
     body.light-theme .footer a { color: var(--accent); }
-  </style>
+  
+    @media (max-width: 768px) {
+      body.light-theme { --bg: #FFFFFF; --bg-card: #FFFFFF; }
+      body.light-theme .highlight-box { background: #FFFFFF !important; }
+      body.light-theme .cta-box { background: #FFFFFF !important; }
+    }</style>
 </head>
 <body>
 
