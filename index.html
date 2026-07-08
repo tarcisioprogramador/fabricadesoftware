@@ -504,7 +504,7 @@
       font-family: var(--font-title); font-size: 2rem;
       font-weight: 800; color: var(--white); margin-bottom: 4px;
     }
-    .plan-card .plan-price span { font-size: 1rem; font-weight: 400; color: var(--muted); }
+
     .plan-card .plan-desc {
       font-size: 0.8125rem; color: var(--muted); margin-bottom: 24px;
     }
@@ -733,10 +733,12 @@
     body.light-theme .faq-item { border-color: rgba(0,0,0,0.08); background: #FFFFFF; }
     body.light-theme .faq-question { color: #0F172A; }
     body.light-theme .faq-answer { color: #475569; }
-    body.light-theme .pricing-card { border-color: rgba(0,0,0,0.06); }
-    body.light-theme .pricing-card h3 { color: #0F172A; }
-    body.light-theme .pricing-card .price { color: #0F172A; }
-    body.light-theme .pricing-card li { color: #475569; }
+    body.light-theme .plan-card { border-color: rgba(0,0,0,0.06); }
+    body.light-theme .plan-card.featured { border-color: var(--accent); }
+    body.light-theme .plan-card .plan-name { color: #0F172A; }
+    body.light-theme .plan-card .plan-price { color: #0F172A; }
+    body.light-theme .plan-card .plan-features li { color: #475569; }
+    body.light-theme .plan-card .plan-desc { color: #64748B; }
     body.light-theme .footer { border-top-color: rgba(0,0,0,0.08); }
     body.light-theme .footer p { color: rgba(0,0,0,0.3); }
     body.light-theme .footer a { color: var(--accent); }
@@ -744,6 +746,12 @@
     body.light-theme .trust-bar { border-color: rgba(0,0,0,0.08); }
     body.light-theme .gradient-text { background: linear-gradient(135deg, #2563EB, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     body.light-theme .hero::before { opacity: 0.6; }
+    body.light-theme .cta-benefits span { color: rgba(0,0,0,0.6); }
+    body.light-theme .cta-block h2 { color: #0F172A; }
+    body.light-theme .navbar-links .btn-primary { color: #fff; }
+    @media (max-width: 768px) {
+      body.light-theme .navbar-links { background: rgba(255,255,255,0.98); }
+    }
   </style>
 </head>
 <body>
@@ -1017,15 +1025,15 @@
     <div class="container">
       <div class="center">
         <span class="section-label">Planos</span>
-        <h2 class="section-title">Investimento transparente para <span class="gradient-text">cada tipo de projeto</span></h2>
+        <h2 class="section-title">Soluções para <span class="gradient-text">cada tipo de projeto</span></h2>
         <p class="section-sub">
-          Do site institucional à plataforma SaaS completa. Escolha o modelo ideal ou solicite um orçamento personalizado.
+          Do site institucional à plataforma SaaS completa. Solicite um orçamento personalizado para o seu projeto.
         </p>
       </div>
       <div class="plans-grid">
         <div class="plan-card">
           <div class="plan-name">Site & Landing Page</div>
-          <div class="plan-price">A partir de <span>R$ 2.500</span></div>
+          <div class="plan-price">Sob consulta</div>
           <p class="plan-desc">Ideal para empresas que precisam de presença digital profissional com performance.</p>
           <ul class="plan-features">
             <li><i class="fas fa-check"></i> Design exclusivo responsivo</li>
@@ -1040,7 +1048,7 @@
         </div>
         <div class="plan-card featured">
           <div class="plan-name">Sistema Web</div>
-          <div class="plan-price">A partir de <span>R$ 8.000</span></div>
+          <div class="plan-price">Sob consulta</div>
           <p class="plan-desc">Para empresas que precisam de sistemas sob medida: CRM, ERP, dashboard, plataformas.</p>
           <ul class="plan-features">
             <li><i class="fas fa-check"></i> Protótipo navegável antes do código</li>
@@ -1056,7 +1064,7 @@
         </div>
         <div class="plan-card">
           <div class="plan-name">SaaS & IA</div>
-          <div class="plan-price">A partir de <span>R$ 15.000</span></div>
+          <div class="plan-price">Sob consulta</div>
           <p class="plan-desc">Produtos digitais completos, plataformas multi-tenant e sistemas com inteligência artificial.</p>
           <ul class="plan-features">
             <li><i class="fas fa-check"></i> Arquitetura multi-tenant</li>
