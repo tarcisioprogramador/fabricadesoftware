@@ -10,7 +10,7 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Blog — Fábrica de Software">
   <meta property="og:description" content="Artigos sobre desenvolvimento de software, IA, sites e SaaS para empresas.">
-  <meta property="og:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.jpg">
+  <meta property="og:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.svg">
   <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/blog/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,9 +92,47 @@
     .footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.8125rem; color: rgba(255,255,255,0.3); }
     .footer a { color: var(--accent); }
 
+    .nav-toggle {
+      display: none; flex-direction: column; gap: 5px;
+      cursor: pointer; background: none; border: none; padding: 4px; z-index: 1001;
+    }
+    .nav-toggle span {
+      width: 24px; height: 2px; background: var(--white);
+      border-radius: 2px; transition: all 0.3s ease;
+    }
+    body.light-theme .nav-toggle span { background: #0F172A; }
+
+    .whatsapp-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 999;
+      width: 56px; height: 56px; border-radius: 50%;
+      background: #25D366; color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: all 0.3s ease;
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 28px rgba(37,211,102,0.5); }
+
     @media (max-width: 768px) {
-      .navbar-links { display: none; }
+      .navbar-links {
+        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(8,8,12,0.98); flex-direction: column;
+        justify-content: center; gap: 24px;
+        opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
+        display: flex;
+      }
+      .navbar-links.open { opacity: 1; pointer-events: all; }
+      .navbar-links a { font-size: 1.25rem; }
+      .nav-toggle { display: flex; }
       .container { padding: 0 16px; }
+      .blog-grid { padding: 32px 0 60px; }
+      .blog-card { padding: 24px 20px; }
+      .blog-card h2 { font-size: 1.0625rem; }
+      .blog-card p { font-size: 0.8125rem; }
+      .page-header { padding: calc(var(--nav-h) + 32px) 0 24px; }
+      .page-header h1 { font-size: 1.5rem; }
+      .page-header p { font-size: 0.9375rem; }
+      .whatsapp-float { width: 48px; height: 48px; font-size: 22px; bottom: 16px; right: 16px; }
+      body.light-theme .navbar-links { background: rgba(255,255,255,0.98); }
     }
 
     /* Light Theme */
@@ -115,12 +153,15 @@
   <nav class="navbar">
     <div class="container">
       <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
-      <div class="navbar-links">
+      <div class="navbar-links" id="navbarLinks">
         <a href="../index.html">Home</a>
         <a href="../servicos.html">Serviços</a>
         <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" style="padding:8px 20px;font-size:0.8125rem;background:var(--accent);border-radius:12px;color:var(--white);font-weight:600;">Solicitar Orçamento</a>
         <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" style="flex-shrink:0;"><i class="fas fa-moon"></i></button>
       </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" title="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -229,6 +270,8 @@
     </div>
   </footer>
 
+  <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp" title="Fale conosco"><i class="fab fa-whatsapp"></i></a>
+
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const applyTheme = (isLight) => {
@@ -242,6 +285,16 @@
       document.querySelectorAll('.theme-toggle').forEach(btn => {
         btn.addEventListener('click', () => applyTheme(!document.body.classList.contains('light-theme')));
       });
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navbarLinks');
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+      }
     });
   </script>
 

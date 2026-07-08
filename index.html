@@ -542,9 +542,6 @@
     }
     .depo-card .author strong { font-family: var(--font-title); font-size: 0.875rem; color: var(--white); display: block; }
     .depo-card .author span { font-size: 0.75rem; color: var(--muted); }
-    body.light-theme .depo-card { border-color: rgba(0,0,0,0.06); }
-    body.light-theme .depo-card blockquote { color: #475569; }
-    body.light-theme .depo-card .author strong { color: #0F172A; }
 
     /* Lead Magnet */
     .lead-section {
@@ -684,22 +681,65 @@
       #themeToggleMobile { display: flex; }
       #themeToggle { display: none; }
       .hero { min-height: auto; padding: 100px 0 60px; }
-      .hero h1 { font-size: clamp(1.75rem, 7vw, 2.25rem); }
-      .hero-stats { gap: 24px; }
-      .hero-stat h3 { font-size: 1.375rem; }
+      .hero h1 { font-size: clamp(1.5rem, 7vw, 2.25rem); }
+      .hero p { font-size: 1rem; }
+      .hero-stats { gap: 16px; justify-content: center; }
+      .hero-stat { min-width: 100px; }
+      .hero-stat h3 { font-size: 1.25rem; }
+      .hero-stat p { font-size: 0.75rem; }
+      .audience-grid { grid-template-columns: 1fr 1fr; }
       .process-grid { grid-template-columns: 1fr; }
+      .process-step { padding: 24px; }
       .service-grid { grid-template-columns: 1fr; }
       .diff-grid { grid-template-columns: 1fr; }
-      .cta-block { padding: 48px 24px; }
+      .depo-grid { grid-template-columns: 1fr; }
+      .cta-block { padding: 40px 20px; }
+      .cta-block h2 { font-size: 1.5rem; }
       .cta-benefits { flex-direction: column; align-items: center; gap: 12px; }
-      .section { padding: 64px 0; }
+      .section { padding: 48px 0; }
+      .section-title { font-size: 1.5rem; }
+      .plans-grid { max-width: 360px; }
+      .trust-grid { gap: 10px; }
+      .trust-item { font-size: 0.75rem; padding: 8px 14px; }
+      .stats-banner { padding: 32px 20px; gap: 16px; }
+      .stats-banner h3 { font-size: 1.25rem; }
+      .lead-section { flex-direction: column; text-align: center; padding: 28px 20px; }
+      .lead-section .icon-box { width: 60px; height: 60px; font-size: 1.5rem; }
+      .lead-section h3 { font-size: 1.0625rem; }
+      .lead-section .btn { width: 100%; justify-content: center; }
+      .faq-list { margin-top: 32px; }
+      .faq-question { font-size: 0.9375rem; }
+      .whatsapp-float { width: 52px; height: 52px; font-size: 24px; bottom: 16px; right: 16px; }
+      .depo-card { padding: 24px; }
+      .depo-card blockquote { font-size: 0.875rem; }
+      .plan-card { padding: 28px 24px; }
+      .plan-card .plan-price { font-size: 1.5rem; }
     }
     @media (max-width: 480px) {
-      .stats-banner { grid-template-columns: 1fr 1fr; padding: 32px 20px; gap: 20px; }
+      .stats-banner { grid-template-columns: 1fr 1fr; padding: 24px 16px; gap: 16px; }
       .footer-grid { grid-template-columns: 1fr; }
       .hero-buttons { flex-direction: column; }
       .hero-buttons .btn { width: 100%; justify-content: center; }
       .container { padding: 0 16px; }
+      .section-title { font-size: 1.375rem; }
+      .audience-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.375rem; }
+      .hero-badge { font-size: 0.6875rem; padding: 6px 12px; }
+      .service-card { padding: 28px 20px; }
+      .diff-item { padding: 24px; }
+      .cta-block { padding: 32px 16px; }
+      .cta-block h2 { font-size: 1.25rem; }
+      .cta-block p { font-size: 0.875rem; }
+      .lead-section { padding: 24px 16px; }
+      .lead-section h3 { font-size: 1rem; }
+      .navbar-logo { font-size: 1rem; }
+    }
+    @media (max-width: 380px) {
+      .hero-stats { gap: 12px; }
+      .hero-stat { min-width: 80px; }
+      .hero-stat h3 { font-size: 1rem; }
+      .trust-item { font-size: 0.6875rem; padding: 6px 10px; }
+      .plan-card .plan-features li { font-size: 0.8125rem; }
     }
 
     /* Animation */
@@ -719,6 +759,8 @@
     body.light-theme .service-card { border-color: rgba(0,0,0,0.06); }
     body.light-theme .service-card:hover { border-color: rgba(37,99,235,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.08); }
     body.light-theme .service-card h3 { color: #0F172A; }
+    body.light-theme .service-card p { color: #475569; }
+    body.light-theme .service-card .service-cta { color: var(--accent); }
     body.light-theme .trust-item { border-color: rgba(0,0,0,0.06); background: rgba(0,0,0,0.02); color: rgba(0,0,0,0.4); }
     body.light-theme .trust-item:hover { border-color: rgba(37,99,235,0.3); color: #0F172A; }
     body.light-theme .trust-bar p { color: rgba(0,0,0,0.3); }
@@ -748,7 +790,31 @@
     body.light-theme .hero::before { opacity: 0.6; }
     body.light-theme .cta-benefits span { color: rgba(0,0,0,0.6); }
     body.light-theme .cta-block h2 { color: #0F172A; }
+    body.light-theme .cta-block p { color: #475569; }
     body.light-theme .navbar-links .btn-primary { color: #fff; }
+    body.light-theme .audience-item { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
+    body.light-theme .audience-item h4 { color: #0F172A; }
+    body.light-theme .audience-item p { color: #475569; }
+    body.light-theme .process-step { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
+    body.light-theme .process-step h3 { color: #0F172A; }
+    body.light-theme .process-step p { color: #475569; }
+    body.light-theme .step-num { color: var(--accent); }
+    body.light-theme .diff-item { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
+    body.light-theme .diff-item h3 { color: #0F172A; }
+    body.light-theme .diff-item p { color: #475569; }
+    body.light-theme .diff-item .icon { background: rgba(37,99,235,0.08); }
+    body.light-theme .depo-card { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
+    body.light-theme .depo-card blockquote { color: #475569; }
+    body.light-theme .depo-card .author strong { color: #0F172A; }
+    body.light-theme .depo-card .author span { color: #64748B; }
+    body.light-theme .lead-section { border-color: rgba(0,0,0,0.08); }
+    body.light-theme .lead-section h3 { color: #0F172A; }
+    body.light-theme .lead-section p { color: #475569; }
+    body.light-theme .section-sub { color: #475569; }
+    body.light-theme .process-step .step-num { background: linear-gradient(135deg, var(--accent), var(--purple-neon)); color: #fff; }
+    body.light-theme .stats-banner { background: linear-gradient(135deg, rgba(37,99,235,0.04), rgba(124,58,237,0.03)); border-color: rgba(0,0,0,0.06); }
+    body.light-theme .stats-banner h3 { color: #0F172A; }
+    body.light-theme .stats-banner p { color: #64748B; }
     @media (max-width: 768px) {
       body.light-theme .navbar-links { background: rgba(255,255,255,0.98); }
     }
@@ -1059,7 +1125,7 @@
             <li><i class="fas fa-check"></i> Deploy em cloud (AWS/Google)</li>
           </ul>
           <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-whatsapp" style="width:100%; justify-content:center;">
-            <i class="fab fa-whatsapp"></i> Falar com Especialista
+            <i class="fab fa-whatsapp"></i> Quero meu diagnóstico gratuito
           </a>
         </div>
         <div class="plan-card">
