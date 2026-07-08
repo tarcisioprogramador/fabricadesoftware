@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar uma Integração que Potencializa seu Negócio</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar uma <span>Integração que Potencializa seu Negócio</span></h1>
+    <p class="sub">Guia prático para conectar sistemas, automatizar fluxos e integrar suas ferramentas sem dor de cabeça.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Conectar sistemas diferentes é um dos maiores desafios que empresas enfrentam na transformação digital. Integrações mal feitas geram retrabalho, dados inconsistentes e processos manuais que consomem tempo precioso. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para criar integrações robustas que realmente potencializam seu negócio.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Mapeamento dos Sistemas e Fluxos Atuais</h3>
+      <p>Liste todos os sistemas, ferramentas e dados que precisam se conectar. Entenda como os dados trafegam hoje, onde estão as gargalos e quais processos manuais podem ser automatizados.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie todos os sistemas envolvidos na integração</div>
+      <div class="check-item"><span class="checkbox"></span> Documente os fluxos de dados atuais (entrada e saída)</div>
+      <span class="tip">Dica: Um diagrama de fluxo vale mais que mil reuniões.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição dos Objetivos da Integração</h3>
+      <p>Estabeleça claramente o que será automatizado: sincronia de dados em tempo real, eliminação de digitação manual, redução de retrabalho ou consolidação de relatórios. Objetivos claros evitam integrações superdimensionadas.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina o que será automatizado e qual o benefício esperado</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça métricas de sucesso para a integração</div>
+      <span class="tip">Dica: Integração sem objetivo mensurável é desperdício de recurso.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Escolha do Tipo de Integração</h3>
+      <p>Defina entre API REST, webhooks, middleware ou ferramentas no-code/low-code. Cada abordagem tem trade-offs entre complexidade, custo, performance e facilidade de manutenção.</p>
+      <div class="check-item"><span class="checkbox"></span> Avalie se os sistemas possuem APIs disponíveis</div>
+      <div class="check-item"><span class="checkbox"></span> Escolha entre integração ponto-a-ponto ou via middleware</div>
+      <span class="tip">Dica: Middleware centralizado escala melhor que integrações ponto-a-ponto.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Mapeamento de Dados e Regras de Negócio</h3>
+      <p>Documente quais campos, formatos e regras cada sistema espera. Um mapeamento detalhado evita surpresas na implementação e garante que os dados trafeguem corretamente entre as pontas.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie campos obrigatórios e formatos de cada sistema</div>
+      <div class="check-item"><span class="checkbox"></span> Documente regras de transformação e validação de dados</div>
+      <span class="tip">Dica: Dados inconsistentes são a principal causa de falhas em integrações.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Autenticação e Segurança</h3>
+      <p>Configure tokens, chaves de API, OAuth e garanta comunicação segura entre sistemas via HTTPS. A segurança da integração é tão importante quanto a funcionalidade — dados sensíveis não podem ser expostos.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina o método de autenticação (OAuth, API Key, JWT)</div>
+      <div class="check-item"><span class="checkbox"></span> Garanta que todos os dados trafeguem criptografados</div>
+      <span class="tip">Dica: Nunca armazene chaves de API no código-fonte.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Desenvolvimento da Integração</h3>
+      <p>Codifique as pontes entre sistemas com tratamento de erros, logs e validações. Um código robusto prevê falhas de rede, timeouts e mudanças nos contratos das APIs externas.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente tratamento de erros e logs detalhados</div>
+      <div class="check-item"><span class="checkbox"></span> Adicione validação de dados na entrada e saída</div>
+      <span class="tip">Dica: Logs bem estruturados são sua melhor ferramenta de debug.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Testes com Dados Reais</h3>
+      <p>Valide a integração com dados reais em ambiente de testes antes de ir para produção. Crie cenários de sucesso, falha e borda para garantir que a integração se comporta como esperado em todas as situações.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie um ambiente de staging idêntico à produção</div>
+      <div class="check-item"><span class="checkbox"></span> Teste com dados reais anonimizados</div>
+      <span class="tip">Dica: Teste também o que acontece quando um sistema fica offline.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Tratamento de Erros e Exceções</h3>
+      <p>Prepare fallbacks, notificações de falha e mecanismos de retry automático. Uma integração robusta não quebra — ela se recupera. Defina políticas de retry com backoff exponencial e alertas para a equipe.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente retry automático com backoff exponencial</div>
+      <div class="check-item"><span class="checkbox"></span> Configure notificações de falha para a equipe técnica</div>
+      <span class="tip">Dica: Toda integração vai falhar uma hora. Esteja preparado.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Monitoramento e Alertas</h3>
+      <p>Configure dashboards de monitoramento para acompanhar a saúde da integração em tempo real. Métricas como volume de dados trafegados, taxa de erro e latência são essenciais para operação contínua.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure dashboards com métricas-chave da integração</div>
+      <div class="check-item"><span class="checkbox"></span> Defina alertas proativos para anomalias</div>
+      <span class="tip">Dica: Monitore não só se está funcionando, mas como está funcionando.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Documentação e Manutenção Contínua</h3>
+      <p>Documente fluxos, endpoints, regras de negócio e mantenha a integração atualizada com mudanças dos sistemas conectados. Uma integração sem documentação é uma bomba-relógio para a equipe de manutenção.</p>
+      <div class="check-item"><span class="checkbox"></span> Documente todos os endpoints, fluxos e regras de negócio</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça um cronograma de revisão e atualização</div>
+      <span class="tip">Dica: Documentação viva vale mais que documentação perfeita e desatualizada.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer integrar seus sistemas e automatizar seus fluxos?</h3>
+    <p>Na Fábrica de Software, criamos integrações corporativas que conectam todo seu ecossistema digital. Agende uma conversa gratuita.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

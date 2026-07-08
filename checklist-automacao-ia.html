@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar uma Automação com IA que Gera Resultados</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar uma <span>Automação com IA que Gera Resultados</span></h1>
+    <p class="sub">Guia prático para implementar inteligência artificial no seu negócio e reduzir custos operacionais.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Mais de 1.000 projetos digitais nos ensinaram uma lição: a automação com IA só entrega resultados quando é implementada com um processo estruturado, desde o diagnóstico dos processos até o monitoramento contínuo. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para criar automações inteligentes que realmente reduzem custos e aumentam a eficiência do negócio.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Diagnóstico de Processos Automatizáveis</h3>
+      <p>Mapeie todas as tarefas repetitivas que consomem tempo da sua equipe. Nem tudo precisa de IA — o primeiro passo é identificar onde a automação realmente vai gerar impacto.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste todas as tarefas manuais e repetitivas da equipe</div>
+      <div class="check-item"><span class="checkbox"></span> Calcule o tempo gasto em cada tarefa por semana</div>
+      <span class="tip">Dica: Se uma tarefa é repetitiva e baseada em regras, ela pode ser automatizada.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição de Objetivos e Métricas</h3>
+      <p>Estabeleça KPIs claros antes de começar: redução de tempo, diminuição de custos, aumento de conversão ou satisfação do cliente. O que não é medido não pode ser otimizado.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina métricas de sucesso (tempo economizado, redução de custo, etc.)</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça a meta desejada para cada indicador</div>
+      <span class="tip">Dica: Uma automação sem métrica é um tiro no escuro.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Escolha da Tecnologia de IA</h3>
+      <p>Selecione a tecnologia certa para cada caso: ChatGPT API para atendimento, modelos proprietários para tarefas específicas, NLP para análise de texto ou RPA para automação de processos.</p>
+      <div class="check-item"><span class="checkbox"></span> Avalie qual tecnologia atende melhor cada processo identificado</div>
+      <div class="check-item"><span class="checkbox"></span> Considere custo, escalabilidade e facilidade de integração</div>
+      <span class="tip">Dica: A melhor tecnologia é a que resolve o problema com o menor custo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Coleta e Preparação dos Dados</h3>
+      <p>A IA só é tão boa quanto os dados que recebe. Organize bases de conhecimento, documentos e regras do negócio para treinar o modelo com informações de qualidade.</p>
+      <div class="check-item"><span class="checkbox"></span> Reúna todas as bases de conhecimento e documentos relevantes</div>
+      <div class="check-item"><span class="checkbox"></span> Limpe, estruture e organize os dados para o treinamento</div>
+      <span class="tip">Dica: Dados sujos geram respostas erradas — qualidade dos dados é tudo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Treinamento do Modelo</h3>
+      <p>Alimente a IA com dados reais do seu negócio, ajuste as respostas e refine o comportamento. Um modelo bem treinado entende o contexto e entrega respostas precisas.</p>
+      <div class="check-item"><span class="checkbox"></span> Alimente o modelo com exemplos reais de interações do negócio</div>
+      <div class="check-item"><span class="checkbox"></span> Ajuste respostas e refine o comportamento iterativamente</div>
+      <span class="tip">Dica: O treinamento nunca acaba — quanto mais dados, melhor o modelo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Desenvolvimento do Agente ou Bot</h3>
+      <p>Construa o fluxo de conversa, integrações com sistemas internos e a lógica de decisão do agente. A experiência do usuário final deve ser natural e fluida.</p>
+      <div class="check-item"><span class="checkbox"></span> Desenhe o fluxo de conversa completo (inclusive exceções)</div>
+      <div class="check-item"><span class="checkbox"></span> Integre com os sistemas e bancos de dados da empresa</div>
+      <span class="tip">Dica: Um bom bot parece humano. Um ótimo bot é honesto sobre ser IA.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Integração com Canais de Atendimento</h3>
+      <p>Conecte a IA com os canais que seus clientes já usam: WhatsApp, site, Instagram, e-mail e sistemas internos. A automação precisa estar onde o cliente está.</p>
+      <div class="check-item"><span class="checkbox"></span> Integre com WhatsApp Business API</div>
+      <div class="check-item"><span class="checkbox"></span> Conecte com site, Instagram e outros canais relevantes</div>
+      <span class="tip">Dica: A IA deve estar presente onde seus clientes já estão.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Testes com Cenários Reais</h3>
+      <p>Simule conversas reais com a IA, valide as respostas e ajuste o modelo antes de colocar no ar. Teste exceções, perguntas difíceis e situações inesperadas.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie cenários de teste baseados em interações reais de clientes</div>
+      <div class="check-item"><span class="checkbox"></span> Teste exceções e fluxos de escalonamento para atendimento humano</div>
+      <span class="tip">Dica: Teste com o pior cenário possível — se passar nele, está pronto.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Monitoramento e Otimização Contínua</h3>
+      <p>Acompanhe métricas de desempenho, identifique falhas, analise conversas e melhore continuamente o modelo. IA que não é monitorada se degrada com o tempo.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure dashboards com métricas de desempenho da IA</div>
+      <div class="check-item"><span class="checkbox"></span> Analise conversas semanalmente para identificar melhorias</div>
+      <span class="tip">Dica: Uma IA bem monitorada fica mais inteligente a cada semana.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Escalonamento e Expansão</h3>
+      <p>Depois que a automação estiver funcionando, amplie para novos processos, canais e funcionalidades. O potencial da IA no seu negócio é muito maior do que um único uso.</p>
+      <div class="check-item"><span class="checkbox"></span> Identifique novos processos que podem ser automatizados</div>
+      <div class="check-item"><span class="checkbox"></span> Planeje a expansão para novos canais e funcionalidades</div>
+      <span class="tip">Dica: Comece pequeno, mas pense grande — a IA pode escalar para todo o negócio.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer automatizar seu negócio com IA?</h3>
+    <p>Na Fábrica de Software, criamos agentes inteligentes treinados com seus dados. Agende uma conversa gratuita.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

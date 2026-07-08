@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar um Sistema para Clínica Médica</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar um <span>Sistema para Clínica Médica</span></h1>
+    <p class="sub">Guia prático para criar um sistema de gestão completo para sua clínica ou consultório.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    A gestão de clínicas e consultórios enfrenta desafios únicos: agendamento caótico, prontuários perdidos, faturamento desorganizado. Um sistema sob medida resolve esses problemas, mas construir esse sistema exige um processo estruturado. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para criar sistemas de gestão para clínicas médicas.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Mapeamento dos Processos da Clínica</h3>
+      <p>Entenda fluxos de agendamento, atendimento, faturamento e prontuário. Cada clínica funciona de um jeito — o sistema precisa se adaptar aos processos reais, não o contrário.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie todos os fluxos da clínica (agendamento, atendimento, faturamento)</div>
+      <div class="check-item"><span class="checkbox"></span> Identifique gargalos e pontos de dor no processo atual</div>
+      <span class="tip">Dica: O sistema deve resolver problemas reais, não criar novos.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição de Funcionalidades Prioritárias</h3>
+      <p>Agenda, prontuário eletrônico, financeiro, relatórios — defina o que é essencial primeiro. Um sistema cheio de funcionalidades mas que não resolve o básico é um fracasso garantido.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste funcionalidades essenciais vs desejáveis</div>
+      <div class="check-item"><span class="checkbox"></span> Priorize o módulo de agendamento como primeira entrega</div>
+      <span class="tip">Dica: Resolva a agenda primeiro — é o coração da clínica.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Modelagem do Banco de Dados e Arquitetura</h3>
+      <p>Projete dados de pacientes, consultas, convênios e histórico médico. Uma base de dados bem modelada garante performance, escalabilidade e integridade das informações clínicas.</p>
+      <div class="check-item"><span class="checkbox"></span> Modele entidades: pacientes, médicos, consultas, convênios</div>
+      <div class="check-item"><span class="checkbox"></span> Defina arquitetura pensando em privacidade e LGPD</div>
+      <span class="tip">Dica: Dados mal modelados hoje viram dor de cabeça amanhã.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Prototipação das Telas</h3>
+      <p>Crie protótipos das telas de agendamento, prontuário e painel do médico. Teste o fluxo com recepcionistas e médicos antes de programar — a opinião de quem usa o sistema é fundamental.</p>
+      <div class="check-item"><span class="checkbox"></span> Prototipe o fluxo de agendamento e atendimento</div>
+      <div class="check-item"><span class="checkbox"></span> Valide os protótipos com recepcionistas e médicos</div>
+      <span class="tip">Dica: Um protótipo validado economiza meses de retrabalho.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Desenvolvimento do Módulo de Agendamento</h3>
+      <p>Calendário online, marcação por paciente, lembretes automáticos no WhatsApp. O agendamento é o módulo mais crítico — precisa ser intuitivo, rápido e confiável, com notificações que reduzem faltas.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente calendário com visual diário, semanal e mensal</div>
+      <div class="check-item"><span class="checkbox"></span> Configure lembretes automáticos via WhatsApp e e-mail</div>
+      <span class="tip">Dica: Lembretes automáticos reduzem em até 40% as faltas.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Desenvolvimento do Prontuário Eletrônico</h3>
+      <p>Fichas digitais com histórico de consultas, exames, receitas e anamnese. O prontuário precisa ser completo mas fácil de usar — médicos não têm tempo para sistemas complexos.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie fichas com histórico completo de consultas e exames</div>
+      <div class="check-item"><span class="checkbox"></span> Implemente prescrição eletrônica e emissão de receitas</div>
+      <span class="tip">Dica: Prontuário intuitivo = médico feliz = clínica eficiente.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Módulo Financeiro e Convênios</h3>
+      <p>Controle de pagamentos, guias de convênio, emissão de recibos e relatórios financeiros. O financeiro da clínica precisa ser claro — convênios têm regras complexas que o sistema precisa gerenciar.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente controle de pagamentos por paciente e convênio</div>
+      <div class="check-item"><span class="checkbox"></span> Crie relatórios financeiros por período, médico e convênio</div>
+      <span class="tip">Dica: Convênios mal gerenciados são a maior fonte de prejuízo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Segurança e Conformidade LGPD</h3>
+      <p>Criptografia de dados sensíveis, controle de acesso por perfil, logs de auditoria. Dados de saúde são protegidos por lei — o sistema precisa estar em conformidade com a LGPD para evitar multas e processos.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente criptografia de dados sensíveis em repouso e trânsito</div>
+      <div class="check-item"><span class="checkbox"></span> Configure controle de acesso por perfil (médico, recepção, admin)</div>
+      <span class="tip">Dica: Na saúde, segurança não é opcional — é lei.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Testes com Profissionais da Saúde</h3>
+      <p>Valide o sistema com médicos e recepcionistas em ambiente real. Quem está na linha de frente sabe o que funciona — o feedback deles é essencial para ajustar o sistema antes do lançamento oficial.</p>
+      <div class="check-item"><span class="checkbox"></span> Teste o sistema com médicos e recepcionistas reais</div>
+      <div class="check-item"><span class="checkbox"></span> Ajuste fluxos com base no feedback dos usuários</div>
+      <span class="tip">Dica: Médicos são os testadores mais exigentes — e isso é bom.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Deploy, Treinamento e Suporte Contínuo</h3>
+      <p>Implante na clínica, treine equipe e ofereça suporte técnico contínuo. Um sistema só entrega valor quando as pessoas sabem usar — treinamento e suporte são tão importantes quanto o software.</p>
+      <div class="check-item"><span class="checkbox"></span> Realize treinamento presencial ou remoto com a equipe</div>
+      <div class="check-item"><span class="checkbox"></span> Ofereça suporte técnico com SLA definido</div>
+      <span class="tip">Dica: Um sistema sem treinamento é como um carro sem volante.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer um sistema completo para sua clínica?</h3>
+    <p>Na Fábrica de Software, criamos sistemas de gestão para clínicas e consultórios. Agende uma conversa gratuita.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar um SaaS Lucrativo</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar um <span>SaaS Lucrativo</span></h1>
+    <p class="sub">Guia prático para transformar sua ideia em uma plataforma SaaS escalável e com receita recorrente.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Mais de 1.000 projetos de software nos ensinaram uma lição: construir um SaaS lucrativo vai muito além de programar — é preciso validar o mercado, definir o modelo de negócio certo e criar uma arquitetura que escale. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para criar plataformas SaaS que geram receita recorrente de verdade.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Validação do Problema e do Mercado</h3>
+      <p>Confirme que o problema que você quer resolver existe de fato e que pessoas estão dispostas a pagar por uma solução. Converse com clientes potenciais antes de escrever código.</p>
+      <div class="check-item"><span class="checkbox"></span> Entreviste pelo menos 15 potenciais clientes sobre o problema</div>
+      <div class="check-item"><span class="checkbox"></span> Valide a disposição de pagar por uma solução</div>
+      <span class="tip">Dica: Se o cliente não sente dor o suficiente para pagar, você não tem um negócio.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição do Modelo de Negócio e Precificação</h3>
+      <p>Escolha o modelo de assinatura ideal: mensal, anual, freemium ou tiers. Defina preços com base no valor entregue e na disposição a pagar do mercado.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina os planos e faixas de preço do SaaS</div>
+      <div class="check-item"><span class="checkbox"></span> Calcule o CAC (Custo de Aquisição de Cliente) estimado</div>
+      <span class="tip">Dica: Um preço muito baixo desvaloriza seu produto. Teste diferentes faixas.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Pesquisa de Concorrência e Diferenciação</h3>
+      <p>Analise concorrentes diretos e indiretos. Identifique o que eles fazem bem e onde falham. Seu diferencial competitivo é o que fará clientes escolherem você.</p>
+      <div class="check-item"><span class="checkbox"></span> Analise 5 concorrentes diretos e seus modelos de precificação</div>
+      <div class="check-item"><span class="checkbox"></span> Defina 3 diferenciais competitivos claros</div>
+      <span class="tip">Dica: Não tente competir em preço — compita em valor.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Arquitetura Multi-tenant</h3>
+      <p>Projete o banco de dados e a infraestrutura para suportar múltiplos clientes com isolamento de dados. Uma arquitetura multi-tenant bem feita escala sem dores.</p>
+      <div class="check-item"><span class="checkbox"></span> Projete o esquema de dados com isolamento por cliente</div>
+      <div class="check-item"><span class="checkbox"></span> Defina a estratégia de deploy e escalabilidade</div>
+      <span class="tip">Dica: Pense na arquitetura como se você tivesse 10.000 clientes no primeiro dia.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Prototipação do Produto</h3>
+      <p>Crie um protótipo funcional para validar com clientes potenciais antes de desenvolver o produto completo. Feedback cedo evita construir a coisa errada.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie protótipo navegável com as funcionalidades principais</div>
+      <div class="check-item"><span class="checkbox"></span> Apresente para potenciais clientes e colete feedback</div>
+      <span class="tip">Dica: Mostre o protótipo antes de construir — o barato sai caro.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Desenvolvimento do MVP</h3>
+      <p>Construa a versão enxuta com autenticação, funcionalidade principal e pagamentos. Foque em entregar valor real com o mínimo de recursos possível.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente autenticação e gestão de usuários</div>
+      <div class="check-item"><span class="checkbox"></span> Desenvolva a funcionalidade principal com integração de pagamentos</div>
+      <span class="tip">Dica: Seu SaaS precisa estar pronto para cobrar desde o primeiro dia.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Integração de Pagamentos Recorrentes</h3>
+      <p>Configure Stripe, Mercado Pago ou PagSeguro com cobrança automática recorrente. A experiência de pagamento precisa ser simples, segura e sem atritos.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure o gateway de pagamento com cobrança recorrente</div>
+      <div class="check-item"><span class="checkbox"></span> Teste o ciclo completo: cadastro, pagamento, cancelamento</div>
+      <span class="tip">Dica: Um checkout complexo é a principal causa de abandono de assinatura.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Infraestrutura Cloud e Escalabilidade</h3>
+      <p>Faça deploy em AWS, Google Cloud ou Vercel com escalabilidade automática. A infraestrutura certa garante que seu SaaS aguente picos de acesso sem cair.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure servidores com auto-scaling e balanceamento de carga</div>
+      <div class="check-item"><span class="checkbox"></span> Implemente CI/CD para deploys automatizados</div>
+      <span class="tip">Dica: Invista em infraestrutura desde o início — migrar depois é doloroso.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Lançamento e Aquisição de Clientes</h3>
+      <p>Crie uma estratégia de go-to-market com landing page, SEO, conteúdo e tráfego pago. Um lançamento bem planejado atrai os primeiros clientes pagantes.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie landing page de vendas com SEO otimizado</div>
+      <div class="check-item"><span class="checkbox"></span> Planeje campanhas de tráfego pago e conteúdo orgânico</div>
+      <span class="tip">Dica: Os primeiros 100 clientes são os mais difíceis — e os mais importantes.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Métricas, Iteração e Crescimento</h3>
+      <p>Monitore churn, LTV, CAC e outras métricas-chave. Use dados para iterar o produto e melhorar continuamente. SaaS que não evolui, morre.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure dashboards com métricas de negócio e produto</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça ciclos de iteração baseados em dados e feedback</div>
+      <span class="tip">Dica: Seu churn é o termômetro da saúde do seu SaaS.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer lançar um SaaS de sucesso?</h3>
+    <p>Na Fábrica de Software, criamos plataformas SaaS completas do zero. Agende uma conversa gratuita.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

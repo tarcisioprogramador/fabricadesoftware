@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar um Sistema de Agendamento Online</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar um <span>Sistema de Agendamento Online</span></h1>
+    <p class="sub">Guia prático para criar um sistema de agendamento que reduz faltas e organiza sua agenda automaticamente.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Todo negócio que trabalha com horários marcados enfrenta o mesmo desafio: organizar a agenda, reduzir faltas e facilitar a vida do cliente. Um sistema de agendamento online resolve tudo isso — e vai além. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para criar sistemas de agendamento que realmente organizam a operação e aumentam o faturamento.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Diagnóstico do Negócio e Tipos de Agendamento</h3>
+      <p>Entenda profundamente os serviços oferecidos, duração de cada um, horários de funcionamento e regras de agendamento. Mapeie profissionais, recursos necessários e políticas de cancelamento.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste todos os serviços e suas durações</div>
+      <div class="check-item"><span class="checkbox"></span> Defina horários de funcionamento e regras de disponibilidade</div>
+      <span class="tip">Dica: Um agendamento bem modelado começa com um diagnóstico completo da operação.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição da Experiência do Usuário</h3>
+      <p>Desenhe a jornada completa do cliente: busca de horário, escolha do serviço, seleção do profissional, confirmação e lembretes. Cada etapa precisa ser intuitiva e rápida.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie o fluxo ideal de agendamento do cliente</div>
+      <div class="check-item"><span class="checkbox"></span> Defina pontos de atrito e como eliminá-los</div>
+      <span class="tip">Dica: Se o cliente leva mais de 3 cliques para agendar, você está perdendo vendas.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Modelagem de Dados</h3>
+      <p>Estruture as entidades do sistema: profissionais, serviços, horários, clientes e histórico de agendamentos. Uma modelagem bem feita evita conflitos de horário e garante escalabilidade.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina as entidades e relacionamentos do sistema</div>
+      <div class="check-item"><span class="checkbox"></span> Planeje regras de negócio (intervalos, bloqueios, limites)</div>
+      <span class="tip">Dica: Invista tempo na modelagem — ela é a base de todo o sistema.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Calendário Visual e Disponibilidade em Tempo Real</h3>
+      <p>Crie uma interface de calendário que mostre horários disponíveis dinamicamente. O cliente precisa ver em tempo real o que está livre e o que já foi ocupado, sem surpresas.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente calendário com visualização por dia/semana/mês</div>
+      <div class="check-item"><span class="checkbox"></span> Garanta atualização em tempo real da disponibilidade</div>
+      <span class="tip">Dica: Um calendário visual e responsivo reduz em até 40% as dúvidas dos clientes.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Lembretes Automáticos via WhatsApp</h3>
+      <p>Configure disparo automático de mensagens de confirmação e lembrete. Lembretes reduzem drasticamente as faltas e mantêm sua agenda sempre ocupada.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure lembrete 24h antes do horário marcado</div>
+      <div class="check-item"><span class="checkbox"></span> Ofereça opção de confirmar ou cancelar pelo WhatsApp</div>
+      <span class="tip">Dica: Lembretes automáticos podem reduzir faltas em até 60%.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Gestão de Agenda do Profissional</h3>
+      <p>Crie um painel onde cada profissional visualize sua agenda, confirme ou recuse horários, registre atendimentos e gerencie bloqueios. Transparência e autonomia para a equipe.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie painel com visão diária e semanal da agenda</div>
+      <div class="check-item"><span class="checkbox"></span> Permita bloqueios de horário e reagendamentos rápidos</div>
+      <span class="tip">Dica: Quanto mais autonomia o profissional tiver na agenda, menos retrabalho para você.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Autoatendimento para o Cliente</h3>
+      <p>Permita que o cliente marque, remarque e cancele horários sem precisar ligar ou enviar mensagem. Autoatendimento libera sua equipe e melhora a experiência do cliente.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente link ou QR code para autoatendimento</div>
+      <div class="check-item"><span class="checkbox"></span> Permita reagendamento e cancelamento com regras claras</div>
+      <span class="tip">Dica: Clientes que agendam sozinhos têm 30% menos chances de faltar.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Integração com Pagamento</h3>
+      <p>Ofereça cobrança de taxa de confirmação no ato do agendamento ou vincule ao checkout de serviços. Reduza faltas e garanta receita antecipada.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina política de cobrança (taxa fixa, percentual, gratuito)</div>
+      <div class="check-item"><span class="checkbox"></span> Integre com gateway de pagamento (Pix, cartão, boleto)</div>
+      <span class="tip">Dica: Uma pequena taxa de confirmação elimina a maioria das faltas por "esquecimento".</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Relatórios e Métricas</h3>
+      <p>Acompanhe taxa de ocupação, horários mais procurados, índice de faltas e faturamento por período. Dados orientam decisões estratégicas do negócio.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure dashboard com indicadores principais</div>
+      <div class="check-item"><span class="checkbox"></span> Exporte relatórios periódicos para análise</div>
+      <span class="tip">Dica: O que não é medido não pode ser melhorado — acompanhe suas métricas semanalmente.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Deploy, Suporte e Evolução Contínua</h3>
+      <p>Publique o sistema, treine a equipe e acompanhe os primeiros agendamentos. Esteja pronto para adicionar novas funcionalidades conforme o negócio cresce e novos desafios surgem.</p>
+      <div class="check-item"><span class="checkbox"></span> Realize treinamento completo com a equipe</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça canal de suporte para primeiras semanas</div>
+      <span class="tip">Dica: Um sistema de agendamento nunca está pronto — ele evolui junto com seu negócio.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer um sistema de agendamento online para seu negócio?</h3>
+    <p>Na Fábrica de Software, criamos sistemas de agendamento completos com método testado em mais de 1.000 projetos. Agende uma conversa gratuita de 30 minutos.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

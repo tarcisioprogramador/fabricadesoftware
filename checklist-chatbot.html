@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar um Chatbot que Vende</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar um <span>Chatbot que Vende</span></h1>
+    <p class="sub">Guia prático para criar um chatbot inteligente para WhatsApp que gera leads e vendas 24 horas por dia.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Um chatbot bem construído não é apenas um atendente automático — é uma máquina de vendas que trabalha 24 horas por dia, 7 dias por semana. Na Fábrica de Software, já desenvolvemos dezenas de chatbots inteligentes para WhatsApp e aprendemos na prática o que funciona. Este guia reúne os 10 passos essenciais para criar um chatbot que realmente gera leads, qualifica clientes e aumenta suas vendas.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Definição dos Objetivos do Chatbot</h3>
+      <p>Antes de tudo, defina claramente o propósito: vendas, atendimento, qualificação de leads ou suporte. Cada objetivo exige uma abordagem, fluxo e métricas diferentes.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina o objetivo principal do chatbot (vendas, suporte, leads)</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça métricas de sucesso para cada objetivo</div>
+      <span class="tip">Dica: Um chatbot que tenta fazer tudo acaba não fazendo nada bem.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Mapeamento do Fluxo de Conversa</h3>
+      <p>Desenhe a árvore de decisão da conversa com perguntas, respostas possíveis e encaminhamentos. Cada caminho precisa levar o usuário a algum lugar útil.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie o fluxograma completo da conversa</div>
+      <div class="check-item"><span class="checkbox"></span> Mapeie respostas para objeções e dúvidas frequentes</div>
+      <span class="tip">Dica: Teste o fluxo no papel antes de escrever uma linha de código.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Criação do Persona e Tom de Voz</h3>
+      <p>Defina a personalidade do bot: formal, descontraído, técnico ou consultivo. O tom de voz precisa estar alinhado com sua marca e com o perfil do seu cliente.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina o persona do chatbot (nome, estilo, limites)</div>
+      <div class="check-item"><span class="checkbox"></span> Escreva exemplos de falas para cada situação</div>
+      <span class="tip">Dica: Um bom persona faz o cliente esquecer que está falando com um robô.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Base de Conhecimento e Respostas</h3>
+      <p>Alimente o bot com informações reais do negócio: produtos, preços, prazos, dúvidas frequentes e políticas. Uma base rica gera respostas precisas e confiáveis.</p>
+      <div class="check-item"><span class="checkbox"></span> Reúna as 20 perguntas mais frequentes dos clientes</div>
+      <div class="check-item"><span class="checkbox"></span> Estruture respostas completas e atualizadas</div>
+      <span class="tip">Dica: Quanto maior a base de conhecimento, menor a taxa de transferência para humano.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Definição de Gatilhos e Integrações</h3>
+      <p>Configure palavras-chave, botões interativos e integrações com CRM ou ERP. O chatbot precisa se conectar com seus sistemas para ter contexto real do cliente.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie integrações necessárias (CRM, ERP, WhatsApp)</div>
+      <div class="check-item"><span class="checkbox"></span> Defina gatilhos automáticos para ações específicas</div>
+      <span class="tip">Dica: Um chatbot integrado ao CRM vende muito mais que um chatbot isolado.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Desenvolvimento do Fluxo Inteligente</h3>
+      <p>Crie um fluxo com capacidade de entender linguagem natural e desviar do roteiro fixo. Use IA para interpretar intenções e oferecer respostas mais naturais.</p>
+      <div class="check-item"><span class="checkbox"></span> Implemente processamento de linguagem natural (NLP/IA)</div>
+      <div class="check-item"><span class="checkbox"></span> Crie fallback para quando o bot não entender a mensagem</div>
+      <span class="tip">Dica: Um fluxo inteligente reduz em até 50% a necessidade de intervenção humana.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Integração com WhatsApp Business API</h3>
+      <p>Conecte o chatbot ao WhatsApp oficial usando a API Business. Configure templates de mensagens aprovados e garanta entrega confiável.</p>
+      <div class="check-item"><span class="checkbox"></span> Solicite e configure WhatsApp Business API</div>
+      <div class="check-item"><span class="checkbox"></span> Crie e aprove templates de mensagem no Meta</div>
+      <span class="tip">Dica: Mensagens template precisam ser aprovadas — planeje com antecedência.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Testes com Clientes Reais</h3>
+      <p>Teste o bot com usuários reais, colete feedback e ajuste respostas. Um teste bem feito revela gargalos, ambiguidades e oportunidades de melhoria.</p>
+      <div class="check-item"><span class="checkbox"></span> Conduza teste com grupo controlado de clientes</div>
+      <div class="check-item"><span class="checkbox"></span> Analise conversas e ajuste fluxos problemáticos</div>
+      <span class="tip">Dica: Seu primeiro teste sempre vai revelar algo que você não previu.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Monitoramento e Análise de Conversas</h3>
+      <p>Acompanhe métricas: taxa de conclusão de fluxo, abandono, transferência para humano e satisfação. Dados orientam melhorias contínuas.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure dashboard de métricas do chatbot</div>
+      <div class="check-item"><span class="checkbox"></span> Revise conversas semanalmente para identificar padrões</div>
+      <span class="tip">Dica: Taxa de abandono alta indica que o fluxo precisa ser simplificado.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Otimização Contínua com Base em Dados</h3>
+      <p>Analise conversas reais, identifique gargalos e melhore o fluxo continuamente. Um chatbot nunca está pronto — ele aprende e evolui com cada interação.</p>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça rotina de revisão de logs de conversa</div>
+      <div class="check-item"><span class="checkbox"></span> Atualize base de conhecimento com novas dúvidas</div>
+      <span class="tip">Dica: As melhores melhorias do seu chatbot virão das conversas que ele não conseguiu resolver.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer um chatbot que vende para seu negócio?</h3>
+    <p>Na Fábrica de Software, criamos chatbots inteligentes para WhatsApp com método testado em mais de 1.000 projetos. Agende uma conversa gratuita de 30 minutos.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>

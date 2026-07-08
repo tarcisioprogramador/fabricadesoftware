@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Integrar Mercado Livre com ERP</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para <span>Integrar Mercado Livre com seu ERP</span></h1>
+    <p class="sub">Guia prático para automatizar pedidos, estoque e notas fiscais entre Mercado Livre e seu sistema de gestão.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Vender no Mercado Livre é essencial, mas gerenciar pedidos manualmente enquanto o volume cresce é insustentável. Erros de estoque, retrabalho em notas fiscais e atrasos na entrega viram parte do dia a dia. Na Fábrica de Software, já integramos dezenas de lojas do Mercado Livre com ERPs diferentes. Este guia reúne os 10 passos essenciais para automatizar de ponta a ponta sua operação no maior marketplace da América Latina.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Diagnóstico do Cenário Atual</h3>
+      <p>Mapeie volume de pedidos, quantidade de produtos anunciados no Mercado Livre, fluxos manuais existentes e gargalos da operação atual. Entenda onde o tempo está sendo perdido.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste todos os processos manuais que podem ser automatizados</div>
+      <div class="check-item"><span class="checkbox"></span> Meça o tempo gasto em cada tarefa manual</div>
+      <span class="tip">Dica: Onde há digitação manual, há erro humano — e prejuízo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Escolha do ERP e Compatibilidade</h3>
+      <p>Identifique se seu ERP tem API disponível, webhooks ou integração nativa com Mercado Livre. A compatibilidade técnica define a complexidade e o prazo da integração.</p>
+      <div class="check-item"><span class="checkbox"></span> Verifique documentação de API do seu ERP</div>
+      <div class="check-item"><span class="checkbox"></span> Avalie se o ERP oferece webhooks para eventos em tempo real</div>
+      <span class="tip">Dica: ERPs com API RESTful são muito mais fáceis de integrar.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Mapeamento de Dados entre Plataformas</h3>
+      <p>Defina a correspondência exata de produtos, códigos SKU, preços, níveis de estoque e categorias entre Mercado Livre e ERP. Um mapeamento preciso evita divergências.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie planilha de correspondência produto x SKU x variantes</div>
+      <div class="check-item"><span class="checkbox"></span> Mapeie categorias e atributos obrigatórios do Mercado Livre</div>
+      <span class="tip">Dica: Invista 80% do tempo no mapeamento e 20% no código — o resultado é muito melhor.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Autenticação e Configuração de APIs</h3>
+      <p>Configure token de acesso do Mercado Livre (OAuth) e autenticação da API do ERP. A segurança na comunicação entre plataformas é fundamental para evitar vazamentos.</p>
+      <div class="check-item"><span class="checkbox"></span> Gere e configure token de acesso do Mercado Livre</div>
+      <div class="check-item"><span class="checkbox"></span> Configure autenticação e ambiente de homologação</div>
+      <span class="tip">Dica: Use ambientes de teste (sandbox) antes de ir para produção.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Sincronia de Estoque em Tempo Real</h3>
+      <p>Implemente atualização automática de estoque quando uma venda é feita em qualquer canal. Evite vendas de produtos sem estoque e cancelamentos por falta.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure webhook de atualização de estoque bidirecional</div>
+      <div class="check-item"><span class="checkbox"></span> Defina regras de estoque mínimo e alertas</div>
+      <span class="tip">Dica: Estoque em tempo real elimina 100% das vendas sem estoque.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Importação Automática de Pedidos</h3>
+      <p>Os pedidos do Mercado Livre devem cair automaticamente no ERP sem digitação manual. Cada minuto economizado é agilidade na expedição.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure importação automática de novos pedidos</div>
+      <div class="check-item"><span class="checkbox"></span> Mapeie campos do pedido (cliente, endereço, itens, frete)</div>
+      <span class="tip">Dica: Um pedido que cai automático no ERP sai 3x mais rápido para entrega.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Emissão Automática de Notas Fiscais</h3>
+      <p>Gere NF-e automaticamente ao integrar o pedido no ERP. Sem digitação, sem erros de CT-e e sem multas por atraso na emissão.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure integração com sistema de emissão de NF-e</div>
+      <div class="check-item"><span class="checkbox"></span> Defina regras de tributação por produto e região</div>
+      <span class="tip">Dica: Nota fiscal automática reduz erros fiscais em mais de 90%.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Sincronia de Rastreio e Status de Entrega</h3>
+      <p>Atualize código de rastreio e status no Mercado Livre automaticamente. Clientes bem informados abrem menos reclamações e dão melhores avaliações.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure envio automático de código de rastreio</div>
+      <div class="check-item"><span class="checkbox"></span> Sincronize status de entrega (despachado, em trânsito, entregue)</div>
+      <span class="tip">Dica: Clientes que recebem rastreio automático têm 40% menos chamados.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>Tratamento de Erros e Exceções</h3>
+      <p>Prepare fluxos para devoluções, cancelamentos, divergências de preço e estoque. Uma integração robusta antecipa o que pode dar errado.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie cenários de exceção (devolução, cancelamento, divergência)</div>
+      <div class="check-item"><span class="checkbox"></span> Crie alertas para erros de integração</div>
+      <span class="tip">Dica: O sucesso de uma integração se mede pela qualidade do tratamento de erros.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Monitoramento e Suporte Contínuo</h3>
+      <p>Acompanhe a saúde da integração, monitore logs e atualize conforme mudanças nas APIs do Mercado Livre e do ERP. Uma integração abandonada quebra o negócio.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure painel de monitoramento da integração</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça rotina de atualização conforme mudanças nas APIs</div>
+      <span class="tip">Dica: APIs mudam — uma integração sem manutenção é uma bomba-relógio.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer automatizar seu Mercado Livre com o ERP?</h3>
+    <p>Na Fábrica de Software, criamos integrações completas entre marketplaces e sistemas de gestão com método testado em mais de 1.000 projetos. Agende uma conversa gratuita de 30 minutos.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>
