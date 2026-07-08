@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Checklist: 10 Passos para Criar um Software que Vende</title>
+  <style>
+    @page { margin: 2cm 1.5cm; size: A4; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      color: #1E293B; background: #fff; line-height: 1.5;
+      padding: 20px 30px;
+    }
+    .cover {
+      text-align: center; padding: 60px 20px 40px;
+      border-bottom: 3px solid #2563EB; margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 32px; font-weight: 800; color: #0F172A;
+      margin-bottom: 8px;
+    }
+    .cover h1 span { color: #2563EB; }
+    .cover .sub {
+      font-size: 16px; color: #64748B; max-width: 500px; margin: 0 auto;
+    }
+    .cover .logo {
+      font-size: 20px; font-weight: 800; color: #0F172A;
+      margin-bottom: 20px; letter-spacing: -0.5px;
+    }
+    .cover .logo span { color: #2563EB; }
+
+    .intro {
+      background: #F0F9FF; border-left: 4px solid #2563EB;
+      padding: 20px 24px; margin-bottom: 30px; border-radius: 0 8px 8px 0;
+    }
+    .intro p { font-size: 14px; color: #334155; line-height: 1.6; }
+
+    .step {
+      display: flex; gap: 16px; margin-bottom: 20px;
+      padding: 16px 20px; border: 1px solid #E2E8F0;
+      border-radius: 8px; page-break-inside: avoid;
+    }
+    .step:hover { border-color: #2563EB; }
+    .step-num {
+      width: 40px; height: 40px; min-width: 40px;
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700;
+    }
+    .step-content { flex: 1; }
+    .step-content h3 {
+      font-size: 16px; font-weight: 700; color: #0F172A;
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      font-size: 13px; color: #475569; line-height: 1.5;
+    }
+    .step-content .tip {
+      display: inline-block; margin-top: 6px;
+      font-size: 12px; color: #2563EB; font-weight: 600;
+    }
+    .step-content .tip i { font-style: normal; }
+
+    .footer-pdf {
+      margin-top: 40px; padding-top: 20px;
+      border-top: 2px solid #E2E8F0;
+      text-align: center; font-size: 12px; color: #94A3B8;
+    }
+    .footer-pdf strong { color: #2563EB; }
+
+    .checkbox { 
+      display: inline-block; width: 16px; height: 16px;
+      border: 2px solid #CBD5E1; border-radius: 3px;
+      margin-right: 8px; vertical-align: middle;
+    }
+    .step-content .check-item {
+      font-size: 13px; color: #475569; margin-top: 4px;
+    }
+
+    .cta-final {
+      background: linear-gradient(135deg, #2563EB, #7C3AED);
+      color: #fff; padding: 24px; border-radius: 8px;
+      text-align: center; margin-top: 30px;
+    }
+    .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .cta-final p { font-size: 13px; opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <div class="cover">
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+    <h1>10 Passos para Criar <span>um Software que Vende</span></h1>
+    <p class="sub">Guia prático do diagnóstico ao lançamento — para empreendedores que querem transformar uma ideia em um produto digital de sucesso.</p>
+  </div>
+
+  <div class="intro">
+    <p><strong>Por que este checklist existe?</strong><br>
+    Mais de 1.000 projetos de software nos ensinaram uma lição: o sucesso de um produto digital não depende apenas de código bem escrito — depende de um processo estruturado que começa muito antes da primeira linha. Este guia reúne os 10 passos essenciais que seguimos na Fábrica de Software para transformar ideias em software que realmente gera resultado.</p>
+  </div>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-content">
+      <h3>Diagnóstico do Problema</h3>
+      <p>Antes de pensar em solução, entenda profundamente o problema. Converse com clientes reais, mapeie dores e identifique o que realmente precisa ser resolvido. Um software só vende se resolve um problema real.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste as 3 maiores dores do seu cliente ideal</div>
+      <div class="check-item"><span class="checkbox"></span> Valide com pelo menos 5 pessoas do seu público-alvo</div>
+      <span class="tip">Dica: Se você não consegue explicar o problema em 1 frase, ainda não entendeu ele.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-content">
+      <h3>Definição do MVP (Produto Mínimo Viável)</h3>
+      <p>Não tente construir tudo de uma vez. Defina a versão mais enxuta que entrega valor real. Liste funcionalidades essenciais, importantes e supérfluas. Construa só o essencial primeiro.</p>
+      <div class="check-item"><span class="checkbox"></span> Liste 3 funcionalidades indispensáveis para o MVP</div>
+      <div class="check-item"><span class="checkbox"></span> Separe o que é "desejável" do que é "essencial"</div>
+      <span class="tip">Dica: Seu MVP deve resolver UM problema bem, não vários problemas mal.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-content">
+      <h3>Pesquisa de Concorrência</h3>
+      <p>Conheça seus concorrentes diretos e indiretos. Analise o que eles fazem bem, onde falham e como você pode se diferenciar. Use ferramentas como Google, SimilarWeb e redes sociais.</p>
+      <div class="check-item"><span class="checkbox"></span> Identifique 5 concorrentes diretos</div>
+      <div class="check-item"><span class="checkbox"></span> Analise avaliações negativas deles (é ouro puro)</div>
+      <span class="tip">Dica: Onde seus concorrentes falham é sua maior oportunidade.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-content">
+      <h3>Modelo de Negócio e Monetização</h3>
+      <p>Defina como seu software vai gerar receita: assinatura mensal, taxa única, freemium, comissão? Quanto seus clientes estão dispostos a pagar? Qual o valor que seu software entrega?</p>
+      <div class="check-item"><span class="checkbox"></span> Defina o modelo de precificação</div>
+      <div class="check-item"><span class="checkbox"></span> Calcule o custo de aquisição de cliente (CAC)</div>
+      <span class="tip">Dica: Um software que não gera receita é um hobby, não um negócio.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">5</div>
+    <div class="step-content">
+      <h3>Prototipação das Telas</h3>
+      <p>Crie wireframes e protótipos navegáveis antes de escrever código. Ferramentas como Figma permitem testar a experiência do usuário sem gastar horas de desenvolvimento. Mostre para clientes reais.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie o fluxo principal do usuário (jornada)</div>
+      <div class="check-item"><span class="checkbox"></span> Teste o protótipo com 3 pessoas do público-alvo</div>
+      <span class="tip">Dica: Um protótipo bem testado economiza semanas de retrabalho.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">6</div>
+    <div class="step-content">
+      <h3>Escolha da Stack Tecnológica</h3>
+      <p>A tecnologia certa faz toda a diferença. Escolha linguagens, frameworks e bancos de dados que combinem com seu projeto: escalabilidade necessária, time disponível no mercado e custo de manutenção.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina frontend, backend, banco de dados e infraestrutura</div>
+      <div class="check-item"><span class="checkbox"></span> Considere o custo de manutenção a longo prazo</div>
+      <span class="tip">Dica: Prefira tecnologias maduras e com comunidade ativa.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">7</div>
+    <div class="step-content">
+      <h3>Desenvolvimento Ágil com Entregas Semanais</h3>
+      <p>Trabalhe em ciclos curtos (sprints) com entregas reais a cada 1-2 semanas. Isso permite validar funcionalidades rapidamente, ajustar o rumo e evitar surpresas no final do projeto.</p>
+      <div class="check-item"><span class="checkbox"></span> Defina sprints de 1 a 2 semanas</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça uma ferramenta de acompanhamento (Trello, Notion)</div>
+      <span class="tip">Dica: Se não está visível, não está acontecendo.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">8</div>
+    <div class="step-content">
+      <h3>Testes e Qualidade</h3>
+      <p>Nada mata mais a credibilidade de um software do que bugs. Invista em testes automatizados, testes manuais e validação com usuários reais. Um software com bugs perde clientes.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie testes para as funcionalidades críticas</div>
+      <div class="check-item"><span class="checkbox"></span> Convide usuários reais para testar antes do lançamento</div>
+      <span class="tip">Dica: Um bug encontrado pelo cliente custa 10x mais que um encontrado nos testes.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">9</div>
+    <div class="step-content">
+      <h3>SEO e Estratégia de Lançamento</h3>
+      <p>Antes de lançar, prepare o terreno: landing page, SEO, redes sociais, lista de espera. Um lançamento bem planejado gera tração desde o primeiro dia. Não lance no silêncio.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie uma landing page de pré-lançamento</div>
+      <div class="check-item"><span class="checkbox"></span> Monte uma lista de espera com pelo menos 50 potenciais clientes</div>
+      <span class="tip">Dica: O lançamento começa semanas antes do software ficar pronto.</span>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">10</div>
+    <div class="step-content">
+      <h3>Deploy, Monitoramento e Iteração</h3>
+      <p>Lançar é só o começo. Monitore métricas (usuários ativos, retenção, NPS), colete feedback e iterae continuamente. Software de sucesso não é construído — é evoluído.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure ferramentas de monitoramento (erros, performance)</div>
+      <div class="check-item"><span class="checkbox"></span> Crie um canal de feedback direto com usuários</div>
+      <span class="tip">Dica: Seu software nunca está pronto. E é assim que deve ser.</span>
+    </div>
+  </div>
+
+  <div class="cta-final">
+    <h3>Quer transformar sua ideia em software que vende?</h3>
+    <p>Na Fábrica de Software, construímos produtos digitais do zero com método testado em mais de 1.000 projetos. Agende uma conversa gratuita de 30 minutos.</p>
+    <p style="margin-top:12px;"><strong>WhatsApp: (21) 95934-9594</strong></p>
+  </div>
+
+  <div class="footer-pdf">
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 95934-9594 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
+  </div>
+
+</body>
+</html>
