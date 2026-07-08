@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Fábrica de Software | Desenvolvimento, IA, Sites & SaaS</title>
+  <meta name="description" content="Artigos completos sobre criação de sites, sistemas web sob medida, automação com IA, integrações de sistemas e plataformas SaaS. Conteúdo técnico e estratégico para sua empresa.">
+  <meta property="og:type" content="blog">
+  <meta property="og:site_name" content="Fábrica de Software">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Blog — Fábrica de Software">
+  <meta property="og:description" content="Artigos sobre desenvolvimento de software, IA, sites e SaaS para empresas.">
+  <meta property="og:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.jpg">
+  <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', sans-serif; color: #CBD5F5; background: #08080C;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ::selection { background: #2563EB; color: #fff; }
+    :root {
+      --bg: #08080C; --bg-card: #12141E; --border: rgba(255,255,255,0.06);
+      --accent: #2563EB; --purple-neon: #9333EA; --muted: #8B8FA3;
+      --white: #FFFFFF; --font-title: 'Inter', sans-serif; --font-body: 'DM Sans', sans-serif;
+      --radius: 12px; --radius-lg: 20px; --max-w: 960px; --nav-h: 72px;
+    }
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
+
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      height: var(--nav-h); display: flex; align-items: center;
+      background: rgba(8,8,12,0.88); backdrop-filter: blur(20px) saturate(1.5);
+      border-bottom: 1px solid var(--border);
+    }
+    .navbar .container { display: flex; align-items: center; justify-content: space-between; max-width: 1200px; }
+    .navbar-logo { font-family: var(--font-title); font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; }
+    .navbar-logo span { color: var(--accent); }
+    .navbar-links { display: flex; align-items: center; gap: 32px; }
+    .navbar-links a { font-family: var(--font-title); font-size: 0.875rem; font-weight: 500; color: rgba(255,255,255,0.6); transition: color 0.3s ease; }
+    .navbar-links a:hover { color: var(--white); }
+
+    .page-header {
+      padding: calc(var(--nav-h) + 48px) 0 32px; text-align: center;
+      position: relative;
+    }
+    .page-header::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 40% at 50% 30%, rgba(37,99,235,0.08) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-header .container { position: relative; z-index: 1; }
+    .page-header h1 { font-family: var(--font-title); font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; color: var(--white); line-height: 1.08; margin-bottom: 12px; }
+    .page-header p { font-size: 1.0625rem; color: var(--muted); max-width: 560px; margin: 0 auto; line-height: 1.7; }
+
+    .blog-grid { display: grid; gap: 20px; padding: 48px 0 80px; }
+    .blog-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 32px;
+      transition: all 0.35s ease; cursor: pointer;
+    }
+    .blog-card:hover { transform: translateY(-4px); border-color: rgba(37,99,235,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
+    .blog-card .tag {
+      display: inline-block; font-size: 0.6875rem; padding: 4px 12px;
+      border-radius: 100px; background: rgba(37,99,235,0.1); color: var(--accent); font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .blog-card h2 { font-family: var(--font-title); font-size: 1.25rem; font-weight: 700; color: var(--white); margin-bottom: 8px; line-height: 1.3; }
+    .blog-card p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; margin-bottom: 16px; }
+    .blog-card .read-more { font-family: var(--font-title); font-size: 0.8125rem; font-weight: 600; color: var(--accent); display: inline-flex; align-items: center; gap: 8px; transition: gap 0.3s ease; }
+    .blog-card .read-more:hover { gap: 14px; }
+
+    .footer { padding: 32px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.8125rem; color: rgba(255,255,255,0.3); }
+    .footer a { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      .navbar-links { display: none; }
+      .container { padding: 0 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <div class="navbar-links">
+        <a href="../index.html">Home</a>
+        <a href="../servicos.html">Serviços</a>
+        <a href="https://wa.me/5521959349594" target="_blank" style="padding:8px 20px;font-size:0.8125rem;background:var(--accent);border-radius:12px;color:var(--white);font-weight:600;">Solicitar Orçamento</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Blog <span style="color:var(--accent);">Fábrica de Software</span></h1>
+      <p>Artigos completos sobre cada serviço: entenda como a tecnologia pode transformar o seu negócio.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="blog-grid">
+
+        <div class="blog-card" onclick="window.location.href='desenvolvimento-sites.html'">
+          <span class="tag"><i class="fas fa-globe"></i> Desenvolvimento Web</span>
+          <h2>Criação de Sites Profissionais que Vendem</h2>
+          <p>Sites institucionais, landing pages de alta conversão, portais e e-commerces com design moderno, performance extrema e SEO nativo. Transforme visitantes em clientes.</p>
+          <a href="desenvolvimento-sites.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card" onclick="window.location.href='sistemas-personalizados.html'">
+          <span class="tag"><i class="fas fa-server"></i> Sistemas Web</span>
+          <h2>Sistemas Web Sob Medida para Empresas</h2>
+          <p>CRMs, ERPs leves, dashboards e plataformas de gestão feitos sob medida. Automatize processos, centralize dados e escale sua operação com um sistema que se adapta a você.</p>
+          <a href="sistemas-personalizados.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card" onclick="window.location.href='automacao-ia.html'">
+          <span class="tag"><i class="fas fa-robot"></i> Inteligência Artificial</span>
+          <h2>Automação com IA: Bots e Agentes Inteligentes</h2>
+          <p>Bots que vendem, atendem 24/7 e automatizam processos repetitivos. Reduza custos operacionais e aumente a produtividade da sua equipe com IA treinada com seus dados.</p>
+          <a href="automacao-ia.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card" onclick="window.location.href='integracoes.html'">
+          <span class="tag"><i class="fas fa-puzzle-piece"></i> APIs</span>
+          <h2>Integrações e APIs: Conecte Todos os seus Sistemas</h2>
+          <p>Conecte CRM, ERP, gateways de pagamento, marketplaces e qualquer ferramenta do seu ecossistema digital. Elimine retrabalho e faça seus dados fluírem automaticamente.</p>
+          <a href="integracoes.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card" onclick="window.location.href='saas.html'">
+          <span class="tag"><i class="fas fa-cloud"></i> Produtos Digitais</span>
+          <h2>Plataformas SaaS: Transforme sua Ideia em Receita Recorrente</h2>
+          <p>Multi-tenancy, pagamentos recorrentes, autenticação e infraestrutura cloud. Sua ideia de produto digital pode ser o próximo grande SaaS. Do conceito ao lançamento.</p>
+          <a href="saas.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Fábrica de Software. Todos os direitos reservados. | <a href="../index.html">Home</a> | <a href="../servicos.html">Serviços</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
