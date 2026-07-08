@@ -206,7 +206,7 @@
         <p class="section-sub">Cada serviço é desenhado sob medida. Sem pacotes prontos, sem solução genérica.</p>
       </div>
       <div class="service-grid">
-        <article class="service-card">
+        <article class="service-card" data-href="blog/desenvolvimento-sites.html">
           <div class="icon"><i class="fas fa-globe"></i></div>
           <div class="tags"><span>React</span><span>Next.js</span><span>SEO</span></div>
           <h3>Criação de Sites & Landing Pages</h3>
@@ -214,7 +214,7 @@
           <a href="blog/desenvolvimento-sites.html" class="service-link">Ver artigo completo <i class="fas fa-arrow-right"></i></a>
           <a href="https://wa.me/5521959349594" target="_blank" class="service-link" style="color:#25D366;font-size:0.8125rem;display:inline-flex;align-items:center;gap:6px;margin-top:4px;"><i class="fab fa-whatsapp"></i> Solicitar orçamento rápido</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-href="blog/sistemas-personalizados.html">
           <div class="icon"><i class="fas fa-server"></i></div>
           <div class="tags"><span>Node.js</span><span>Python</span><span>APIs</span></div>
           <h3>Desenvolvimento de Sistemas Web</h3>
@@ -222,7 +222,7 @@
           <a href="blog/sistemas-personalizados.html" class="service-link">Ver artigo completo <i class="fas fa-arrow-right"></i></a>
           <a href="https://wa.me/5521959349594" target="_blank" class="service-link" style="color:#25D366;font-size:0.8125rem;display:inline-flex;align-items:center;gap:6px;margin-top:4px;"><i class="fab fa-whatsapp"></i> Solicitar orçamento rápido</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-href="blog/automacao-ia.html">
           <div class="icon"><i class="fas fa-robot"></i></div>
           <div class="tags"><span>IA</span><span>NLP</span><span>RPA</span></div>
           <h3>Automação com Inteligência Artificial</h3>
@@ -237,7 +237,7 @@
           <p>Aplicativos nativos e híbridos do protótipo à publicação nas lojas. Experiência fluida, design centrado no usuário e performance de primeira.</p>
           <a href="https://wa.me/5521959349594" target="_blank" class="service-link" style="color:#25D366;"><i class="fab fa-whatsapp"></i> Solicitar orçamento <i class="fas fa-arrow-right"></i></a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-href="blog/saas.html">
           <div class="icon"><i class="fas fa-cloud"></i></div>
           <div class="tags"><span>SaaS</span><span>Multi-tenant</span><span>Cloud</span></div>
           <h3>Plataformas SaaS & Produtos Digitais</h3>
@@ -245,7 +245,7 @@
           <a href="blog/saas.html" class="service-link">Ver artigo completo <i class="fas fa-arrow-right"></i></a>
           <a href="https://wa.me/5521959349594" target="_blank" class="service-link" style="color:#25D366;font-size:0.8125rem;display:inline-flex;align-items:center;gap:6px;margin-top:4px;"><i class="fab fa-whatsapp"></i> Solicitar orçamento rápido</a>
         </article>
-        <article class="service-card">
+        <article class="service-card" data-href="blog/integracoes.html">
           <div class="icon"><i class="fas fa-puzzle-piece"></i></div>
           <div class="tags"><span>APIs</span><span>Webhooks</span><span>Middleware</span></div>
           <h3>Integrações & Soluções Sob Medida</h3>
@@ -319,6 +319,13 @@
         a.addEventListener('click', () => {
           toggle.classList.remove('active');
           links.classList.remove('open');
+        });
+      });
+
+      document.querySelectorAll('.service-card[data-href]').forEach(card => {
+        card.addEventListener('click', function(e) {
+          if (e.target.closest('a, button')) return;
+          window.location.href = this.dataset.href;
         });
       });
     });
