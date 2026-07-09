@@ -37,18 +37,20 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&text=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%C3%A7%C3%A3%C3%A9%C3%AA%C3%AD%C3%B3%C3%B9%C3%B1%C3%A0%C3%A2%C3%B4&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"><link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"><link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'DM Sans', sans-serif; color: #CBD5F5; background: #08080C;
-      overflow-x: hidden; -webkit-font-smoothing: antialiased;
+      overflow-x: hidden; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;
     }
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
     ::selection { background: #2563EB; color: #fff; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
 
     :root {
       --bg: #08080C; --bg-card: #12141E; --border: rgba(255,255,255,0.06);
@@ -190,33 +192,37 @@
       border-radius: 2px; transition: all 0.3s ease;
     }
 
-    @media (max-width: 768px) {
-      .navbar-links {
-        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(8,8,12,0.98); flex-direction: column;
-        justify-content: center; gap: 24px;
-        opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
-        display: flex;
-      }
-      .navbar-links.open { opacity: 1; pointer-events: all; }
-      .navbar-links a { font-size: 1.25rem; }
-      .nav-toggle { display: flex; }
-      .container { padding: 0 16px; }
-      .article-header { padding: calc(var(--nav-h) + 32px) 0 24px; }
-      .article-header h1 { font-size: 1.5rem; }
-      .article-header p { font-size: 0.9375rem; }
-      .article-body h2 { font-size: 1.25rem; }
-      .article-body p { font-size: 0.9375rem; }
-      .cta-box { padding: 28px 20px; }
-      .cta-box h3 { font-size: 1.125rem; }
-      .whatsapp-float { width: 48px; height: 48px; font-size: 22px; bottom: 16px; right: 16px; }
+    @media(max-width:768px){
+      .navbar-links{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(8,8,12,0.98);flex-direction:column;justify-content:center;gap:28px;opacity:0;pointer-events:none;transition:opacity .4s ease;display:flex}
+      .navbar-links.open{opacity:1;pointer-events:all}
+      .navbar-links a{font-size:1.25rem;min-height:48px;display:flex;align-items:center;justify-content:center}
+      .nav-toggle{display:flex;min-height:44px;min-width:44px;align-items:center;justify-content:center}
+      .container{padding:0 16px}
+      .article-header{padding:calc(var(--nav-h) + 32px) 0 24px}
+      .article-header h1{font-size:1.5rem}
+      .article-header p{font-size:.9375rem}
+      .article-body h2{font-size:1.25rem}
+      .article-body p{font-size:.9375rem}
+      .cta-box{padding:28px 20px}
+      .cta-box h3{font-size:1.125rem}
+      .cta-box .btn{min-height:48px;display:inline-flex;align-items:center}
+      .whatsapp-float{width:48px;height:48px;font-size:22px;bottom:16px;right:16px}
+      .btn-lg,.btn{padding:14px 24px;font-size:.875rem;min-height:44px}
     }
-    @media (max-width: 480px) {
-      .article-header h1 { font-size: 1.25rem; }
-      .article-body .highlight-box { padding: 24px 20px; }
-      .lead-magnet { padding: 24px 16px !important; }
-      .lead-magnet strong { font-size: 0.9375rem !important; }
+    @media(max-width:480px){
+      .article-header h1{font-size:1.25rem}
+      .article-body .highlight-box{padding:24px 20px}
+      .container{padding:0 12px}
+      .article-header p{font-size:.875rem}
+      .article-body p{font-size:.875rem}
+      .btn-lg,.btn{font-size:.8125rem;padding:12px 20px;min-height:40px}
     }
+    @media(max-width:374px){
+      .article-header h1{font-size:1.1rem}
+      .article-body h2{font-size:1.125rem}
+      .container{padding:0 10px}
+    }
+
     body.light-theme {
       --bg: #F8FAFC; --bg-card: #FFFFFF; --border: rgba(0,0,0,0.08);
       --muted: #64748B; --text: #1E293B; --white: #0F172A;
@@ -266,7 +272,7 @@
         <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-primary btn-sm" style="padding:8px 20px;font-size:0.8125rem;">Solicitar Orçamento</a>
         <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" style="background:none;border:1px solid var(--border);border-radius:50%;width:40px;height:40px;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--muted);font-size:1rem;flex-shrink:0;"><i class="fas fa-moon"></i></button>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" title="Abrir menu">
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Abrir menu" title="Abrir menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -377,7 +383,7 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <script>
+  <script defer>
     document.addEventListener('DOMContentLoaded', () => {
       const applyTheme = (isLight) => {
         document.body.classList.toggle('light-theme', isLight);
@@ -393,9 +399,19 @@
       const navToggle = document.getElementById('navToggle');
       const navLinks = document.querySelector('.navbar-links');
       if (navToggle && navLinks) {
-        navToggle.addEventListener('click', () => { navLinks.classList.toggle('open'); });
+        navToggle.addEventListener('click', () => {
+          const isOpen = navLinks.classList.toggle('open');
+          navToggle.classList.toggle('active');
+          navToggle.setAttribute('aria-expanded', isOpen);
+          navToggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        });
         navLinks.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => navLinks.classList.remove('open'));
+          link.addEventListener('click', () => {
+            navToggle.classList.remove('active');
+            navLinks.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Abrir menu');
+          });
         });
       }
     });

@@ -89,8 +89,14 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&text=FABRICADESOFTWAREJriositemaspaplicaoeIAubMedidavelmentconvertercrescerfabricdesofwrj&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"></noscript>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -102,11 +108,15 @@
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       transition: background 0.3s ease, color 0.3s ease;
+      -webkit-tap-highlight-color: transparent;
     }
-    img { max-width: 100%; display: block; }
+    img { max-width: 100%; display: block; height: auto; }
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; }
     ::selection { background: #2563EB; color: #fff; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
     :root {
       --bg: #08080C;
@@ -274,7 +284,7 @@
 
     /* Hero */
     .hero {
-      min-height: 100vh; display: flex; align-items: center;
+      min-height: 100dvh; display: flex; align-items: center;
       padding: calc(var(--nav-h) + 40px) 0 80px;
       position: relative; overflow: hidden;
     }
@@ -629,13 +639,6 @@
     body.light-theme .seo-services-intro h3 { color: #0F172A; }
     body.light-theme .seo-service-item strong { color: #0F172A; }
     body.light-theme .seo-cta-content h4 { color: #0F172A; }
-    @media (max-width: 768px) {
-      .seo-compare { grid-template-columns: 1fr; }
-      .seo-services-list { grid-template-columns: 1fr; }
-      .seo-cta-content { flex-direction: column; text-align: center; }
-      .seo-services { padding: 32px 24px; }
-      .seo-cta-lead { padding: 32px 24px; }
-    }
     @media (max-width: 480px) {
       .seo-benefits { grid-template-columns: 1fr; }
       .seo-col { padding: 24px 20px; }
@@ -745,7 +748,8 @@
     .cta-benefits i { color: var(--green); }
 
     /* Footer */
-    .footer { padding: 48px 0 32px; border-top: 1px solid var(--border); }
+    .footer { padding: 48px 0 80px; border-top: 1px solid var(--border); }
+    @media (max-width: 768px) { .footer { padding: 48px 0 72px; } }
     .footer-grid {
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
@@ -787,25 +791,21 @@
     }
     .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 8px 32px rgba(37,211,102,0.5); color: #fff; }
 
-    /* Responsive */
+    /* Responsive — mobile-first breakpoints */
     @media (max-width: 1024px) {
       .stats-banner { grid-template-columns: repeat(2, 1fr); padding: 48px 32px; }
       .plans-grid { grid-template-columns: 1fr; max-width: 400px; margin-left: auto; margin-right: auto; }
       .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
     }
     @media (max-width: 768px) {
-      .navbar-links {
-        position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(8,8,12,0.98); flex-direction: column;
-        justify-content: center; gap: 24px;
-        opacity: 0; pointer-events: none; transition: opacity 0.4s ease;
-      }
+      .navbar-links { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(8,8,12,0.98); flex-direction: column; justify-content: center; gap: 28px; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
       .navbar-links.open { opacity: 1; pointer-events: all; }
-      .navbar-links a { font-size: 1.25rem; }
-      .navbar-links .btn { margin-left: 0; }
-      .nav-toggle { display: flex; }
-      #themeToggleMobile { display: flex; }
+      .navbar-links a { font-size: 1.25rem; min-height: 48px; display: flex; align-items: center; justify-content: center; }
+      .navbar-links .btn { margin-left: 0; min-height: 48px; }
+      .nav-toggle { display: flex; min-height: 44px; min-width: 44px; align-items: center; justify-content: center; }
+      #themeToggleMobile { display: flex; min-height: 44px; min-width: 44px; }
       #themeToggle { display: none; }
+      .theme-toggle { min-height: 44px; min-width: 44px; }
       .hero { min-height: auto; padding: 100px 0 60px; }
       .hero h1 { font-size: clamp(1.5rem, 7vw, 2.25rem); }
       .hero p { font-size: 1rem; }
@@ -813,33 +813,53 @@
       .hero-stat { min-width: 100px; }
       .hero-stat h3 { font-size: 1.25rem; }
       .hero-stat p { font-size: 0.75rem; }
+      .hero-buttons .btn { min-height: 48px; }
       .audience-grid { grid-template-columns: 1fr 1fr; }
       .process-grid { grid-template-columns: 1fr; }
       .process-step { padding: 24px; }
       .service-grid { grid-template-columns: 1fr; }
+      .service-card .service-cta { min-height: 44px; display: inline-flex; align-items: center; }
+      .service-card .tags span { min-height: 28px; display: inline-flex; align-items: center; }
       .diff-grid { grid-template-columns: 1fr; }
       .depo-grid { grid-template-columns: 1fr; }
       .cta-block { padding: 40px 20px; }
       .cta-block h2 { font-size: 1.5rem; }
+      .cta-block .btn, .cta-block a { min-height: 48px; display: inline-flex; align-items: center; }
       .cta-benefits { flex-direction: column; align-items: center; gap: 12px; }
+      .cta-benefits span { min-height: 44px; display: flex; align-items: center; }
       .section { padding: 48px 0; }
       .section-title { font-size: 1.5rem; }
       .plans-grid { max-width: 360px; }
+      .plan-card .btn, .plan-card a { min-height: 48px; }
       .trust-grid { gap: 10px; }
-      .trust-item { font-size: 0.75rem; padding: 8px 14px; }
+      .trust-item { font-size: 0.75rem; padding: 8px 14px; min-height: 36px; display: inline-flex; align-items: center; }
       .stats-banner { padding: 32px 20px; gap: 16px; }
       .stats-banner h3 { font-size: 1.25rem; }
       .lead-section { flex-direction: column; text-align: center; padding: 28px 20px; }
       .lead-section .icon-box { width: 60px; height: 60px; font-size: 1.5rem; }
       .lead-section h3 { font-size: 1.0625rem; }
-      .lead-section .btn { width: 100%; justify-content: center; }
+      .lead-section .btn { width: 100%; justify-content: center; min-height: 48px; }
       .faq-list { margin-top: 32px; }
-      .faq-question { font-size: 0.9375rem; }
+      .faq-question { font-size: 0.9375rem; min-height: 48px; display: flex; align-items: center; }
       .whatsapp-float { width: 52px; height: 52px; font-size: 24px; bottom: 16px; right: 16px; }
       .depo-card { padding: 24px; }
       .depo-card blockquote { font-size: 0.875rem; }
+      .depo-card .author { gap: 10px; }
       .plan-card { padding: 28px 24px; }
       .plan-card .plan-price { font-size: 1.5rem; }
+      .plan-card .plan-features li { min-height: 44px; display: flex; align-items: center; }
+      .footer a { min-height: 44px; display: flex; align-items: center; }
+      .audience-item { padding: 24px 16px; }
+      .seo-compare { grid-template-columns: 1fr; }
+      .seo-services-list { grid-template-columns: 1fr; }
+      .seo-cta-content { flex-direction: column; text-align: center; }
+      .seo-cta-content a { min-height: 48px; display: inline-flex; align-items: center; }
+      .seo-services { padding: 32px 24px; }
+      .seo-cta-lead { padding: 32px 24px; }
+    }
+    @media (max-width: 600px) {
+      .hero-stat { min-width: 120px; }
+      .hero-stats { gap: 12px; }
     }
     @media (max-width: 480px) {
       .stats-banner { grid-template-columns: 1fr 1fr; padding: 24px 16px; gap: 16px; }
@@ -852,20 +872,43 @@
       .hero h1 { font-size: 1.375rem; }
       .hero-badge { font-size: 0.6875rem; padding: 6px 12px; }
       .service-card { padding: 28px 20px; }
+      .service-card h3 { font-size: 1rem; }
+      .service-card p { font-size: 0.8125rem; }
       .diff-item { padding: 24px; }
+      .diff-item h4 { font-size: 0.9375rem; }
+      .diff-item p { font-size: 0.75rem; }
+      .btn-lg, .btn { padding: 14px 24px; font-size: 0.875rem; min-height: 44px; }
       .cta-block { padding: 32px 16px; }
       .cta-block h2 { font-size: 1.25rem; }
       .cta-block p { font-size: 0.875rem; }
       .lead-section { padding: 24px 16px; }
       .lead-section h3 { font-size: 1rem; }
       .navbar-logo { font-size: 1rem; }
+      .plan-card .plan-name { font-size: 0.75rem; }
+      .plan-card .plan-price { font-size: 1.25rem; }
+      .plan-card .plan-desc { font-size: 0.75rem; }
+      .plan-card .plan-features li { font-size: 0.8125rem; }
+      .depo-card blockquote { font-size: 0.8125rem; }
+      .depo-card .author strong { font-size: 0.8125rem; }
+      .section-label { font-size: 0.6875rem; letter-spacing: 2px; }
+      .process-step h3 { font-size: 1rem; }
+      .process-step p { font-size: 0.8125rem; }
+      .faq-question { font-size: 0.875rem; }
+      .faq-answer { font-size: 0.8125rem; }
+      .audience-item h4 { font-size: 0.9375rem; }
+      .audience-item p { font-size: 0.75rem; }
     }
-    @media (max-width: 380px) {
-      .hero-stats { gap: 12px; }
+    @media (max-width: 374px) {
+      .hero h1 { font-size: 1.25rem; }
       .hero-stat { min-width: 80px; }
       .hero-stat h3 { font-size: 1rem; }
       .trust-item { font-size: 0.6875rem; padding: 6px 10px; }
-      .plan-card .plan-features li { font-size: 0.8125rem; }
+      .plan-card .plan-features li { font-size: 0.75rem; }
+      .container { padding: 0 12px; }
+      .btn { font-size: 0.8125rem; padding: 10px 16px; min-height: 40px; }
+      .service-card { padding: 20px 14px; }
+      .service-card h3 { font-size: 0.875rem; }
+      .service-card p { font-size: 0.75rem; }
     }
 
     /* Animation */
@@ -984,7 +1027,7 @@
       </div>
       <div style="display:flex;align-items:center;gap:8px;">
         <button class="theme-toggle" id="themeToggleMobile" aria-label="Alternar tema" title="Alternar tema" style="display:none;"><i class="fas fa-moon"></i></button>
-        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -1626,44 +1669,52 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <script>
+  <script defer>
     document.addEventListener('DOMContentLoaded', () => {
       const navbar = document.getElementById('navbar');
       const toggle = document.getElementById('navToggle');
       const links = document.getElementById('navLinks');
 
+      if (toggle && links) {
+        toggle.addEventListener('click', () => {
+          const isOpen = links.classList.toggle('open');
+          toggle.classList.toggle('active');
+          toggle.setAttribute('aria-expanded', isOpen);
+          toggle.setAttribute('aria-label', isOpen ? 'Fechar menu' : 'Abrir menu');
+        });
+        links.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            toggle.classList.remove('active');
+            links.classList.remove('open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menu');
+          });
+        });
+      }
+
       window.addEventListener('scroll', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 60);
-      });
+      }, { passive: true });
 
-      toggle.addEventListener('click', () => {
-        toggle.classList.toggle('active');
-        links.classList.toggle('open');
-      });
-
-      links.querySelectorAll('a').forEach(a => {
-        a.addEventListener('click', () => {
-          toggle.classList.remove('active');
-          links.classList.remove('open');
+      document.querySelectorAll('[data-href]').forEach(el => {
+        el.addEventListener('click', function(e) {
+          if (e.target.closest('a, button, .btn')) return;
+          const href = this.dataset.href;
+          if (href) window.location.href = href;
         });
       });
 
-      document.querySelectorAll('.service-card[data-href]').forEach(card => {
-        card.addEventListener('click', function(e) {
-          if (e.target.closest('a, button')) return;
-          window.location.href = this.dataset.href;
-        });
-      });
-
-      /* Theme Toggle */
       const applyTheme = (isLight) => {
         document.body.classList.toggle('light-theme', isLight);
-        const icons = document.querySelectorAll('.theme-toggle i');
-        icons.forEach(icon => { icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon'; });
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        document.querySelectorAll('.theme-toggle i').forEach(icon => {
+          icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
+        });
+        try { localStorage.setItem('theme', isLight ? 'light' : 'dark'); } catch (e) {}
       };
-      const saved = localStorage.getItem('theme');
-      if (saved === 'light') applyTheme(true);
+      try {
+        const saved = localStorage.getItem('theme');
+        if (saved === 'light') applyTheme(true);
+      } catch (e) {}
       document.querySelectorAll('.theme-toggle').forEach(btn => {
         btn.addEventListener('click', () => applyTheme(!document.body.classList.contains('light-theme')));
       });
