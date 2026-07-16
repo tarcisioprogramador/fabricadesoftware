@@ -1841,12 +1841,7 @@
         </p>
       </div>
       <div class="contact-section">
-        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
-          <input type="hidden" name="subject" value="Novo contato do site - Fábrica de Software">
-          <input type="hidden" name="from_name" value="Formulário do Site">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_honeypot" value="" style="display:none !important" tabindex="-1" autocomplete="off">
+        <form class="contact-form" id="contactForm">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Nome <span style="color:var(--accent);">*</span></label>
@@ -1866,15 +1861,15 @@
               <label for="service">Serviço de interesse</label>
               <select id="service" name="service">
                 <option value="">Selecione...</option>
-                <option value="site">Criação de Sites & Landing Pages</option>
-                <option value="sistema">Sistemas Web Sob Medida</option>
-                <option value="ia">Automação com Inteligência Artificial</option>
-                <option value="app">Aplicativos Android & iOS</option>
-                <option value="saas">Plataformas SaaS</option>
-                <option value="integracao">Integrações & APIs</option>
-                <option value="seo">Estratégia de SEO</option>
-                <option value="trafego">Gestão de Tráfego Pago</option>
-                <option value="outro">Outro</option>
+                <option value="Criação de Sites & Landing Pages">Criação de Sites & Landing Pages</option>
+                <option value="Sistemas Web Sob Medida">Sistemas Web Sob Medida</option>
+                <option value="Automação com Inteligência Artificial">Automação com Inteligência Artificial</option>
+                <option value="Aplicativos Android & iOS">Aplicativos Android & iOS</option>
+                <option value="Plataformas SaaS">Plataformas SaaS</option>
+                <option value="Integrações & APIs">Integrações & APIs</option>
+                <option value="Estratégia de SEO">Estratégia de SEO</option>
+                <option value="Gestão de Tráfego Pago">Gestão de Tráfego Pago</option>
+                <option value="Outro">Outro</option>
               </select>
             </div>
           </div>
@@ -1883,22 +1878,12 @@
             <textarea id="message" name="message" placeholder="Conte-nos sobre seu projeto, desafios e objetivos..." required></textarea>
           </div>
           <div class="form-submit">
-            <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">
-              <i class="fas fa-paper-plane"></i> Enviar mensagem
+            <button type="submit" class="btn btn-whatsapp btn-lg" id="submitBtn" style="font-size:1.0625rem;">
+              <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
             </button>
           </div>
-          <div id="formSuccess" style="display:none;background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
-            <i class="fas fa-check-circle" style="color:#22C55E;font-size:2rem;margin-bottom:12px;"></i>
-            <p style="color:var(--white);font-family:var(--font-title);font-weight:600;font-size:1.0625rem;">Mensagem enviada com sucesso!</p>
-            <p style="color:var(--muted);font-size:0.875rem;margin-top:4px;">Obrigado pelo contato. Responderemos em até 24 horas.</p>
-          </div>
-          <div id="formError" style="display:none;background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.2);border-radius:12px;padding:24px;text-align:center;margin-top:16px;">
-            <i class="fas fa-exclamation-circle" style="color:#EF4444;font-size:2rem;margin-bottom:12px;"></i>
-            <p style="color:var(--white);font-family:var(--font-title);font-weight:600;font-size:1.0625rem;">Erro ao enviar mensagem</p>
-            <p style="color:var(--muted);font-size:0.875rem;margin-top:4px;">Tente novamente ou <a href="https://wa.me/5521959349594" target="_blank" style="color:var(--accent);">fale pelo WhatsApp</a>.</p>
-          </div>
           <div class="form-info">
-            Prefere falar agora? <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank"><i class="fab fa-whatsapp"></i> Chame no WhatsApp</a>
+            Seus dados são enviados direto para nosso WhatsApp. <i class="fas fa-lock" style="font-size:0.75rem;"></i>
           </div>
         </form>
       </div>
@@ -2076,25 +2061,24 @@
         btn.addEventListener('click', () => applyTheme(!document.body.classList.contains('light-theme')));
       });
 
-      // === Contact Form (Web3Forms) ===
+      // === Contact Form (WhatsApp Redirect) ===
       const contactForm = document.querySelector('.contact-form');
       if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
+        contactForm.addEventListener('submit', (e) => {
           e.preventDefault();
-          const btn = document.getElementById('submitBtn');
-          const succ = document.getElementById('formSuccess');
-          const err = document.getElementById('formError');
-          if (succ) succ.style.display = 'none';
-          if (err) err.style.display = 'none';
-          if (btn) { btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...'; }
-          try {
-            const fd = new FormData(contactForm);
-            const resp = await fetch(contactForm.action, { method: 'POST', body: fd });
-            const data = await resp.json();
-            if (data.success) { if (succ) succ.style.display = 'block'; contactForm.reset(); }
-            else { if (err) err.style.display = 'block'; }
-          } catch(_) { if (err) err.style.display = 'block'; }
-          finally { if (btn) { btn.disabled = false; btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar mensagem'; } }
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const phone = document.getElementById('phone').value.trim();
+          const service = document.getElementById('service').value;
+          const message = document.getElementById('message').value.trim();
+          if (!name || !email || !message) return;
+          let msg = `*Olá! Vim pelo site da Fábrica de Software*%0A%0A`;
+          msg += `*Nome:* ${encodeURIComponent(name)}%0A`;
+          msg += `*E-mail:* ${encodeURIComponent(email)}%0A`;
+          if (phone) msg += `*Telefone:* ${encodeURIComponent(phone)}%0A`;
+          if (service) msg += `*Serviço de interesse:* ${encodeURIComponent(service)}%0A`;
+          msg += `%0A*Mensagem:*%0A${encodeURIComponent(message)}`;
+          window.open(`https://wa.me/5521959349594?text=${msg}`, '_blank');
         });
       }
     });
