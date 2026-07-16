@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog — Fábrica de Software | Desenvolvimento, IA, Sites & SaaS</title>
   <meta name="description" content="Blog da Fábrica de Software: artigos sobre criação de sites, sistemas web, automação com IA, SaaS e integrações. Conteúdo estratégico para sua empresa.">
+  <meta name="author" content="Fábrica de Software | tarcisioflow.dev@gmail.com">
+  <meta name="theme-color" content="#08080C">
   <meta name="keywords" content="blog fábrica de software, desenvolvimento de sites, sistemas web, automação com IA, SaaS, criação de sites, SEO">
   <meta property="og:type" content="blog">
   <meta property="og:site_name" content="Fábrica de Software">
@@ -17,6 +19,9 @@
   <meta name="twitter:description" content="Artigos sobre desenvolvimento de software, IA, sites e SaaS para empresas.">
   <meta name="twitter:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.svg">
   <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/blog/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&text=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%C3%A7%C3%A3%C3%A9%C3%AA%C3%AD%C3%B3%C3%B9%C3%B1%C3%A0%C3%A2%C3%B4&display=swap" rel="stylesheet">
@@ -110,6 +115,15 @@
       border-radius: 2px; transition: all 0.3s ease;
     }
     body.light-theme .nav-toggle span { background: #0F172A; }
+    .skip-link {
+      position: absolute; top: -100px; left: 16px;
+      background: var(--accent); color: #fff;
+      padding: 12px 24px; border-radius: 8px;
+      z-index: 10000;
+      font-family: var(--font-title); font-size: 0.875rem; font-weight: 600;
+      transition: top 0.3s ease;
+    }
+    .skip-link:focus { top: 16px; }
 
     .whatsapp-float {
       position: fixed; bottom: 24px; right: 24px; z-index: 999;
@@ -179,12 +193,15 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
   <nav class="navbar">
     <div class="container">
       <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
       <div class="navbar-links" id="navbarLinks">
         <a href="../index.html">Home</a>
         <a href="../servicos.html">Serviços</a>
+        <a href="../portfolio.html">Portfólio</a>
         <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" style="padding:8px 20px;font-size:0.8125rem;background:var(--accent);border-radius:12px;color:var(--white);font-weight:600;">Solicitar Orçamento</a>
         <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema" style="flex-shrink:0;"><i class="fas fa-moon"></i></button>
       </div>
@@ -195,7 +212,7 @@
   </nav>
 
   <main>
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <h1>Blog <span style="color:var(--accent);">Fábrica de Software</span></h1>
       <p>Artigos completos sobre cada serviço: entenda como a tecnologia pode transformar o seu negócio.</p>
@@ -211,6 +228,13 @@
           <h2>Fábrica de Software: Sites, Sistemas, IA e SaaS Sob Medida</h2>
           <p>Conheça a Fábrica de Software: desenvolvimento de sites profissionais, sistemas personalizados, automação com IA, integrações e criação de SaaS. Sua ideia vira software que vende.</p>
           <a href="fabrica-de-software.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="blog-card" onclick="window.location.href='landing-pages-conversao.html'" style="border-color:rgba(37,99,235,0.2);background:linear-gradient(135deg,rgba(37,99,235,0.06),rgba(124,58,237,0.04));">
+          <span class="tag"><i class="fas fa-bullseye"></i> Conversão</span>
+          <h2>Landing Pages de Alta Conversão: Guia para Páginas que Vendem</h2>
+          <p>Landing pages bem construídas convertem 2 a 5 vezes mais que sites comuns. Descubra elementos essenciais, estratégias de copy e otimização para criar páginas que transformam visitantes em clientes.</p>
+          <a href="landing-pages-conversao.html" class="read-more">Ler artigo completo <i class="fas fa-arrow-right"></i></a>
         </div>
 
         <div class="blog-card" onclick="window.location.href='desenvolvimento-sites.html'">

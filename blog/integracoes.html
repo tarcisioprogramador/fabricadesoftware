@@ -35,6 +35,11 @@
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://tarcisioprogramador.github.io/fabricadesoftware/blog/integracoes" }
   }
   </script>
+  <meta name="author" content="Fábrica de Software | tarcisioflow.dev@gmail.com">
+  <meta name="theme-color" content="#08080C">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&text=0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz%C3%A7%C3%A3%C3%A9%C3%AA%C3%AD%C3%B3%C3%B9%C3%B1%C3%A0%C3%A2%C3%B4&display=swap" rel="stylesheet">
@@ -261,7 +266,17 @@
       body.light-theme .highlight-box { background: #FFFFFF !important; }
       body.light-theme .cta-box { background: #FFFFFF !important; }
       body.light-theme .article-body h2, body.light-theme .article-body h3 { color: #0F172A; }
-    }</style>
+    }
+    .skip-link {
+      position: absolute; top: -100px; left: 16px;
+      background: var(--accent); color: #fff;
+      padding: 12px 24px; border-radius: 8px;
+      z-index: 10000;
+      font-family: var(--font-title); font-size: 0.875rem; font-weight: 600;
+      transition: top 0.3s ease;
+    }
+    .skip-link:focus { top: 16px; }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -273,8 +288,9 @@
     ]
   }
   </script>
-</head>
-<body>
+</head>  <body>
+
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
 
   <nav class="navbar">
     <div class="container">
@@ -291,7 +307,7 @@
     </div>
   </nav>
 
-  <main><article>
+  <main id="main-content"><article>
     <header class="article-header">
       <div class="container">
         <div class="breadcrumb">

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serviços de Software Sob Medida | Fábrica de Software</title>
   <meta name="description" content="Serviços de desenvolvimento de software sob medida: criação de sites, sistemas personalizados, automação com IA, aplicativos e SaaS. Diagnóstico gratuito para seu projeto.">
+  <meta name="author" content="Fábrica de Software | tarcisioflow.dev@gmail.com">
+  <meta name="theme-color" content="#08080C">
   <meta name="keywords" content="serviços de software, criação de sites, desenvolvimento de sistemas, aplicativos, automação IA, SaaS">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Fábrica de Software">
@@ -58,6 +60,9 @@
     ]
   }
   </script>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&text=FABRICADESOFTWAREJriositemaspaplicaoeIAubMedidavelmentconverter&display=swap" rel="stylesheet">
@@ -83,6 +88,15 @@
     :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; } }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip-link {
+      position: absolute; top: -100px; left: 16px;
+      background: var(--accent); color: #fff;
+      padding: 12px 24px; border-radius: 8px;
+      z-index: 10000;
+      font-family: var(--font-title); font-size: 0.875rem; font-weight: 600;
+      transition: top 0.3s ease;
+    }
+    .skip-link:focus { top: 16px; }
 
     :root {
       --bg: #08080C; --bg-card: #12141E; --border: rgba(255,255,255,0.06);
@@ -309,12 +323,15 @@
 </head>
 <body>
 
+  <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
   <nav class="navbar" id="navbar">
     <div class="container">
       <a href="index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
       <div class="navbar-links" id="navLinks">
         <a href="index.html">Home</a>
         <a href="servicos.html" aria-current="page">Serviços</a>
+        <a href="portfolio.html">Portfólio</a>
         <a href="blog/index.html">Blog</a>
         <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-sm btn-primary">Solicitar Orçamento</a>
         <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema"><i class="fas fa-moon"></i></button>
@@ -328,7 +345,7 @@
   </nav>
 
   <main>
-  <header class="page-header">
+  <header class="page-header" id="main-content">
     <div class="container">
       <span class="section-label">Nossos Serviços</span>
       <h1>Soluções completas de tecnologia e software</h1>
@@ -444,6 +461,7 @@
           <h4>Empresa</h4>
           <a href="index.html">Home</a>
           <a href="servicos.html">Serviços</a>
+          <a href="portfolio.html">Portfólio</a>
           <a href="blog/index.html">Blog</a>
           <a href="https://wa.me/5521959349594?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank">Contato</a>
         </div>
