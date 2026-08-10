@@ -101,6 +101,16 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-colocar-minha-empresa-no-google.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-aparecer-no-google-gratuitamente.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-10-passos.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -147,11 +157,6 @@
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-gestao-trafego.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-seo.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
