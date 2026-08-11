@@ -247,6 +247,34 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Páginas "Perto de Mim" -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-perto-de-mim.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/desenvolvimento-de-sistemas-perto-de-mim.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Páginas por Cidade -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-niteroi.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-duque-de-caxias.html</loc>
+    <lastmod>2026-08-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- Blog -->
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/index.html</loc>
