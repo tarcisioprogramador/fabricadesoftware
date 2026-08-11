@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /seo-agencia/
 
 Sitemap: https://tarcisioprogramador.github.io/fabricadesoftware/sitemap.xml

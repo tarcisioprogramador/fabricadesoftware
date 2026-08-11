@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automação com Inteligência Artificial | Fábrica de Software</title>
+  <meta name="description" content="Automação com inteligência artificial para empresas: chatbots, agentes IA, automação de processos. ChatGPT API, NLP, RPA. Transforme operações com IA.">
+  <link rel="canonical" href="https://tarcisioprogramador.github.io/fabricadesoftware/servicos/automacao-com-ia.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fábrica de Software">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Automação com Inteligência Artificial | Fábrica de Software">
+  <meta property="og:description" content="Chatbots, agentes IA e automação de processos com inteligência artificial. ChatGPT API, NLP e RPA para sua empresa.">
+  <meta property="og:url" content="https://tarcisioprogramador.github.io/fabricadesoftware/servicos/automacao-com-ia.html">
+  <meta property="og:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Automação com Inteligência Artificial | Fábrica de Software">
+  <meta name="twitter:description" content="Chatbots, agentes IA e automação de processos para sua empresa.">
+  <meta name="twitter:image" content="https://tarcisioprogramador.github.io/fabricadesoftware/og-image.png">
+  <meta name="author" content="Fábrica de Software">
+  <meta name="theme-color" content="#08080C">
+  <link rel="alternate" hreflang="pt-BR" href="https://tarcisioprogramador.github.io/fabricadesoftware/servicos/automacao-com-ia.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Automação com Inteligência Artificial",
+    "description": "Automação com inteligência artificial: chatbots, agentes IA, automação de processos com ChatGPT API, NLP e RPA.",
+    "url": "https://tarcisioprogramador.github.io/fabricadesoftware/servicos/automacao-com-ia.html",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Fábrica de Software",
+      "url": "https://tarcisioprogramador.github.io/fabricadesoftware/"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Rio de Janeiro" },
+      { "@type": "Country", "name": "Brasil" }
+    ],
+    "serviceType": "Automação com IA"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Quanto custa criar um chatbot com IA?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O investimento depende da complexidade, integrações e volume de mensagens. Chatbots simples começam a partir de R$ 2.000. Agentes avançados com NLP e integrações complexas a partir de R$ 8.000." }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA consegue atender clientes sozinha?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. Chatbots com IA generativa conseguem responder dúvidas, agendar compromissos, qualificar leads e encaminhar para atendentes humanos quando necessário." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quais processos podem ser automatizados com IA?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Atendimento ao cliente, qualificação de leads, processamento de documentos, classificação de e-mails, geração de relatórios, análise de dados e muito mais." }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA funciona com meu sistema atual?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim. Integramos IA com WhatsApp, e-mail, CRM, ERP, site e qualquer sistema via APIs. A IA se conecta com suas ferramentas existentes." }
+      },
+      {
+        "@type": "Question",
+        "name": "Preciso ter conhecimento técnico para usar a IA?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Não. Entregamos o sistema pronto com interface simples para gerenciar. Sua equipe usa sem precisar entender de programação." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"></noscript>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <div class="navbar-links" id="navLinks">
+        <a href="../index.html#servicos">Serviços</a>
+        <a href="../index.html#segmentos">Segmentos</a>
+        <a href="../index.html#cases">Cases</a>
+        <a href="../blog/index.html">Blog</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#contato">Contato</a>
+        <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="btn btn-sm btn-primary">
+          <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+        </a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema"><i class="fas fa-moon"></i></button>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Alternar tema" title="Alternar tema" style="display:none;"><i class="fas fa-moon"></i></button>
+        <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="service-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <a href="../index.html#servicos">Serviços</a>
+          <span>/</span>
+          <span>Automação com IA</span>
+        </nav>
+        <h1>Automação com Inteligência Artificial</h1>
+        <p>
+          Transforme operações com chatbots inteligentes, agentes IA e automação de processos. 
+          ChatGPT API, NLP e RPA para escalar atendimento, qualificar leads e eliminar tarefas manuais.
+        </p>
+        <div class="hero-buttons" style="margin-top:32px;">
+          <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20saber%20sobre%20automa%C3%A7%C3%A3o%20com%20IA" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Falar com Especialista
+          </a>
+          <a href="#como-funciona" class="btn btn-outline btn-lg">
+            Como Funciona <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROBLEMA ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">O problema</span>
+          <h2 class="section-title">Sua equipe perde tempo <span class="gradient-text">com tarefas repetitivas?</span></h2>
+          <p class="section-sub">
+            Responder as mesmas dúvidas, digitar dados manualmente, classificar e-mails. Sua equipe poderia estar vendendo mais.
+          </p>
+        </div>
+        <div class="audience-grid">
+          <div class="audience-item">
+            <div class="icon">⏰</div>
+            <h4>Atendimento lento</h4>
+            <p>Clientes esperam horas para receber resposta. Você perde vendas a cada minuto de espera.</p>
+          </div>
+          <div class="audience-item">
+            <div class="icon">🔁</div>
+            <h4>Tarefas manuais</h4>
+            <p>Sua equipe repete as mesmas ações todos os dias. Tempo desperdiçado que poderia ser automatizado.</p>
+          </div>
+          <div class="audience-item">
+            <div class="icon">📉</div>
+            <h4>Leads perdidos</h4>
+            <p>Leads chegam mas ninguém responde rápido. Competidores com IA atendem primeiro e fecham a venda.</p>
+          </div>
+          <div class="audience-item">
+            <div class="icon">💸</div>
+            <h4>Custo operacional alto</h4>
+            <p>Mais atendentes para volume crescente. O custo sobe linearmente while a qualidade cai.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOLUÇÃO ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Nossa solução</span>
+          <h2 class="section-title">IA que <span class="gradient-text">trabalha 24/7 pela sua empresa</span></h2>
+          <p class="section-sub">
+            Automatize o que é repetitivo, escale o que é lucrativo. IA que aprende, responde e converte.
+          </p>
+        </div>
+        <div class="service-grid">
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-robot"></i></div>
+            <h3>Chatbots com IA Generativa</h3>
+            <p>Chatbots que entendem linguagem natural, respondem dúvidas complexas e aprendem com cada conversa.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-brain"></i></div>
+            <h3>Agentes IA Autônomos</h3>
+            <p>Agentes que executam tarefas completas: qualificam leads, agendam reuniões, processam pedidos.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-comments"></i></div>
+            <h3>Atendimento WhatsApp IA</h3>
+            <p>Chatbot inteligente no WhatsApp que atende, qualifica e encaminha para vendedores humanos.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-cogs"></i></div>
+            <h3>RPA & Automação</h3>
+            <p>Automatize processos de digitação, classificação, geração de relatórios e movimentação de dados.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Processamento de Documentos</h3>
+            <p>IA que lê, classifica e extrai dados de PDFs, e-mails, planilhas e formulários automaticamente.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Analytics com IA</h3>
+            <p>Análise preditiva, identificação de padrões e recomendações inteligentes baseadas nos seus dados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TECNOLOGIAS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Tecnologias</span>
+          <h2 class="section-title">IA de ponta <span class="gradient-text">para sua empresa</span></h2>
+        </div>
+        <div class="seo-services">
+          <div class="seo-services-list">
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>OpenAI ChatGPT API</strong>
+                <span>Integração com GPT-4 para conversas naturais e geração de conteúdo inteligente</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>NLP (Processamento de Linguagem Natural)</strong>
+                <span>Entendimento de intenção, sentimento e contexto em mensagens e documentos</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>RPA (Automação Robótica)</strong>
+                <span>Automação de processos digitais repetitivos sem intervenção humana</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>WhatsApp Business API</strong>
+                <span>Integração oficial para chatbots e automação no WhatsApp</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Python & TensorFlow</strong>
+                <span>Modelos de IA customizados para análise de dados e predição</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Webhooks & APIs</strong>
+                <span>Integrações em tempo real com CRM, ERP, e-mail e qualquer sistema</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Machine Learning</strong>
+                <span>Modelos que aprendem com seus dados e melhoram com o tempo</span>
+              </div>
+            </div>
+            <div class="seo-service-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <strong>Cloud & Escalabilidade</strong>
+                <span>Infraestrutura que escala automaticamente com a demanda de mensagens</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Processo</span>
+          <h2 class="section-title">Como implementamos IA <span class="gradient-text">na sua empresa</span></h2>
+          <p class="section-sub">
+            Um processo ágil que do conceito ao chatbot funcionando em poucas semanas.
+          </p>
+        </div>
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="step-num">1</div>
+            <h3>Diagnóstico</h3>
+            <p>Mapeamos seus processos, identificamos gargalos e definimos quais automações trazem mais retorno.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">2</div>
+            <h3>Design da IA</h3>
+            <p>Projetamos fluxos de conversação, personas, tom de voz e regras de encaminhamento para humanos.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">3</div>
+            <h3>Treinamento</h3>
+            <p>Alimentamos a IA com seu conteúdo, base de conhecimento e exemplos reais de atendimento.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">4</div>
+            <h3>Integração</h3>
+            <p>Conectamos a IA com WhatsApp, e-mail, CRM e sistemas existentes na sua operação.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">5</div>
+            <h3>Testes & Otimização</h3>
+            <p>Testamos com cenários reais, ajustamos respostas e refinamos antes do lançamento.</p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">6</div>
+            <h3>Go-Live & Evolução</h3>
+            <p>Publicamos, monitoramos métricas e evoluimos continuamente com base em dados reais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PARA QUEM ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Para quem é</span>
+          <h2 class="section-title">IA para <span class="gradient-text">qualquer tipo de negócio</span></h2>
+          <p class="section-sub">
+            Automação com IA traz resultado para qualquer empresa que atende clientes ou processa dados.
+          </p>
+        </div>
+        <div class="audience-grid">
+          <a href="../segmentos/sites-para-clinicas.html" class="audience-item" style="text-decoration:none;">
+            <div class="icon">🏥</div>
+            <h4>Clínicas & Saúde</h4>
+            <p>Chatbot de agendamento, triagem de pacientes e FAQ automático.</p>
+          </a>
+          <a href="../segmentos/sites-para-imobiliarias.html" class="audience-item" style="text-decoration:none;">
+            <div class="icon">🏠</div>
+            <h4>Imobiliárias</h4>
+            <p>Qualificação de leads, agendamento de visitas e resposta automática sobre imóveis.</p>
+          </a>
+          <a href="../segmentos/sites-para-restaurantes.html" class="audience-item" style="text-decoration:none;">
+            <div class="icon">🍽️</div>
+            <h4>Restaurantes</h4>
+            <p>Pedidos via chatbot, recomendações personalizadas e atendimento automático.</p>
+          </a>
+          <a href="../segmentos/sites-para-advogados.html" class="audience-item" style="text-decoration:none;">
+            <div class="icon">⚖️</div>
+            <h4>Advogados</h4>
+            <p>Triagem de casos, agendamento de consultas e FAQ jurídico automatizado.</p>
+          </a>
+          <a href="../segmentos/sites-para-empresas.html" class="audience-item" style="text-decoration:none;">
+            <div class="icon">🏢</div>
+            <h4>Empresas em Geral</h4>
+            <p>Atendimento, vendas, suporte e processos internos automatizados com IA.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CASES ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Cases de Sucesso</span>
+          <h2 class="section-title">IA que <span class="gradient-text">gerou resultado real</span></h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:48px;">
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
+            <div style="font-size:0.6875rem;font-weight:600;padding:4px 12px;border-radius:100px;background:rgba(37,99,235,0.1);color:var(--accent-hover);display:inline-block;margin-bottom:16px;">CHATBOT WHATSAPP</div>
+            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">Clínica Saúde+</h3>
+            <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;margin-bottom:16px;">Chatbot no WhatsApp para agendamento, confirmação e triagem de pacientes.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">+200</div><div style="font-size:0.6875rem;color:var(--muted);">Atendimentos/dia</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">2 semanas</div><div style="font-size:0.6875rem;color:var(--muted);">Para lançar</div></div>
+            </div>
+          </div>
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
+            <div style="font-size:0.6875rem;font-weight:600;padding:4px 12px;border-radius:100px;background:rgba(124,58,237,0.1);color:var(--purple-neon);display:inline-block;margin-bottom:16px;">RPA COMERCIAL</div>
+            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">E-commerce XYZ</h3>
+            <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;margin-bottom:16px;">Automação de processamento de pedidos, envio de NF e atualização de estoque.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">-80%</div><div style="font-size:0.6875rem;color:var(--muted);">Tempo manual</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">1 mês</div><div style="font-size:0.6875rem;color:var(--muted);">Deploy</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Diferenciais</span>
+          <h2 class="section-title">Por que automação com IA <span class="gradient-text">com a Fábrica de Software</span></h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-rocket"></i></div>
+            <h4>Implementação Rápida</h4>
+            <p>Do conceito ao chatbot funcionando em 2 a 4 semanas. Resultado rápido, sem burocracia.</p>
+          </div>
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-brain"></i></div>
+            <h4>IA Customizada</h4>
+            <p>Não usamos templates genéricos. Treinamos a IA com seu conteúdo, tom de voz e regras de negócio.</p>
+          </div>
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-headset"></i></div>
+            <h4>Evolução Contínua</h4>
+            <p>Monitoramos métricas e refinamos a IA continuamente. Quanto mais tempo, melhor ela fica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ARTIGOS RELACIONADOS ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">Artigos Relacionados</span>
+          <h2 class="section-title">Conteúdo sobre <span class="gradient-text">automação com IA</span></h2>
+        </div>
+        <div class="service-grid">
+          <a href="../blog/automacao-ia-empresas.html" class="service-card" style="text-decoration:none;">
+            <div class="icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Guia Completo: Automação com IA para Empresas</h3>
+            <p>Tudo sobre chatbots, RPA e como a inteligência artificial transforma operações.</p>
+            <span class="service-cta">Ler artigo <i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a href="../blog/quanto-custa-chatbot.html" class="service-card" style="text-decoration:none;">
+            <div class="icon"><i class="fas fa-file-alt"></i></div>
+            <h3>Quanto Custa Criar um Chatbot com IA?</h3>
+            <p>Fatores que influenciam o custo e como calcular o investimento em automação.</p>
+            <span class="service-cta">Ler artigo <i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="center">
+          <span class="section-label">FAQ</span>
+          <h2 class="section-title">Dúvidas frequentes sobre automação com IA</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary class="faq-question">Quanto custa criar um chatbot com IA?</summary>
+            <div class="faq-answer">O investimento depende da complexidade, integrações e volume de mensagens. Chatbots simples começam a partir de R$ 2.000. Agentes avançados com NLP e integrações complexas a partir de R$ 8.000.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">A IA consegue atender clientes sozinha?</summary>
+            <div class="faq-answer">Sim. Chatbots com IA generativa conseguem responder dúvidas, agendar compromissos, qualificar leads e encaminhar para atendentes humanos quando necessário.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Quais processos podem ser automatizados com IA?</summary>
+            <div class="faq-answer">Atendimento ao cliente, qualificação de leads, processamento de documentos, classificação de e-mails, geração de relatórios, análise de dados e muito mais.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">A IA funciona com meu sistema atual?</summary>
+            <div class="faq-answer">Sim. Integramos IA com WhatsApp, e-mail, CRM, ERP, site e qualquer sistema via APIs. A IA se conecta com suas ferramentas existentes.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Preciso ter conhecimento técnico para usar a IA?</summary>
+            <div class="faq-answer">Não. Entregamos o sistema pronto com interface simples para gerenciar. Sua equipe usa sem precisar entender de programação.</div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">A IA aprende e melhora com o tempo?</summary>
+            <div class="faq-answer">Sim. Configuramos feedback loops para que a IA aprenda com cada interação, melhore suas respostas e se adapte ao comportamento dos seus clientes.</div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-block">
+          <h2>Pronto para automatizar com inteligência artificial?</h2>
+          <p>Fale com um especialista e descubra como a IA pode transformar sua operação. Primeira conversa gratuita.</p>
+          <div class="cta-benefits">
+            <span><i class="fas fa-check-circle"></i> Consultoria gratuita</span>
+            <span><i class="fas fa-check-circle"></i> Resultado em 2 a 4 semanas</span>
+            <span><i class="fas fa-check-circle"></i> Contato direto com o dev</span>
+          </div>
+          <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20saber%20sobre%20automa%C3%A7%C3%A3o%20com%20IA" target="_blank" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Falar com Especialista
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+          <p>Transformamos ideias em software sob medida. Sites, sistemas, automação com IA e marketing digital.</p>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="criacao-de-sites.html">Criação de Sites</a>
+          <a href="desenvolvimento-de-sistemas.html">Sistemas Web</a>
+          <a href="automacao-com-ia.html">Automação com IA</a>
+          <a href="seo.html">SEO</a>
+          <a href="google-ads.html">Google Ads</a>
+        </div>
+        <div>
+          <h4>Segmentos</h4>
+          <a href="../segmentos/sites-para-clinicas.html">Clínicas</a>
+          <a href="../segmentos/sites-para-imobiliarias.html">Imobiliárias</a>
+          <a href="../segmentos/sites-para-restaurantes.html">Restaurantes</a>
+          <a href="../segmentos/sites-para-advogados.html">Advogados</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="https://wa.me/5521996936397" target="_blank"><i class="fab fa-whatsapp"></i> (21) 99693-6397</a>
+          <a href="mailto:contato@fabricadesoftware.com.br"><i class="fas fa-envelope"></i> E-mail</a>
+          <p style="font-size:0.8125rem; color:rgba(255,255,255,0.3); margin-top:4px;">Rio de Janeiro, RJ</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Fábrica de Software. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20saber%20sobre%20automa%C3%A7%C3%A3o%20com%20IA" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="../js/main.js" defer></script>
+</body>
+</html>
