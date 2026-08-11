@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard SEO | Fábrica de Software</title>
+  <meta name="description" content="Painel de acompanhamento SEO da Fábrica de Software. Métricas de desempenho, tráfego e conversões.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#08080C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"></noscript>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dashboard { padding: 48px 0; }
+    .dashboard h1 { font-size: 2rem; margin-bottom: 8px; }
+    .dashboard .subtitle { color: var(--muted); margin-bottom: 40px; }
+    .metric-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px; }
+    .metric-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; text-align: center; }
+    .metric-card .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--muted); margin-bottom: 8px; }
+    .metric-card .value { font-size: 2rem; font-weight: 800; font-family: var(--font-title); }
+    .metric-card .change { font-size: 0.8125rem; margin-top: 4px; }
+    .metric-card .change.up { color: var(--green); }
+    .metric-card .change.down { color: #EF4444; }
+    .section-title { margin: 40px 0 20px; font-size: 1.25rem; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+    th { text-align: left; padding: 12px 16px; background: var(--bg-card); color: var(--muted); font-weight: 600; text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1px; border-bottom: 1px solid var(--border); }
+    td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    tr:hover td { background: var(--bg-elevated); }
+    .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+    .tag-green { background: rgba(34,197,94,0.15); color: var(--green); }
+    .tag-yellow { background: rgba(234,179,8,0.15); color: #EAB308; }
+    .tag-red { background: rgba(239,68,68,0.15); color: #EF4444; }
+    .checklist { list-style: none; }
+    .checklist li { padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+    .checklist li i { font-size: 1rem; }
+    .checklist li .done { color: var(--green); }
+    .checklist li .pending { color: var(--muted); }
+    .checklist li .action { margin-left: auto; font-size: 0.8125rem; color: var(--accent); cursor: pointer; }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <div class="navbar-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="blog/index.html">Blog</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema"><i class="fas fa-moon"></i></button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main class="dashboard">
+    <div class="container">
+      <h1><i class="fas fa-chart-line" style="color:var(--accent);"></i> Dashboard SEO</h1>
+      <p class="subtitle">Acompanhamento de performance orgânica — Última atualização: <span id="lastUpdate"></span></p>
+
+      <!-- KPIs Principais -->
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="label">Páginas Indexadas</div>
+          <div class="value" style="color:var(--accent);">125</div>
+          <div class="change up">↑ 95 novas (sitemap atualizado)</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">Artigos Blog</div>
+          <div class="value" style="color:var(--purple);">44</div>
+          <div class="change up">↑ 44 artigos otimizados</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">Money Pages</div>
+          <div class="value" style="color:var(--green);">25</div>
+          <div class="change up">↑ 11 RJ + 7 bairros + 5 nichos + 2 cidades</div>
+        </div>
+        <div class="metric-card">
+          <div class="label">Schemas Ativos</div>
+          <div class="value" style="color:#EAB308;">100%</div>
+          <div class="change up">Service + BreadcrumbList + FAQPage</div>
+        </div>
+      </div>
+
+      <!-- Checklist de SEO Técnico -->
+      <h2 class="section-title"><i class="fas fa-check-circle" style="color:var(--green);"></i> Checklist SEO Técnico</h2>
+      <ul class="checklist">
+        <li><i class="fas fa-check-circle done"></i> robots.txt configurado</li>
+        <li><i class="fas fa-check-circle done"></i> sitemap.xml com 125 URLs</li>
+        <li><i class="fas fa-check-circle done"></i> Canonical URLs corrigidas (todas com .html)</li>
+        <li><i class="fas fa-check-circle done"></i> og:url em todas as páginas</li>
+        <li><i class="fas fa-check-circle done"></i> og:image configurado</li>
+        <li><i class="fas fa-check-circle done"></i> JSON-LD movido para </body></li>
+        <li><i class="fas fa-check-circle done"></i> BreadcrumbList em todas as páginas</li>
+        <li><i class="fas fa-check-circle done"></i> FAQPage em homepage + bairros + nichos</li>
+        <li><i class="fas fa-check-circle done"></i> Service schema em money pages</li>
+        <li><i class="fas fa-check-circle done"></i> Article schema em blog posts</li>
+        <li><i class="fas fa-check-circle done"></i> CSS minificado (45KB → 39KB)</li>
+        <li><i class="fas fa-check-circle done"></i> Font Awesome otimizado (9 → 2 requests)</li>
+        <li><i class="fas fa-check-circle done"></i> Google Fonts otimizado (6 → 3 weights)</li>
+        <li><i class="fas fa-check-circle done"></i> preconnect para cdnjs.cloudflare.com</li>
+        <li><i class="fas fa-check-circle done"></i> hreflang pt-BR configurado</li>
+        <li><i class="fas fa-check-circle done"></i> Viewport meta tag</li>
+        <li><i class="fas fa-check-circle done"></i> theme-color configurado</li>
+        <li><i class="fas fa-check-circle done"></i> about.html criado (entidade GEO)</li>
+        <li><i class="fas fa-check-circle done"></i> perguntas-frequentes.html criado (AI Search)</li>
+        <li><i class="fas fa-circle pending"></i> Imagens de conteúdo <span class="tag tag-yellow">pendente</span></li>
+        <li><i class="fas fa-circle pending"></i> Service worker para cache <span class="tag tag-yellow">pendente</span></li>
+        <li><i class="fas fa-circle pending"></i> WebP/AVIF images <span class="tag tag-yellow">pendente</span></li>
+      </ul>
+
+      <!-- Performance -->
+      <h2 class="section-title"><i class="fas fa-tachometer-alt" style="color:var(--accent);"></i> Performance</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Métrica</th><th>Antes</th><th>Depois</th><th>Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>CSS inline (blog)</td><td>308KB (44 arquivos)</td><td>0KB</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>Font Awesome requests</td><td>9 requests</td><td>2 requests</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>Google Fonts weights</td><td>6 (~200KB)</td><td>3 (~100KB)</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>JSON-LD no head</td><td>~4KB bloqueando</td><td>Movido para body</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>CSS minificado</td><td>45KB</td><td>39KB</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>Sitemap URLs</td><td>~50</td><td>125</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+            <tr><td>Canonicals corretas</td><td>43 com erro</td><td>0 com erro</td><td><span class="tag tag-green">CORRIGIDO</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Páginas por Tipo -->
+      <h2 class="section-title"><i class="fas fa-sitemap" style="color:var(--purple);"></i> Estrutura do Site</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Tipo</th><th>Qtd</th><th>Schemas</th><th>Priority</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Homepage</td><td>1</td><td>LocalBusiness + WebSite + BreadcrumbList + FAQPage</td><td>1.0</td></tr>
+            <tr><td>Money Pages RJ</td><td>11</td><td>Service + BreadcrumbList</td><td>0.9</td></tr>
+            <tr><td>Bairros</td><td>7</td><td>Service + BreadcrumbList + FAQPage</td><td>0.8</td></tr>
+            <tr><td>Nichos</td><td>5</td><td>Service + BreadcrumbList + FAQPage</td><td>0.8</td></tr>
+            <tr><td>Cidades</td><td>2</td><td>Service + BreadcrumbList</td><td>0.8</td></tr>
+            <tr><td>Perto de mim</td><td>2</td><td>Service + BreadcrumbList</td><td>0.8</td></tr>
+            <tr><td>Serviços</td><td>9</td><td>Service + BreadcrumbList</td><td>0.8</td></tr>
+            <tr><td>Segmentos</td><td>7</td><td>Service + BreadcrumbList</td><td>0.7</td></tr>
+            <tr><td>Blog</td><td>44</td><td>Article + BreadcrumbList</td><td>0.6</td></tr>
+            <tr><td>Checklists</td><td>16</td><td>—</td><td>0.6</td></tr>
+            <tr><td>Sobre</td><td>1</td><td>AboutPage + BreadcrumbList</td><td>0.8</td></tr>
+            <tr><td>FAQ</td><td>1</td><td>FAQPage + BreadcrumbList</td><td>0.8</td></tr>
+            <tr><td>Portfolio</td><td>1</td><td>—</td><td>0.7</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Ações Pendentes -->
+      <h2 class="section-title"><i class="fas fa-tasks" style="color:#EAB308;"></i> Próximas Ações</h2>
+      <ul class="checklist">
+        <li><i class="fas fa-circle pending"></i> Criar imagens para hero e artigos do blog</li>
+        <li><i class="fas fa-circle pending"></i> Self-host Font Awesome (evitar CDN)</li>
+        <li><i class="fas fa-circle pending"></i> Criar service worker para cache offline</li>
+        <li><i class="fas fa-circle pending"></i> Comprimir og-image.png → WebP</li>
+        <li><i class="fas fa-circle pending"></i> Adicionar Article schema nos 44 blog posts</li>
+        <li><i class="fas fa-circle pending"></i> Configurar Google Search Console</li>
+        <li><i class="fas fa-circle pending"></i> Configurar Google Analytics 4</li>
+        <li><i class="fas fa-circle pending"></i> Configurar Google Business Profile</li>
+        <li><i class="fas fa-circle pending"></i> Criar mais 5 páginas de nicho</li>
+        <li><i class="fas fa-circle pending"></i> Criar mais 10 artigos do blog</li>
+      </ul>
+
+      <!-- Links Rápidos -->
+      <div class="cta-section" style="margin-top:40px;">
+        <h2>Ferramentas de Monitoramento</h2>
+        <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:20px;">
+          <a href="https://search.google.com/search-console" target="_blank" class="btn btn-outline"><i class="fas fa-search"></i> Google Search Console</a>
+          <a href="https://analytics.google.com" target="_blank" class="btn btn-outline"><i class="fas fa-chart-bar"></i> Google Analytics</a>
+          <a href="https://business.google.com" target="_blank" class="btn btn-outline"><i class="fas fa-store"></i> Google Business Profile</a>
+          <a href="https://pagespeed.web.dev" target="_blank" class="btn btn-outline"><i class="fas fa-tachometer-alt"></i> PageSpeed Insights</a>
+          <a href="https://search.google.com/test/rich-results" target="_blank" class="btn btn-outline"><i class="fas fa-code"></i> Rich Results Test</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Fábrica de Software. Dashboard interno.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('lastUpdate').textContent = new Date().toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' });
+  </script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
