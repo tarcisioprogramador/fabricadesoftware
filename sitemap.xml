@@ -1,794 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ========== PÁGINA PRINCIPAL ========== -->
+  <!-- Home -->
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- ========== PÁGINAS INSTITUCIONAIS ========== -->
+  <!-- Landing Pages -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/landing-pages/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- E-commerce -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/e-commerce/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sites Institucionais -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/sites-institucionais/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sites de Alta Performance -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/sites-de-alta-performance/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- E-commerce Brasil -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/ecommerce-brasil/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Landing Page para Advogados -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/landing-page-para-advogados/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: E-commerce O Que Faz -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/e-commerce-o-que-faz/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: O Que É E-commerce -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/o-que-e-e-commerce/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: O Que É Landing Page -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/o-que-e-landing-page/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Home -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/index.html</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sobre -->
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/sobre.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/perguntas-frequentes.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 
-  <!-- ========== PÁGINAS LOCALIZADAS (SEO Local - RJ) ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/desenvolvimento-de-sistemas-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/empresa-de-desenvolvimento-de-software-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/software-house-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/automacao-com-inteligencia-artificial-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/desenvolvimento-de-aplicativos-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/chatbot-com-inteligencia-artificial-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/software-sob-medida-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-loja-virtual-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/crm-personalizado-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/desenvolvimento-saas-rio-de-janeiro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <!-- ========== PÁGINAS POR BAIRRO ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-copacabana.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-barra-da-tijuca.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-centro.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-zona-sul.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-tijuca.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-vila-isabel.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-recreio.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ========== PÁGINAS "PERTO DE MIM" ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-perto-de-mim.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/desenvolvimento-de-sistemas-perto-de-mim.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ========== PÁGINAS POR CIDADE ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-niteroi.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/criacao-de-sites-duque-de-caxias.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ========== PÁGINAS POR NICHO ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/site-para-salao-de-beleza-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/site-para-clinica-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/site-para-restaurante-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/site-para-advogado-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/site-para-imobiliaria-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- ========== PÁGINAS DE SERVIÇOS ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <!-- Serviços -->
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/criacao-de-sites.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/desenvolvimento-de-sistemas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/automacao-com-ia.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/desenvolvimento-de-aplicativos.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/seo.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/google-ads.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/marketing-digital.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/google-meu-negocio.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- ========== PÁGINAS DE SEGMENTOS ========== -->
+  <!-- Segmentos -->
   <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-clinicas.html</loc>
-    <lastmod>2026-08-11</lastmod>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/servicos/desenvolvimento-de-sistemas.html</loc>
+    <lastmod>2026-08-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-imobiliarias.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-restaurantes.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-advogados.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-contadores.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-academias.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/segmentos/sites-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ========== PORTFOLIO ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/portfolio.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- ========== CHECKLISTS ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-10-passos.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-agendamento-online.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-aplicativos.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-automacao-ia.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-chatbot.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-desenvolvimento-sites.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-gestao-trafego.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-integracoes.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-integrar-mercado-livre-erp.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-landing-page.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-saas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-seo.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-sistema-clinica.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-sistemas-personalizados.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-site-advogado.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/checklist-site-imobiliaria.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- ========== BLOG ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/index.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/o-que-e-software-house.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-escolher-empresa-desenvolvimento-software.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/automacao-de-processos-com-ia.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/custo-desenvolvimento-sistema-sob-medida.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/vantagens-crm-personalizado.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-criar-plataforma-saas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/diferenciais-loja-virtual-profissional.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/chatbot-ia-atendimento-24h.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/erp-personalizado-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-melhorar-seo-local.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/desenvolvimento-app-nativo-vs-hibrido.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/marketing-digital-para-empresas-rj.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/wordpress-vs-site-sob-medida.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/flutter-vs-react-native.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/automacao-de-processos-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/site-institucional-vs-landing-page.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-gestao-clinica.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-criar-chatbot-whatsapp.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/automacao-ia.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/chatbot-whatsapp.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/saas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/fabrica-de-software.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/desenvolvimento-sites.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/seo-otimizacao-google.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/quanto-custa-criar-site-profissional.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/o-que-e-sistema-sob-medida.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-escolher-empresa-criacao-sites.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/gestao-de-trafego.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/integracoes.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/integrar-mercado-livre-erp.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/landing-pages-conversao.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistemas-personalizados.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-academia-fitness.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-agendamento-online.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-escola-curso.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-para-clinica.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/sistema-restaurante-delivery.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/site-salon-de-beleza.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/site-para-advogado.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/site-para-imobiliaria.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/aplicativos-android-ios.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-aparecer-no-google-gratuitamente.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-colocar-minha-empresa-no-google.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-
-  <!-- ========== SEO AGÊNCIA ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/index.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/seo-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/criacao-de-sites-profissionais.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/gestao-de-trafego-pago.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/automacao-de-marketing.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/obrigado.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- ========== BLOG SEO AGÊNCIA ========== -->
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/index.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/seo-para-empresas-guia-completo.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/quanto-custa-criar-site-profissional.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/quanto-custa-contratar-agencia-marketing-digital.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/como-aparecer-no-google-rapido.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/como-aumentar-vendas-com-trafego-pago.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/desenvolvimento-aplicativos.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/desenvolvimento-sistemas-web.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/design-grafico-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/estrategia-digital-completa.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/gestao-de-redes-sociais.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/plataformas-saas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/automacao-marketing-para-empresas.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/seo-agencia/blog/solucoes-software-sob-medida.html</loc>
-    <lastmod>2026-08-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
 
 </urlset>

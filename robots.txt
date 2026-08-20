@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://tarcisioprogramador.github.io/fabricadesoftware/sitemap.xml
-
-# Fábrica de Software - Criação de Sites, Sistemas Web e Automação com IA no Rio de Janeiro
