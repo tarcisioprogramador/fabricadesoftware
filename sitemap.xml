@@ -149,4 +149,37 @@
     <priority>0.7</priority>
   </url>
 
+
+  <!-- Blog: Como Criar Loja Virtual -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-criar-loja-virtual/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Quanto Custa Landing Page -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/quanto-custa-landing-page/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Diferença Site e Landing Page -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/diferenca-site-e-landing-page/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog: Como Melhorar Conversão -->
+  <url>
+    <loc>https://tarcisioprogramador.github.io/fabricadesoftware/blog/como-melhorar-conversao-site/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
