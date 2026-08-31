@@ -1030,7 +1030,7 @@ body.light-theme .process-step h3 { color: #0F172A; }
 body.light-theme .process-step p { color: #475569; }
 body.light-theme .step-num { color: var(--accent); }
 body.light-theme .diff-item { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
-body.light-theme .diff-item h3 { color: #0F172A; }
+body.light-theme .diff-item h4 { color: #0F172A; }
 body.light-theme .diff-item p { color: #475569; }
 body.light-theme .diff-item .icon { background: rgba(37,99,235,0.08); }
 body.light-theme .depo-card { background: #FFFFFF; border-color: rgba(0,0,0,0.06); }
@@ -1075,6 +1075,14 @@ body.light-theme .seo-cta-content h4 { color: #0F172A; }
 @media (max-width: 480px) {
   .seo-benefits { grid-template-columns: 1fr; }
   .seo-col { padding: 24px 20px; }
+  .sobre-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .sobre-avatar { width: 120px !important; height: 120px !important; font-size: 2.5rem !important; }
+  .cases-grid { grid-template-columns: 1fr !important; }
+}
+@media (max-width: 768px) {
+  .sobre-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .sobre-avatar { width: 140px !important; height: 140px !important; }
+  .cases-grid { grid-template-columns: 1fr !important; }
 }
 
 /* Breadcrumb */
