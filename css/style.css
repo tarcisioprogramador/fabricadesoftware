@@ -1127,3 +1127,24 @@ body.light-theme .seo-cta-content h4 { color: #0F172A; }
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: var(--muted); max-width: 600px; line-height: 1.7;
 }
+
+/* Botões Flutuantes */
+.floating-buttons{position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:9998;display:flex;flex-direction:column;gap:12px;align-items:center}
+.floating-btn{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px;box-shadow:0 4px 20px rgba(0,0,0,0.3);transition:all 0.3s ease;position:relative;cursor:pointer}
+.floating-btn:hover{transform:scale(1.12)}
+.floating-btn::after{content:attr(data-tooltip);position:absolute;right:calc(100% + 12px);top:50%;transform:translateY(-50%);background:var(--bg-elevated);color:var(--white);font-family:var(--font-title);font-size:0.8125rem;font-weight:600;padding:8px 14px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity 0.25s ease;box-shadow:0 4px 16px rgba(0,0,0,0.3);border:1px solid var(--border)}
+.floating-btn::before{content:'';position:absolute;right:calc(100% + 6px);top:50%;transform:translateY(-50%);border:5px solid transparent;border-left-color:var(--bg-elevated);opacity:0;pointer-events:none;transition:opacity 0.25s ease}
+.floating-btn:hover::after{opacity:1}
+.floating-btn:hover::before{opacity:1}
+.floating-btn--google{background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.floating-btn--google:hover{background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5)}
+.floating-btn--google i{color:#fff}
+.floating-btn--whatsapp{background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,0.35)}
+.floating-btn--whatsapp:hover{box-shadow:0 8px 32px rgba(37,211,102,0.5)}
+body.light-theme .floating-btn--google{background:#1E293B;border-color:rgba(0,0,0,0.1)}
+body.light-theme .floating-btn--google:hover{background:#0F172A}
+body.light-theme .floating-btn::after{background:#fff;color:#0F172A;border-color:rgba(0,0,0,0.08)}
+body.light-theme .floating-btn::before{border-left-color:#fff}
+@media (max-width:1024px){.floating-buttons{right:16px;gap:10px}.floating-btn{width:50px;height:50px;font-size:22px}.floating-btn::after{font-size:0.75rem;padding:6px 12px}}
+@media (max-width:768px){.floating-buttons{right:16px;top:auto;bottom:24px;transform:none;flex-direction:column;gap:10px}.floating-btn{width:52px;height:52px;font-size:24px}.floating-btn::after,.floating-btn::before{display:none}}
+@media (max-width:480px){.floating-buttons{right:12px;bottom:20px;gap:8px}.floating-btn{width:48px;height:48px;font-size:22px}}
