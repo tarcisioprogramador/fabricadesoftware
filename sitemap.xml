@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Páginas Principais -->
   <url>
-    <loc>https://fabricadesoftware.com/</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/portfolio.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/portfolio.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -22,61 +22,61 @@
 
   <!-- Páginas de Serviços -->
   <url>
-    <loc>https://fabricadesoftware.com/servicos/criacao-de-sites.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/criacao-de-sites.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/desenvolvimento-de-sistemas.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/desenvolvimento-de-sistemas.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/automacao-com-ia.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/automacao-com-ia.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/desenvolvimento-de-aplicativos.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/desenvolvimento-de-aplicativos.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/seo.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/seo.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/google-ads.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/google-ads.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/marketing-digital.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/marketing-digital.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/google-meu-negocio.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/google-meu-negocio.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/integracao-de-sistemas.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/integracao-de-sistemas.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/servicos/sistemas-web.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/servicos/sistemas-web.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -84,43 +84,43 @@
 
   <!-- Páginas por Segmento -->
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-clinicas.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-clinicas.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-imobiliarias.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-imobiliarias.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-restaurantes.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-restaurantes.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-advogados.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-advogados.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-contadores.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-contadores.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-academias.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-academias.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/segmentos/sites-para-empresas.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/segmentos/sites-para-empresas.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -128,73 +128,73 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://fabricadesoftware.com/blog/index.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/index.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/desenvolvimento-sites.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/desenvolvimento-sites.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/sistemas-personalizados.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/sistemas-personalizados.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/automacao-ia.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/automacao-ia.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/seo-otimizacao-google.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/seo-otimizacao-google.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/quanto-custa-criar-site-profissional.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/quanto-custa-criar-site-profissional.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/como-aparecer-no-google-gratuitamente.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/como-aparecer-no-google-gratuitamente.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/chatbot-whatsapp.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/chatbot-whatsapp.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/gestao-de-trafego.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/gestao-de-trafego.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/aplicativos-android-ios.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/aplicativos-android-ios.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/saas.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/saas.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/blog/integracoes.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/blog/integracoes.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -202,20 +202,26 @@
 
   <!-- Páginas de SEO Local -->
   <url>
-    <loc>https://fabricadesoftware.com/criacao-de-sites-rio-de-janeiro.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/criacao-de-sites-rio-de-janeiro.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/desenvolvimento-de-sistemas-rio-de-janeiro.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/desenvolvimento-de-sistemas-rio-de-janeiro.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://fabricadesoftware.com/desenvolvimento-de-aplicativos-rio-de-janeiro.html</loc>
+    <loc>https://fabricadesoftware-master.vercel.app/desenvolvimento-de-aplicativos-rio-de-janeiro.html</loc>
     <lastmod>2026-08-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fabricadesoftware-master.vercel.app/desenvolvimento-de-crm/</loc>
+    <lastmod>2026-09-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
