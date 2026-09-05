@@ -1,1 +1,4 @@
 ﻿cloud-kb/
+
+# Local Netlify folder
+.netlify

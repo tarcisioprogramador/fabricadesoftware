@@ -1,0 +1,22 @@
+# Fábrica de Software — Rio de Janeiro
+
+## Sobre
+Fábrica de Software é uma empresa de desenvolvimento de software baseada no Rio de Janeiro. Criamos sites profissionais, sistemas web sob medida, automação com IA, aplicativos mobile e estratégias de marketing digital.
+
+## Serviços
+- Criação de Sites Profissionais (React, Next.js, SEO)
+- Desenvolvimento de Sistemas Web Sob Medida (Node.js, Python, PostgreSQL)
+- Automação com Inteligência Artificial (ChatGPT API, NLP, Agentes IA)
+- Desenvolvimento de Aplicativos Android e iOS (React Native, Flutter)
+- SEO e Marketing Digital
+- Google Ads e Tráfego Pago
+- Google Meu Negócio e SEO Local
+
+## Contato
+- WhatsApp: https://wa.me/5521996936397
+- E-mail: tarcisioflow.dev@gmail.com
+- LinkedIn: https://www.linkedin.com/in/tarcisiodev
+- Localização: Rio de Janeiro, RJ
+
+## Site
+https://fabricadesoftware-rj.netlify.app
