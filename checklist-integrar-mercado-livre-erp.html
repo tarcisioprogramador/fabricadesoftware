@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -86,28 +86,38 @@
     .cta-final h3 { font-size: 18px; margin-bottom: 6px; color: #fff; }
     .cta-final p { font-size: 13px; opacity: 0.9; }
   </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG1RG503V2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GG1RG503V2');
+</script>
 </head>
 <body>
 
   <div class="cover">
-    <div class="logo">F�BRICA DE <span>SOFTWARE</span></div>
+    <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
     <h1>10 Passos para <span>Integrar Mercado Livre com seu ERP</span></h1>
-    <p class="sub">Guia pr�tico para automatizar pedidos, estoque e notas fiscais entre Mercado Livre e seu sistema de gest�o.</p>
+    <p class="sub">Guia prático para automatizar pedidos, estoque e notas fiscais entre Mercado Livre e seu sistema de gestão.</p>
   </div>
 
   <div class="intro">
     <p><strong>Por que este checklist existe?</strong><br>
-    Vender no Mercado Livre � essencial, mas gerenciar pedidos manualmente enquanto o volume cresce � insustent�vel. Erros de estoque, retrabalho em notas fiscais e atrasos na entrega viram parte do dia a dia. Na F�brica de Software, j� integramos dezenas de lojas do Mercado Livre com ERPs diferentes. Este guia re�ne os 10 passos essenciais para automatizar de ponta a ponta sua opera��o no maior marketplace da Am�rica Latina.</p>
+    Vender no Mercado Livre é essencial, mas gerenciar pedidos manualmente enquanto o volume cresce é insustentável. Erros de estoque, retrabalho em notas fiscais e atrasos na entrega viram parte do dia a dia. Na Fábrica de Software, já integramos dezenas de lojas do Mercado Livre com ERPs diferentes. Este guia reúne os 10 passos essenciais para automatizar de ponta a ponta sua operação no maior marketplace da América Latina.</p>
   </div>
 
   <div class="step">
     <div class="step-num">1</div>
     <div class="step-content">
-      <h3>Diagn�stico do Cen�rio Atual</h3>
-      <p>Mapeie volume de pedidos, quantidade de produtos anunciados no Mercado Livre, fluxos manuais existentes e gargalos da opera��o atual. Entenda onde o tempo est� sendo perdido.</p>
+      <h3>Diagnóstico do Cenário Atual</h3>
+      <p>Mapeie volume de pedidos, quantidade de produtos anunciados no Mercado Livre, fluxos manuais existentes e gargalos da operação atual. Entenda onde o tempo está sendo perdido.</p>
       <div class="check-item"><span class="checkbox"></span> Liste todos os processos manuais que podem ser automatizados</div>
-      <div class="check-item"><span class="checkbox"></span> Me�a o tempo gasto em cada tarefa manual</div>
-      <span class="tip">Dica: Onde h� digita��o manual, h� erro humano � e preju�zo.</span>
+      <div class="check-item"><span class="checkbox"></span> Meça o tempo gasto em cada tarefa manual</div>
+      <span class="tip">Dica: Onde há digitação manual, há erro humano — e prejuízo.</span>
     </div>
   </div>
 
@@ -115,10 +125,10 @@
     <div class="step-num">2</div>
     <div class="step-content">
       <h3>Escolha do ERP e Compatibilidade</h3>
-      <p>Identifique se seu ERP tem API dispon�vel, webhooks ou integra��o nativa com Mercado Livre. A compatibilidade t�cnica define a complexidade e o prazo da integra��o.</p>
-      <div class="check-item"><span class="checkbox"></span> Verifique documenta��o de API do seu ERP</div>
+      <p>Identifique se seu ERP tem API disponível, webhooks ou integração nativa com Mercado Livre. A compatibilidade técnica define a complexidade e o prazo da integração.</p>
+      <div class="check-item"><span class="checkbox"></span> Verifique documentação de API do seu ERP</div>
       <div class="check-item"><span class="checkbox"></span> Avalie se o ERP oferece webhooks para eventos em tempo real</div>
-      <span class="tip">Dica: ERPs com API RESTful s�o muito mais f�ceis de integrar.</span>
+      <span class="tip">Dica: ERPs com API RESTful são muito mais fáceis de integrar.</span>
     </div>
   </div>
 
@@ -126,21 +136,21 @@
     <div class="step-num">3</div>
     <div class="step-content">
       <h3>Mapeamento de Dados entre Plataformas</h3>
-      <p>Defina a correspond�ncia exata de produtos, c�digos SKU, pre�os, n�veis de estoque e categorias entre Mercado Livre e ERP. Um mapeamento preciso evita diverg�ncias.</p>
-      <div class="check-item"><span class="checkbox"></span> Crie planilha de correspond�ncia produto x SKU x variantes</div>
-      <div class="check-item"><span class="checkbox"></span> Mapeie categorias e atributos obrigat�rios do Mercado Livre</div>
-      <span class="tip">Dica: Invista 80% do tempo no mapeamento e 20% no c�digo � o resultado � muito melhor.</span>
+      <p>Defina a correspondência exata de produtos, códigos SKU, preços, níveis de estoque e categorias entre Mercado Livre e ERP. Um mapeamento preciso evita divergências.</p>
+      <div class="check-item"><span class="checkbox"></span> Crie planilha de correspondência produto x SKU x variantes</div>
+      <div class="check-item"><span class="checkbox"></span> Mapeie categorias e atributos obrigatórios do Mercado Livre</div>
+      <span class="tip">Dica: Invista 80% do tempo no mapeamento e 20% no código — o resultado é muito melhor.</span>
     </div>
   </div>
 
   <div class="step">
     <div class="step-num">4</div>
     <div class="step-content">
-      <h3>Autentica��o e Configura��o de APIs</h3>
-      <p>Configure token de acesso do Mercado Livre (OAuth) e autentica��o da API do ERP. A seguran�a na comunica��o entre plataformas � fundamental para evitar vazamentos.</p>
+      <h3>Autenticação e Configuração de APIs</h3>
+      <p>Configure token de acesso do Mercado Livre (OAuth) e autenticação da API do ERP. A segurança na comunicação entre plataformas é fundamental para evitar vazamentos.</p>
       <div class="check-item"><span class="checkbox"></span> Gere e configure token de acesso do Mercado Livre</div>
-      <div class="check-item"><span class="checkbox"></span> Configure autentica��o e ambiente de homologa��o</div>
-      <span class="tip">Dica: Use ambientes de teste (sandbox) antes de ir para produ��o.</span>
+      <div class="check-item"><span class="checkbox"></span> Configure autenticação e ambiente de homologação</div>
+      <span class="tip">Dica: Use ambientes de teste (sandbox) antes de ir para produção.</span>
     </div>
   </div>
 
@@ -148,9 +158,9 @@
     <div class="step-num">2</div>
     <div class="step-content">
       <h3>Sincronia de Estoque em Tempo Real</h3>
-      <p>Implemente atualiza��o autom�tica de estoque quando uma venda � feita em qualquer canal. Evite vendas de produtos sem estoque e cancelamentos por falta.</p>
-      <div class="check-item"><span class="checkbox"></span> Configure webhook de atualiza��o de estoque bidirecional</div>
-      <div class="check-item"><span class="checkbox"></span> Defina regras de estoque m�nimo e alertas</div>
+      <p>Implemente atualização automática de estoque quando uma venda é feita em qualquer canal. Evite vendas de produtos sem estoque e cancelamentos por falta.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure webhook de atualização de estoque bidirecional</div>
+      <div class="check-item"><span class="checkbox"></span> Defina regras de estoque mínimo e alertas</div>
       <span class="tip">Dica: Estoque em tempo real elimina 100% das vendas sem estoque.</span>
     </div>
   </div>
@@ -158,22 +168,22 @@
   <div class="step">
     <div class="step-num">6</div>
     <div class="step-content">
-      <h3>Importa��o Autom�tica de Pedidos</h3>
-      <p>Os pedidos do Mercado Livre devem cair automaticamente no ERP sem digita��o manual. Cada minuto economizado � agilidade na expedi��o.</p>
-      <div class="check-item"><span class="checkbox"></span> Configure importa��o autom�tica de novos pedidos</div>
-      <div class="check-item"><span class="checkbox"></span> Mapeie campos do pedido (cliente, endere�o, itens, frete)</div>
-      <span class="tip">Dica: Um pedido que cai autom�tico no ERP sai 3x mais r�pido para entrega.</span>
+      <h3>Importação Automática de Pedidos</h3>
+      <p>Os pedidos do Mercado Livre devem cair automaticamente no ERP sem digitação manual. Cada minuto economizado é agilidade na expedição.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure importação automática de novos pedidos</div>
+      <div class="check-item"><span class="checkbox"></span> Mapeie campos do pedido (cliente, endereço, itens, frete)</div>
+      <span class="tip">Dica: Um pedido que cai automático no ERP sai 3x mais rápido para entrega.</span>
     </div>
   </div>
 
   <div class="step">
     <div class="step-num">7</div>
     <div class="step-content">
-      <h3>Emiss�o Autom�tica de Notas Fiscais</h3>
-      <p>Gere NF-e automaticamente ao integrar o pedido no ERP. Sem digita��o, sem erros de CT-e e sem multas por atraso na emiss�o.</p>
-      <div class="check-item"><span class="checkbox"></span> Configure integra��o com sistema de emiss�o de NF-e</div>
-      <div class="check-item"><span class="checkbox"></span> Defina regras de tributa��o por produto e regi�o</div>
-      <span class="tip">Dica: Nota fiscal autom�tica reduz erros fiscais em mais de 90%.</span>
+      <h3>Emissão Automática de Notas Fiscais</h3>
+      <p>Gere NF-e automaticamente ao integrar o pedido no ERP. Sem digitação, sem erros de CT-e e sem multas por atraso na emissão.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure integração com sistema de emissão de NF-e</div>
+      <div class="check-item"><span class="checkbox"></span> Defina regras de tributação por produto e região</div>
+      <span class="tip">Dica: Nota fiscal automática reduz erros fiscais em mais de 90%.</span>
     </div>
   </div>
 
@@ -181,44 +191,44 @@
     <div class="step-num">8</div>
     <div class="step-content">
       <h3>Sincronia de Rastreio e Status de Entrega</h3>
-      <p>Atualize c�digo de rastreio e status no Mercado Livre automaticamente. Clientes bem informados abrem menos reclama��es e d�o melhores avalia��es.</p>
-      <div class="check-item"><span class="checkbox"></span> Configure envio autom�tico de c�digo de rastreio</div>
-      <div class="check-item"><span class="checkbox"></span> Sincronize status de entrega (despachado, em tr�nsito, entregue)</div>
-      <span class="tip">Dica: Clientes que recebem rastreio autom�tico t�m 40% menos chamados.</span>
+      <p>Atualize código de rastreio e status no Mercado Livre automaticamente. Clientes bem informados abrem menos reclamações e dão melhores avaliações.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure envio automático de código de rastreio</div>
+      <div class="check-item"><span class="checkbox"></span> Sincronize status de entrega (despachado, em trânsito, entregue)</div>
+      <span class="tip">Dica: Clientes que recebem rastreio automático têm 40% menos chamados.</span>
     </div>
   </div>
 
   <div class="step">
     <div class="step-num">9</div>
     <div class="step-content">
-      <h3>Tratamento de Erros e Exce��es</h3>
-      <p>Prepare fluxos para devolu��es, cancelamentos, diverg�ncias de pre�o e estoque. Uma integra��o robusta antecipa o que pode dar errado.</p>
-      <div class="check-item"><span class="checkbox"></span> Mapeie cen�rios de exce��o (devolu��o, cancelamento, diverg�ncia)</div>
-      <div class="check-item"><span class="checkbox"></span> Crie alertas para erros de integra��o</div>
-      <span class="tip">Dica: O sucesso de uma integra��o se mede pela qualidade do tratamento de erros.</span>
+      <h3>Tratamento de Erros e Exceções</h3>
+      <p>Prepare fluxos para devoluções, cancelamentos, divergências de preço e estoque. Uma integração robusta antecipa o que pode dar errado.</p>
+      <div class="check-item"><span class="checkbox"></span> Mapeie cenários de exceção (devolução, cancelamento, divergência)</div>
+      <div class="check-item"><span class="checkbox"></span> Crie alertas para erros de integração</div>
+      <span class="tip">Dica: O sucesso de uma integração se mede pela qualidade do tratamento de erros.</span>
     </div>
   </div>
 
   <div class="step">
     <div class="step-num">10</div>
     <div class="step-content">
-      <h3>Monitoramento e Suporte Cont�nuo</h3>
-      <p>Acompanhe a sa�de da integra��o, monitore logs e atualize conforme mudan�as nas APIs do Mercado Livre e do ERP. Uma integra��o abandonada quebra o neg�cio.</p>
-      <div class="check-item"><span class="checkbox"></span> Configure painel de monitoramento da integra��o</div>
-      <div class="check-item"><span class="checkbox"></span> Estabele�a rotina de atualiza��o conforme mudan�as nas APIs</div>
-      <span class="tip">Dica: APIs mudam � uma integra��o sem manuten��o � uma bomba-rel�gio.</span>
+      <h3>Monitoramento e Suporte Contínuo</h3>
+      <p>Acompanhe a saúde da integração, monitore logs e atualize conforme mudanças nas APIs do Mercado Livre e do ERP. Uma integração abandonada quebra o negócio.</p>
+      <div class="check-item"><span class="checkbox"></span> Configure painel de monitoramento da integração</div>
+      <div class="check-item"><span class="checkbox"></span> Estabeleça rotina de atualização conforme mudanças nas APIs</div>
+      <span class="tip">Dica: APIs mudam — uma integração sem manutenção é uma bomba-relógio.</span>
     </div>
   </div>
 
   <div class="cta-final">
     <h3>Quer automatizar seu Mercado Livre com o ERP?</h3>
-    <p>Na F�brica de Software, criamos integra��es completas entre marketplaces e sistemas de gest�o com m�todo testado em mais de 100 projetos. Agende uma conversa gratuita de 30 minutos.</p>
+    <p>Na Fábrica de Software, criamos integrações completas entre marketplaces e sistemas de gestão com método testado em mais de 100 projetos. Agende uma conversa gratuita de 30 minutos.</p>
     <p style="margin-top:12px;"><strong>WhatsApp: (21) 99693-6397</strong></p>
   </div>
 
   <div class="footer-pdf">
-    <strong>F�BRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 99693-6397 &mdash; tarcisioflow.dev@gmail.com<br>
-    &copy; 2026 F�brica de Software. Todos os direitos reservados.
+    <strong>FÁBRICA DE SOFTWARE</strong> &mdash; Rio de Janeiro, RJ &mdash; (21) 99693-6397 &mdash; tarcisioflow.dev@gmail.com<br>
+    &copy; 2026 Fábrica de Software. Todos os direitos reservados.
   </div>
 
 <script> (function(ss,ex){ window.ldfdr=window.ldfdr||function(){(ldfdr._q=ldfdr._q||[]).push([].slice.call(arguments));}; (function(d,s){ fs=d.getElementsByTagName(s)[0]; function ce(src){ var cs=d.createElement(s); cs.src=src; cs.async=1; fs.parentNode.insertBefore(cs,fs); }; ce('https://sc.lfeeder.com/lftracker_v1_'+ss+(ex?'_'+ex:'')+'.js'); })(document,'script'); })('ywVkO4XlYBe4Z6Bj'); </script>
