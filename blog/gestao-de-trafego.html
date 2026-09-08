@@ -261,7 +261,25 @@
       transition: top 0.3s ease;
     }
     .skip-link:focus { top: 16px; }
-  </style>
+  
+    .footer { padding: 60px 0 32px; border-top: 1px solid var(--border); background: var(--surface); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+    .footer-brand .logo { font-family: var(--font-title); font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 12px; }
+    .footer-brand .logo span { color: var(--accent); }
+    .footer-brand p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; max-width: 300px; }
+    .footer h4 { font-family: var(--font-title); font-size: 0.875rem; font-weight: 700; color: var(--white); margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .footer div a { display: block; font-size: 0.8125rem; color: var(--muted); padding: 4px 0; transition: color 0.2s; }
+    .footer div a:hover { color: var(--white); }
+    .footer div a i { margin-right: 6px; width: 14px; }
+    .footer-address { margin-top: 16px; }
+    .footer-address p { font-size: 0.8125rem; color: var(--muted); line-height: 1.5; margin: 0; }
+    .footer-bottom { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; }
+    .footer-bottom span { font-size: 0.8125rem; color: var(--muted); }
+     (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer { padding: 40px 0 24px; }
+    }
+</style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -395,13 +413,56 @@
 
       </div>
     </div>
-  </article></main>
-
+  </article>
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 Fábrica de Software. Todos os direitos reservados. | <a href="../index.html">Home</a> | <a href="../servicos.html">Serviços</a></p>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+          <p>Transformamos ideias em software sob medida. Sites, sistemas, automação com IA, aplicativos e marketing digital para empresas que querem crescer com tecnologia.</p>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="../servicos/criacao-de-sites.html">Criação de Sites</a>
+          <a href="../servicos/desenvolvimento-de-sistemas.html">Sistemas Web</a>
+          <a href="../servicos/automacao-com-ia.html">Automação com IA</a>
+          <a href="../servicos/desenvolvimento-de-aplicativos.html">Aplicativos</a>
+          <a href="../servicos/seo.html">SEO</a>
+          <a href="../servicos/google-ads.html">Google Ads</a>
+          <a href="../servicos/marketing-digital.html">Marketing Digital</a>
+          <a href="../servicos/google-meu-negocio.html">Google Meu Negócio</a>
+        </div>
+        <div>
+          <h4>Segmentos</h4>
+          <a href="../segmentos/sites-para-clinicas.html">Clínicas & Saúde</a>
+          <a href="../segmentos/sites-para-imobiliarias.html">Imobiliárias</a>
+          <a href="../segmentos/sites-para-restaurantes.html">Restaurantes</a>
+          <a href="../segmentos/sites-para-advogados.html">Advogados</a>
+          <a href="../segmentos/sites-para-contadores.html">Contadores</a>
+          <a href="../segmentos/sites-para-academias.html">Academias</a>
+          <a href="../segmentos/sites-para-empresas.html">Empresas em Geral</a>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <a href="../index.html">Home</a>
+          <a href="../index.html#sobre">Sobre</a>
+          <a href="../blog/index.html">Blog</a>
+          <a href="../index.html#cases">Cases</a>
+          <a href="../index.html#contato">Contato</a>
+          <a href="https://wa.me/5521996936397" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:tarcisioflow.dev.com"><i class="fas fa-envelope"></i> E-mail</a>
+          <p style="font-size:0.8125rem; color:rgba(255,255,255,0.3); margin-top:4px;">Rua Silva Pinto, 117 - Vila Isabel<br>Rio de Janeiro, RJ</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Fábrica de Software. Todos os direitos reservados.</span>
+      </div>
     </div>
   </footer>
+  </main>
+
+  
 
   <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20F%C3%A1brica%20de%20Software%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
     <i class="fab fa-whatsapp"></i>

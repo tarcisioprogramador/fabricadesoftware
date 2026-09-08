@@ -23,7 +23,25 @@
     .cta h3{font-size:1.2rem;margin-bottom:4px;color:#fff}
     .cta p{color:rgba(255,255,255,.85);font-size:.9rem;margin-bottom:0}
     @media print{body{padding:20px 16px}.box{break-inside:avoid}}
-  </style>
+  
+    .footer { padding: 60px 0 32px; border-top: 1px solid var(--border); background: var(--surface); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; }
+    .footer-brand .logo { font-family: var(--font-title); font-size: 1.25rem; font-weight: 800; color: var(--white); letter-spacing: -0.5px; margin-bottom: 12px; }
+    .footer-brand .logo span { color: var(--accent); }
+    .footer-brand p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; max-width: 300px; }
+    .footer h4 { font-family: var(--font-title); font-size: 0.875rem; font-weight: 700; color: var(--white); margin-bottom: 16px; letter-spacing: 0.5px; text-transform: uppercase; }
+    .footer div a { display: block; font-size: 0.8125rem; color: var(--muted); padding: 4px 0; transition: color 0.2s; }
+    .footer div a:hover { color: var(--white); }
+    .footer div a i { margin-right: 6px; width: 14px; }
+    .footer-address { margin-top: 16px; }
+    .footer-address p { font-size: 0.8125rem; color: var(--muted); line-height: 1.5; margin: 0; }
+    .footer-bottom { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; }
+    .footer-bottom span { font-size: 0.8125rem; color: var(--muted); }
+     (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer { padding: 40px 0 24px; }
+    }
+</style>
   <script defer src="/_vercel/insights/script.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GG1RG503V2"></script>
