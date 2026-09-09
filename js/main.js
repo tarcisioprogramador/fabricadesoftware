@@ -75,6 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ===== Medição de cliques no WhatsApp (evento whatsapp_click) =====
+  // - Não bloqueia a navegação: o link funciona mesmo sem Analytics.
+  // - Não dispara duplicado: um clique = um evento.
+  // - Não envia dados pessoais: apenas página e posição do botão.
+  function ctaPosition(el) {
+    if (el.closest('.whatsapp-float, .floating-btn--whatsapp')) return 'floating';
+    if (el.closest('.navbar')) return 'navbar';
+    if (el.closest('.contact-form')) return 'form';
+    if (el.closest('.hero')) return 'hero';
+    if (el.closest('.cta-block')) return 'cta-final';
+    return 'conteudo';
+  }
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (!link) return;
+    var payload = {
+      cta_position: ctaPosition(link),
+      cta_text: (link.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 60) || 'icone',
+      page_location: window.location.pathname
+    };
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'whatsapp_click', payload);
+    } else if (window.dataLayer && typeof window.dataLayer.push === 'function') {
+      window.dataLayer.push(Object.assign({ event: 'whatsapp_click' }, payload));
+    }
+  });
+
   // Scroll animation observer
   const observerOptions = {
     threshold: 0.1,
