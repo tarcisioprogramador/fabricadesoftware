@@ -1,3 +1,4 @@
 ﻿cloud-kb/
 .vercel
 .env*
+.audit/
