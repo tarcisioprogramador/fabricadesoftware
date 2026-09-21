@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (phone) msg += `*Telefone:* ${encodeURIComponent(phone)}%0A`;
       if (service) msg += `*Serviço de interesse:* ${encodeURIComponent(service)}%0A`;
       msg += `%0A*Mensagem:*%0A${encodeURIComponent(message)}`;
-      window.open(`https://wa.me/5521996936397?text=${msg}`, '_blank');
+      window.open(`https://wa.me/5521959349594?text=${msg}`, '_blank');
     });
   }
 
