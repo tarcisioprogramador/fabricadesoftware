@@ -1139,10 +1139,15 @@ body.light-theme .seo-cta-content h4 { color: #0F172A; }
 .floating-btn--google{background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 20px rgba(0,0,0,0.4)}
 .floating-btn--google:hover{background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5)}
 .floating-btn--google i{color:#fff}
+.floating-btn--instagram{background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 20px rgba(0,0,0,0.4)}
+.floating-btn--instagram:hover{background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5)}
+.floating-btn--instagram i{color:#fff}
 .floating-btn--whatsapp{background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,0.35)}
 .floating-btn--whatsapp:hover{box-shadow:0 8px 32px rgba(37,211,102,0.5)}
 body.light-theme .floating-btn--google{background:#1E293B;border-color:rgba(0,0,0,0.1)}
 body.light-theme .floating-btn--google:hover{background:#0F172A}
+body.light-theme .floating-btn--instagram{background:#1E293B;border-color:rgba(0,0,0,0.1)}
+body.light-theme .floating-btn--instagram:hover{background:#0F172A}
 body.light-theme .floating-btn::after{background:#fff;color:#0F172A;border-color:rgba(0,0,0,0.08)}
 body.light-theme .floating-btn::before{border-left-color:#fff}
 @media (max-width:1024px){.floating-buttons{right:16px;gap:10px}.floating-btn{width:50px;height:50px;font-size:22px}.floating-btn::after{font-size:0.75rem;padding:6px 12px}}
