@@ -1142,12 +1142,14 @@ body.light-theme .seo-cta-content h4 { color: #0F172A; }
 .floating-btn--instagram{background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);box-shadow:0 4px 20px rgba(0,0,0,0.4)}
 .floating-btn--instagram:hover{background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5)}
 .floating-btn--instagram i{color:#fff}
-/* Botão flutuante do Instagram (páginas com whatsapp-float solto) */
-.instagram-float{position:fixed;bottom:96px;right:24px;z-index:999;width:56px;height:56px;border-radius:50%;background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all .3s ease}
+/* Botões flutuantes do Instagram e Google (páginas com whatsapp-float solto) */
+.instagram-float{position:fixed;bottom:168px;right:24px;z-index:999;width:56px;height:56px;border-radius:50%;background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);color:#fff;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all .3s ease}
 .instagram-float:hover{transform:scale(1.1);background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5);color:#fff}
-body.light-theme .instagram-float{background:#1E293B;border-color:rgba(0,0,0,0.1)}
-body.light-theme .instagram-float:hover{background:#0F172A}
-@media (max-width:768px){.instagram-float{width:48px;height:48px;font-size:22px;bottom:80px;right:16px}}
+.google-float{position:fixed;bottom:96px;right:24px;z-index:999;width:56px;height:56px;border-radius:50%;background:#1A1D2E;border:1px solid rgba(255,255,255,0.08);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 20px rgba(0,0,0,0.4);transition:all .3s ease}
+.google-float:hover{transform:scale(1.1);background:#252838;border-color:rgba(255,255,255,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.5);color:#fff}
+body.light-theme .instagram-float,body.light-theme .google-float{background:#1E293B;border-color:rgba(0,0,0,0.1)}
+body.light-theme .instagram-float:hover,body.light-theme .google-float:hover{background:#0F172A}
+@media (max-width:768px){.instagram-float{width:48px;height:48px;font-size:22px;bottom:144px;right:16px}.google-float{width:48px;height:48px;font-size:20px;bottom:80px;right:16px}}
 .floating-btn--whatsapp{background:#25D366;box-shadow:0 4px 20px rgba(37,211,102,0.35)}
 .floating-btn--whatsapp:hover{box-shadow:0 8px 32px rgba(37,211,102,0.5)}
 body.light-theme .floating-btn--google{background:#1E293B;border-color:rgba(0,0,0,0.1)}
