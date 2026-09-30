@@ -1,35 +1,39 @@
 # ============================================
-# Fábrica de Software — configuração Apache (Hostinger)
+# Fábrica de Software — configuração Apache/LiteSpeed (Hostinger)
 # ============================================
 
 AddDefaultCharset UTF-8
 
 # --- Redirecionamentos 301: pasta legada /seo-agencia/ ---
-# Equivalem ao arquivo _redirects (Netlify). No Apache, a primeira correspondência vence:
-# as regras específicas vêm antes do coringa.
+# Usa mod_rewrite (executa antes do mod_alias e tem ordem determinística no LiteSpeed).
+# Equivalem ao arquivo _redirects (Netlify).
 
-Redirect 301 /seo-agencia/index.html /servicos.html
-Redirect 301 /seo-agencia/automacao-de-marketing.html /servicos/automacao-com-ia.html
-Redirect 301 /seo-agencia/criacao-de-sites-profissionais.html /servicos/criacao-de-sites.html
-Redirect 301 /seo-agencia/gestao-de-trafego-pago.html /servicos/google-ads.html
-Redirect 301 /seo-agencia/seo-para-empresas.html /servicos/seo.html
-Redirect 301 /seo-agencia/blog/index.html /blog/
-Redirect 301 /seo-agencia/blog/automacao-marketing-para-empresas.html /blog/automacao-ia.html
-Redirect 301 /seo-agencia/blog/como-aparecer-no-google-rapido.html /blog/como-aparecer-no-google-gratuitamente.html
-Redirect 301 /seo-agencia/blog/como-aumentar-vendas-com-trafego-pago.html /blog/gestao-de-trafego.html
-Redirect 301 /seo-agencia/blog/desenvolvimento-aplicativos.html /blog/aplicativos-android-ios.html
-Redirect 301 /seo-agencia/blog/desenvolvimento-sistemas-web.html /blog/sistemas-personalizados.html
-Redirect 301 /seo-agencia/blog/design-grafico-para-empresas.html /servicos/marketing-digital.html
-Redirect 301 /seo-agencia/blog/estrategia-digital-completa.html /servicos/marketing-digital.html
-Redirect 301 /seo-agencia/blog/gestao-de-redes-sociais.html /servicos/marketing-digital.html
-Redirect 301 /seo-agencia/blog/plataformas-saas.html /blog/saas.html
-Redirect 301 /seo-agencia/blog/quanto-custa-contratar-agencia-marketing-digital.html /servicos/marketing-digital.html
-Redirect 301 /seo-agencia/blog/quanto-custa-criar-site-profissional.html /blog/quanto-custa-criar-site-profissional.html
-Redirect 301 /seo-agencia/blog/seo-para-empresas-guia-completo.html /servicos/seo.html
-Redirect 301 /seo-agencia/blog/solucoes-software-sob-medida.html /blog/sistemas-personalizados.html
-Redirect 301 /seo-agencia/obrigado.html /obrigado.html
-# Qualquer outra URL antiga da pasta -> página de serviços (coringa, deixe por último)
-RedirectMatch 301 ^/seo-agencia(/.*)?$ /servicos.html
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+RewriteRule ^seo-agencia/obrigado\.html$ /obrigado.html [R=301,L]
+RewriteRule ^seo-agencia/automacao-de-marketing\.html$ /servicos/automacao-com-ia.html [R=301,L]
+RewriteRule ^seo-agencia/criacao-de-sites-profissionais\.html$ /servicos/criacao-de-sites.html [R=301,L]
+RewriteRule ^seo-agencia/gestao-de-trafego-pago\.html$ /servicos/google-ads.html [R=301,L]
+RewriteRule ^seo-agencia/seo-para-empresas\.html$ /servicos/seo.html [R=301,L]
+RewriteRule ^seo-agencia/blog/automacao-marketing-para-empresas\.html$ /blog/automacao-ia.html [R=301,L]
+RewriteRule ^seo-agencia/blog/como-aparecer-no-google-rapido\.html$ /blog/como-aparecer-no-google-gratuitamente.html [R=301,L]
+RewriteRule ^seo-agencia/blog/como-aumentar-vendas-com-trafego-pago\.html$ /blog/gestao-de-trafego.html [R=301,L]
+RewriteRule ^seo-agencia/blog/desenvolvimento-aplicativos\.html$ /blog/aplicativos-android-ios.html [R=301,L]
+RewriteRule ^seo-agencia/blog/desenvolvimento-sistemas-web\.html$ /blog/sistemas-personalizados.html [R=301,L]
+RewriteRule ^seo-agencia/blog/design-grafico-para-empresas\.html$ /servicos/marketing-digital.html [R=301,L]
+RewriteRule ^seo-agencia/blog/estrategia-digital-completa\.html$ /servicos/marketing-digital.html [R=301,L]
+RewriteRule ^seo-agencia/blog/gestao-de-redes-sociais\.html$ /servicos/marketing-digital.html [R=301,L]
+RewriteRule ^seo-agencia/blog/plataformas-saas\.html$ /blog/saas.html [R=301,L]
+RewriteRule ^seo-agencia/blog/quanto-custa-contratar-agencia-marketing-digital\.html$ /servicos/marketing-digital.html [R=301,L]
+RewriteRule ^seo-agencia/blog/quanto-custa-criar-site-profissional\.html$ /blog/quanto-custa-criar-site-profissional.html [R=301,L]
+RewriteRule ^seo-agencia/blog/seo-para-empresas-guia-completo\.html$ /servicos/seo.html [R=301,L]
+RewriteRule ^seo-agencia/blog/solucoes-software-sob-medida\.html$ /blog/sistemas-personalizados.html [R=301,L]
+RewriteRule ^seo-agencia/blog/?$ /blog/ [R=301,L]
+# Coringa por último: qualquer outra URL antiga da pasta
+RewriteRule ^seo-agencia(/.*)?$ /servicos.html [R=301,L]
+
+</IfModule>
 
 # --- CSS/JS sempre atualizados (sem cache), igual ao _headers ---
 <IfModule mod_headers.c>
