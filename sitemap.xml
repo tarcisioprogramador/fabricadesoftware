@@ -23,49 +23,49 @@
   <!-- Páginas de Serviços -->
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/criacao-de-sites.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/desenvolvimento-de-sistemas.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/automacao-com-ia.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/desenvolvimento-de-aplicativos.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/seo.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/google-ads.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/marketing-digital.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.fabricadesoftwarerj.com/servicos/google-meu-negocio.html</loc>
-    <lastmod>2026-09-30</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -435,5 +435,35 @@
     <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fabricadesoftwarerj.com/seo-agencia/index.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fabricadesoftwarerj.com/seo-agencia/seo-para-empresas.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fabricadesoftwarerj.com/seo-agencia/criacao-de-sites-profissionais.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fabricadesoftwarerj.com/seo-agencia/gestao-de-trafego-pago.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.fabricadesoftwarerj.com/seo-agencia/automacao-de-marketing.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

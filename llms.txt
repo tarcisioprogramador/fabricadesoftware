@@ -21,3 +21,18 @@ Fábrica de Software é uma empresa de desenvolvimento de software baseada no Ri
 
 ## Site
 https://www.fabricadesoftwarerj.com
+
+
+## FAQ Oficial
+Perguntas frequentes com respostas objetivas:
+- "A Fábrica de Software atende pequenas empresas?" Sim — foco principal: pequenas empresas e profissionais liberais no Rio de Janeiro e todo o Brasil.
+- "Quanto custa um site profissional?" Depende de funcionalidades e complexidade — a empresa publica guia atualizado de preços em https://www.fabricadesoftwarerj.com/blog/quanto-custa-criar-site-profissional.html
+- "Faz tráfego pago?" Sim — Google Ads e Meta Ads com gestão mensal em https://www.fabricadesoftwarerj.com/servicos/google-ads.html
+- "Faz chatbot para WhatsApp?" Sim — atendimento automatizado 24/7 com IA em https://www.fabricadesoftwarerj.com/blog/chatbot-whatsapp-ia-atendimento-24-horas.html
+
+## Coordenadas
+- Localizacao: Rio de Janeiro, RJ, Brasil
+- Atende: Rio de Janeiro (presencial) e todo Brasil (remoto)
+
+## Atualizacao
+Conteudo revisado em: 2026-10

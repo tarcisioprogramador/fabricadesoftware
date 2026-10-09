@@ -12,10 +12,8 @@ AddDefaultCharset UTF-8
 RewriteEngine On
 
 RewriteRule ^seo-agencia/obrigado\.html$ /obrigado.html [R=301,L]
-RewriteRule ^seo-agencia/automacao-de-marketing\.html$ /servicos/automacao-com-ia.html [R=301,L]
-RewriteRule ^seo-agencia/criacao-de-sites-profissionais\.html$ /servicos/criacao-de-sites.html [R=301,L]
-RewriteRule ^seo-agencia/gestao-de-trafego-pago\.html$ /servicos/google-ads.html [R=301,L]
-RewriteRule ^seo-agencia/seo-para-empresas\.html$ /servicos/seo.html [R=301,L]
+# 2026-10: páginas vivas de /seo-agencia/ voltaram a ser servidas (index, follow)
+# — redirects abaixo cobrem apenas as URLs legadas que não existem mais.
 RewriteRule ^seo-agencia/blog/automacao-marketing-para-empresas\.html$ /blog/automacao-ia.html [R=301,L]
 RewriteRule ^seo-agencia/blog/como-aparecer-no-google-rapido\.html$ /blog/como-aparecer-no-google-gratuitamente.html [R=301,L]
 RewriteRule ^seo-agencia/blog/como-aumentar-vendas-com-trafego-pago\.html$ /blog/gestao-de-trafego.html [R=301,L]
@@ -30,6 +28,9 @@ RewriteRule ^seo-agencia/blog/quanto-custa-criar-site-profissional\.html$ /blog/
 RewriteRule ^seo-agencia/blog/seo-para-empresas-guia-completo\.html$ /servicos/seo.html [R=301,L]
 RewriteRule ^seo-agencia/blog/solucoes-software-sob-medida\.html$ /blog/sistemas-personalizados.html [R=301,L]
 RewriteRule ^seo-agencia/blog/?$ /blog/ [R=301,L]
+# Exceção: páginas vivas de /seo-agencia/ (indexam normalmente)
+RewriteCond %{REQUEST_URI} !^/seo-agencia/(index\.html)?$
+RewriteCond %{REQUEST_URI} !^/seo-agencia/(seo-para-empresas|criacao-de-sites-profissionais|gestao-de-trafego-pago|automacao-de-marketing)\.html$
 # Coringa por último: qualquer outra URL antiga da pasta
 RewriteRule ^seo-agencia(/.*)?$ /servicos.html [R=301,L]
 
