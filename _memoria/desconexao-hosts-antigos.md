@@ -24,14 +24,20 @@ Objetivo: manter o site principal em `https://www.fabricadesoftwarerj.com/` (Hos
 
 Obs.: ao desativar Pages, o edge do GitHub mantém por algum tempo um 301 em cache na URL antiga `.../fabricadesoftware/index.html` (para `http://www.fabricadesoftwarerj.com/index.html`, que por sua vez 301a raiz canônica) — cadeia sem ciclo, expira sozinha. A partir de agora **nenhum novo deploy publica o site antigo** pois a origem (Pages) foi desativada e o CNAME removido.
 
-## 4. Pendência de acesso — Vercel (preparado, não executado)
-Sem token/painel da Vercel nesta máquina. Instruções exatas na conta dona do projeto `fabricadesoftware-master` (vercel.com/dashboard):
-1. **Desconectar automático** em seguida: Project `fabricadesoftware-master` → **Settings → Git → Connected Repository → Disconnect**.
-   - Importante: desconectar o Git **NÃO entrega o site do ar** — o último deploy continua servindo.
-2. **Encerrar publicação** (mecanismo suportado): Project → **Settings → General → Delete Project** — isso derruba `fabricadesoftware-master.vercel.app` (futuras visitas: 404 `DEPLOYMENT_NOT_FOUND`).
-   - Diferenciação: não remova dominios de outros projetos da conta; o subdomínio `.vercel.app` só sai do ar com a exclusão do projeto.
-3. **Domains**: em Account → Domains, confirme que nem `fabricadesoftwarerj.com` nem `fabricadesoftware.com` estão vinculados a projeto algum da Vercel (o principal não está — verificado por DNS/host; o antigo `fabricadesoftware.com` não é atendido pela Vercel hoje).
-4. Reversão (se precisar republishing antigo): recriar projeto conectando o repo `tarcisioprogramador/fabricadesoftware` — o histórico e o código continuam no GitHub.
+## 4. Vercel — EXECUTADO (18/10/2026, via API com token do usuário, revogável)
+Confirmado: projeto antigo `fabricadesoftware-master` já não existia (URLs 404 `DEPLOYMENT_NOT_FOUND`).
+
+Escopo confirmado pelo dono: excluir apenas os projetos da Fábrica, preservando os demais negócios e os 8 domínios registrados na conta.
+
+**10 projetos excluídos (DELETE /v2/projects → 204):**
+`fabricasoftware-blog`, `fabricaseo`, `fabrica-de-software-seo`, `fabrica-de-software`, `fabricadesoftware2-0`, `fabricadesoftware2-0-bdxr`, `blog-fabrica`, `criacao-de-sites-rio-de-janeiro`, `trafegopago`, `site-gbp`.
+- Cada um verificado ao vivo: título de conteúdo Fábrica antes da exclusão (site-gbp e trafegopago eram landings da Fábrica; trafegopago servia `gestordetrafego.app`).
+
+**Preservados (conforme confirmação do dono):** 28 projetos da conta (zapflow, copyzap, rendaextracomia.com.br, catalogo-sonho-dos-moveis, lavajatoguia, lomapet, entre outros) e os 8 domínios registrados (juliooliveira.app, rendaextracomia.com.br, fabricasoftwarerj.app/.com.br, fabricadesoftware.com, agencia-de-seo.app, criacao-de-sites-rio-de-janeiro.app, gestordetrafego.app — nenhum com projectId vinculado).
+
+**Validação pós-exclusão:** todas as URLs `.vercel.app` excluídas retornam **404** (fabricadesoftware-master, fabrica-de-software, fabricadesoftware2-0, fabricasoftware-blog, site-gbp spot-check). Produção Hostinger intacta: www 200, apex 301→www, case 200.
+
+**Ação do usuário pendente:** revogar o token da Vercel usado na operação (vercel.com/account/tokens).
 
 ## 5. Referências do site revisadas nesta fase
 - Canonical, sitemap, OG e schema: já normalizados para `www.fabricadesoftwarerj.com` na fase anterior (sem referências aos hosts antigos — verificado por varredura; `seo-agencia/` eliminada).
