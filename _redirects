@@ -1,6 +1,23 @@
-# Redirecionamentos 301 — pasta legada /seo-agencia/ (contida também por robots.txt)
+# ============================================================
+# Redirecionamentos 301 — Fábrica de Software
+# Domínio principal: https://www.fabricadesoftwarerj.com/
+# Contido também em .htaccess (Apache/LiteSpeed) e robots/CNAME.
+# 2026-10-18: pasta legada /seo-agencia/ inteira consolidada.
+# ============================================================
+
+# --- Páginas vivas de /seo-agencia/ movidas para as páginas de serviço ---
+
+# /seo-agencia/obrigado.html → versão canônica na raiz
 /seo-agencia/obrigado.html /obrigado.html 301
-# 2026-10: páginas vivas de /seo-agencia/ servidas normalmente (index, follow)
+
+# Corpo do mapeamento aprovado
+/seo-agencia/index.html /servicos.html 301
+/seo-agencia/seo-para-empresas.html /servicos/seo.html 301
+/seo-agencia/criacao-de-sites-profissionais.html /servicos/criacao-de-sites.html 301
+/seo-agencia/gestao-de-trafego-pago.html /servicos/google-ads.html 301
+/seo-agencia/automacao-de-marketing.html /servicos/automacao-com-ia.html 301
+
+# --- Blog legado dentro de /seo-agencia/blog/ (mantido do ciclo anterior) ---
 /seo-agencia/blog/automacao-marketing-para-empresas.html /blog/automacao-ia.html 301
 /seo-agencia/blog/como-aparecer-no-google-rapido.html /blog/como-aparecer-no-google-gratuitamente.html 301
 /seo-agencia/blog/como-aumentar-vendas-com-trafego-pago.html /blog/gestao-de-trafego.html 301
@@ -9,8 +26,22 @@
 /seo-agencia/blog/design-grafico-para-empresas.html /servicos/marketing-digital.html 301
 /seo-agencia/blog/estrategia-digital-completa.html /servicos/marketing-digital.html 301
 /seo-agencia/blog/gestao-de-redes-sociais.html /servicos/marketing-digital.html 301
-/seo-agencia/blog/ /blog/ 301
+/seo-agencia/blog/index.html /blog/ 301
 /seo-agencia/blog/plataformas-saas.html /blog/saas.html 301
 /seo-agencia/blog/quanto-custa-contratar-agencia-marketing-digital.html /servicos/marketing-digital.html 301
 /seo-agencia/blog/quanto-custa-criar-site-profissional.html /blog/quanto-custa-criar-site-profissional.html 301
 /seo-agencia/blog/seo-para-empresas-guia-completo.html /servicos/seo.html 301
+/seo-agencia/blog/solucoes-software-sob-medida.html /blog/sistemas-personalizados.html 301
+/seo-agencia/blog/ /blog/ 301
+
+# --- Coringa por último: qualquer outra URL da pasta legada ---
+/seo-agencia/* /servicos.html 301
+
+# --- Padronização de variantes ---
+
+# /index.html e /blog/index.html → diretórios
+/index.html / 301
+/blog/index.html /blog/ 301
+
+# Rota de subpasta que devolve index.html duplicado (não há /servicos/index.html físico)
+/servicos/index.html /servicos.html 301

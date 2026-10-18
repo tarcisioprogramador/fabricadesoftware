@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case: Site para Júlio Segurança Eletrônica — Rio de Janeiro | Fábrica de Software</title>
+  <meta name="description" content="Como desenvolvemos o site do Júlio Segurança Eletrônica (RJ): necessidade, escopo entregue, decisões de desenvolvimento e SEO, capturas do site publicado e melhorias já mapeadas.">
+  <link rel="canonical" href="https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Fábrica de Software">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Case: Site para Júlio Segurança Eletrônica — Rio de Janeiro">
+  <meta property="og:description" content="Estudo de caso do site institucional do Júlio Segurança Eletrônica (RJ): escopo, decisões de desenvolvimento e SEO, capturas do site publicado.">
+  <meta property="og:url" content="https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html">
+  <meta property="og:image" content="https://www.fabricadesoftwarerj.com/img/cases/julio-desktop.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Case: Site para Júlio Segurança Eletrônica — Rio de Janeiro">
+  <meta name="twitter:description" content="Estudo de caso do site institucional do Júlio Segurança Eletrônica (RJ), com capturas reais e decisões do projeto.">
+  <meta name="twitter:image" content="https://www.fabricadesoftwarerj.com/img/cases/julio-desktop.png">
+  <meta name="author" content="Tarcísio — Fábrica de Software">
+  <meta name="theme-color" content="#08080C">
+  <link rel="alternate" hreflang="pt-BR" href="https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fabricadesoftwarerj.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Portfólio", "item": "https://www.fabricadesoftwarerj.com/portfolio.html" },
+      { "@type": "ListItem", "position": 3, "name": "Case: Júlio Segurança Eletrônica", "item": "https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Case: Site para Júlio Segurança Eletrônica — Rio de Janeiro",
+    "description": "Estudo de caso do site institucional do Júlio Segurança Eletrônica (RJ): necessidade inicial, escopo entregue, decisões de desenvolvimento e SEO, capturas do site publicado e próximas melhorias.",
+    "author": { "@type": "Person", "name": "Tarcísio", "jobTitle": "Fundador & Desenvolvedor da Fábrica de Software", "url": "https://www.linkedin.com/in/tarcisiodev", "worksFor": { "@id": "https://www.fabricadesoftwarerj.com/#organization" } },
+    "publisher": { "@id": "https://www.fabricadesoftwarerj.com/#organization" },
+    "url": "https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html",
+    "mainEntityOfPage": "https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html",
+    "image": "https://www.fabricadesoftwarerj.com/img/cases/julio-desktop.png",
+    "about": { "@type": "LocalBusiness", "name": "Júlio Oliveira — Segurança Eletrônica", "url": "https://juliosegurancaeletronica.com.br/", "address": { "@type": "PostalAddress", "addressLocality": "Rio de Janeiro", "addressRegion": "RJ", "addressCountry": "BR" } }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css"></noscript>
+  <link rel="stylesheet" href="../css/style.css?v=20260925b">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GG1RG503V2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GG1RG503V2');
+</script>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="/index.html" class="navbar-logo">FÁBRICA DE <span>SOFTWARE</span></a>
+      <ul class="navbar-links">
+        <li><a href="/portfolio.html">Portfólio</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20case%20do%20site%20da%20F%C3%A1brica%20de%20Software%20e%20quero%20um%20site%20igual%20pro%20meu%20neg%C3%B3cio" target="_blank" rel="noopener noreferrer" class="navbar-cta"><i class="fab fa-whatsapp"></i> Quero um site assim</a></li>
+      </ul>
+      <button class="navbar-toggle" id="navbarToggle" aria-label="Abrir menu"><i class="fas fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+      <div class="container">
+        <span class="section-label">Case real · publicado e no ar</span>
+        <h1>Como entregamos o site do <span class="gradient-text">Júlio Segurança Eletrônica</span></h1>
+        <p class="section-sub">Cliente real, site publicado e funcionando hoje. Este texto documenta o que era a demanda, o que foi entregue, as decisões de desenvolvimento e SEO e o que já está no radar de melhoria. Dados de tráfego medidos serão agregados quando o Search Console do cliente estiver disponível para consulta.</p>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;align-items:center;margin-top:24px;">
+          <a href="https://juliosegurancaeletronica.com.br/" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-arrow-up-right-from-square"></i> Ver o site publicado</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== CONTEXTO ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">A <span style="color:var(--accent-hover)">necessidade inicial</span></h2>
+        <p style="font-size:1.0625rem;color:var(--muted);line-height:1.8;">O Júlio Segurança Eletrônica é uma empresa de segurança eletrônica no Rio de Janeiro: instalação de câmeras, alarmes e monitoramento 24 horas com soluções preventivas EMIVE. O serviço é local, competitivo e depende de confiança — quem contrata quer ver prova antes de chamar.</p>
+        <p style="font-size:1.0625rem;color:var(--muted);line-height:1.8;margin-top:12px;">Duas demandas guiaram o projeto:</p>
+        <ul style="font-size:1.0625rem;color:var(--muted);line-height:1.9;max-width:760px;margin:12px auto 0;padding-left:24px;">
+          <li>Um site profissional que transmitisse credibilidade na primeira visita (no mercado de segurança, um site fraco custa a chamada).</li>
+          <li>Fazer a avaliação gratuita entrar em contato direto pelo WhatsApp, sem formulário parado no meio do caminho.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ESCOPO ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">O <span class="gradient-text">escopo entregue</span></h2>
+        <div class="diff-grid" style="margin-top:40px;">
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-file-lines"></i></div>
+            <h4>Site institucional de uma página</h4>
+            <p>Estrutura enxuta que apresenta o negócio, os serviços e o diferencial EMIVE sem burocracia — a página inteira serve uma decisão: chamar o Júlio.</p>
+          </div>
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-map-location-dot"></i></div>
+            <h4>SEO local para o Rio de Janeiro</h4>
+            <p>Escrita otimizada para buscas locais do segmento, com foco em quem procura segurança eletrônica, câmeras e monitoramento na região.</p>
+          </div>
+          <div class="diff-item">
+            <div class="icon"><i class="fas fa-star"></i></div>
+            <h4>Prova social em destaque</h4>
+            <p>Avaliações de clientes ★★★★★ exibidas na página — a evidência de serviço entregue fica visível para o visitante sem precisar sair do site.</p>
+          </div>
+          <div class="diff-item">
+            <div class="icon"><i class="fab fa-whatsapp"></i></div>
+            <h4>CTA direto de avaliação gratuita</h4>
+            <p>Chamadas de ação constantes para avaliação gratuita, funcionando no desktop e no celular.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DECISÕES ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Decisões de <span style="color:var(--accent-hover)">desenvolvimento e SEO</span></h2>
+        <ul style="font-size:1.0625rem;color:var(--muted);line-height:2;max-width:760px;margin:20px auto 0;padding-left:24px;">
+          <li><strong style="color:var(--white)">HTML próprio e leve:</strong> código escrito do zero, sem plataformas genéricas — carrega rápido até em internet de celular, que é onde a maioria dos leads de segurança eletrônica chega.</li>
+          <li><strong style="color:var(--white)">Dados estruturados do negócio do cliente:</strong> marcação do negócio local para o Google entender segmento, região e contato.</li>
+          <li><strong style="color:var(--white)">Prova social no HTML, não em imagem:</strong> as avaliações ficam em texto selecionável — os motores de busca e as IAs conseguem ler e citar o depoimento.</li>
+          <li><strong style="color:var(--white)">Conversão acima de vitrine:</strong> o CTA de avaliação gratuita mantém mensagem pré-preenchida, para o contato já chegar contextualizado.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CAPTURAS ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Capturas do <span class="gradient-text">site publicado</span></h2>
+        <p class="section-sub" style="margin-top:12px;">Registro em 18/10/2026 do site no ar em juliosegurancaeletronica.com.br.</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:40px;">
+          <figure style="margin:0;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;">
+            <img src="../img/cases/julio-desktop.png" alt="Captura do site do Júlio Segurança Eletrônica em desktop, 1440px" loading="lazy" style="width:100%;height:auto;border-radius:8px;display:block;">
+            <figcaption style="font-size:0.8125rem;color:var(--muted);margin-top:12px;text-align:center;">Desktop · 1440px</figcaption>
+          </figure>
+          <figure style="margin:0;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:16px;">
+            <img src="../img/cases/julio-mobile.png" alt="Captura do site do Júlio Segurança Eletrônica no celular, 390px" loading="lazy" style="width:100%;height:auto;border-radius:8px;display:block;">
+            <figcaption style="font-size:0.8125rem;color:var(--muted);margin-top:12px;text-align:center;">Celular · 390px</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RESULTADOS ===== -->
+    <section class="section">
+      <div class="container" style="max-width:800px;">
+        <h2 class="section-title">Resultados <span style="color:var(--accent-hover)">— o que está comprovado hoje</span></h2>
+        <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;margin-top:40px;">
+          <p style="font-size:1.0625rem;color:var(--muted);line-height:1.8;">Fato verificável: <strong style="color:var(--white)">o site está publicado e operando</strong> — juliosegurancaeletronica.com.br responde no ar, com as avaliações de clientes exibidas na própria página. As avaliaçõesens em destaque na página são do <em>serviço de segurança</em> do cliente — elas comprovam a qualidade do negócio dele, não do nosso trabalho.</p>
+          <p style="font-size:1.0625rem;color:var(--muted);line-height:1.8;margin-top:16px;">O que ainda <strong style="color:var(--white)">não</strong> está medido e documentado: volume de visitas orgânicas, posição média no Google e contatos gerados. Essas métricas precisam do Search Console do cliente e serão agregadas aqui quando o acesso existir. Preferimos publicar sem número que seria alucinado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MELHORIAS ===== -->
+    <section class="section section-alt">
+      <div class="container" style="max-width:800px;">
+        <h2 class="section-title">Próximas <span class="gradient-text">melhorias planejadas</span></h2>
+        <ul style="font-size:1.0625rem;color:var(--muted);line-height:2;margin:20px 0 0;padding-left:24px;">
+          <li>Medir no Search Console do cliente: impressões, cliques posições das buscas locais do segmento.</li>
+          <li>Recolher e publicar novas avaliações de clientes do Júlio para fortalecer a prova social.</li>
+          <li>Avaliar páginas de serviço específicas (câmeras, alarmes, monitoramento) conforme demanda de busca.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-block">
+          <h2>Quer um site assim para o seu negócio?</h2>
+          <p>Fazemos o mesmo processo para empresas do Rio de Janeiro e de todo o Brasil: site profissional, SEO local e caminho direto para o WhatsApp.</p>
+          <div class="cta-benefits">
+            <span><i class="fas fa-check-circle"></i> Orçamento gratuito</span>
+            <span><i class="fas fa-check-circle"></i> Proposta em até 48h</span>
+            <span><i class="fas fa-check-circle"></i> Contato direto com o dev</span>
+          </div>
+          <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20case%20do%20site%20da%20F%C3%A1brica%20de%20Software%20e%20quero%20um%20site%20igual%20pro%20meu%20neg%C3%B3cio" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">
+            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">FÁBRICA DE <span>SOFTWARE</span></div>
+          <p>Transformamos ideias em software sob medida. Sites, sistemas, automação com IA e marketing digital.</p>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="/servicos/criacao-de-sites.html">Criação de Sites</a>
+          <a href="/servicos/desenvolvimento-de-sistemas.html">Sistemas Web</a>
+          <a href="/servicos/automacao-com-ia.html">Automação com IA</a>
+          <a href="/servicos/seo.html">SEO</a>
+          <a href="/servicos/google-ads.html">Google Ads</a>
+        </div>
+        <div>
+          <h4>Portfólio</h4>
+          <a href="/portfolio.html">Cases e projetos</a>
+          <a href="/cases/julio-seguranca-eletronica.html">Case Júlio Segurança</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="https://wa.me/5521996936397" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> (21) 99693-6397</a>
+          <a href="mailto:tarcisioflow.dev@gmail.com"><i class="fas fa-envelope"></i> E-mail</a>
+          <p style="font-size:0.8125rem; color:rgba(255,255,255,0.3); margin-top:4px;">Rio de Janeiro, RJ</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Fábrica de Software. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOAT ===== -->
+  <a href="https://maps.google.com/?cid=8410504153000437704" target="_blank" rel="noopener noreferrer" class="google-float" aria-label="Avalie-nos no Google" title="Avalie-nos no Google"><i class="fab fa-google"></i></a>
+  <a href="https://www.instagram.com/fabricadesoftwarerj/" target="_blank" rel="noopener noreferrer" class="instagram-float" aria-label="Siga-nos no Instagram" title="Siga-nos no Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/5521996936397?text=Ol%C3%A1%2C%20vim%20pelo%20case%20do%20site%20da%20F%C3%A1brica%20de%20Software%20e%20quero%20um%20site%20igual%20pro%20meu%20neg%C3%B3cio" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="/js/main.js" defer></script>
+</body>
+</html>

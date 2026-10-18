@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada | Fábrica de Software</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    body{font-family:Inter,system-ui,sans-serif;background:#08080C;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;padding:24px;text-align:center}
+    .box{max-width:520px}
+    h1{font-size:1.5rem;margin:0 0 12px}
+    p{color:#64748B;line-height:1.7;margin:0 0 24px}
+    a{color:#2563EB;font-weight:600;text-decoration:none}
+    .links{margin-top:32px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+  </style>
+  <script>
+    // Fallback de redirecionamento para hosts sem redirect no servidor
+    // (GitHub Pages). Mapeado em conjunto com _redirects / .htaccess.
+    (function () {
+      var path = window.location.pathname.replace(/\/index\.html$/, '/').replace(/\/$/, '/').toLowerCase();
+      var map = {
+        'index.html': '/',
+        '/index.html': '/',
+        'seo-agencia.html': '/servicos.html',
+        '/servicos/index.html': '/servicos.html'
+      };
+      if (/\/seo-agencia\/?$/.test(path)) { target = '/servicos.html'; }
+      else if (/\/seo-agencia\/seo-para-empresas\.html$/.test(path)) { target = '/servicos/seo.html'; }
+      else if (/\/seo-agencia\/criacao-de-sites-profissionais\.html$/.test(path)) { target = '/servicos/criacao-de-sites.html'; }
+      else if (/\/seo-agencia\/gestao-de-trafego-pago\.html$/.test(path)) { target = '/servicos/google-ads.html'; }
+      else if (/\/seo-agencia\/automacao-de-marketing\.html$/.test(path)) { target = '/servicos/automacao-com-ia.html'; }
+      else if (/\/seo-agencia\/obrigado\.html$/.test(path)) { target = '/obrigado.html'; }
+      else { target = '/'; }
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <div class="box">
+    <h1>Página não encontrada</h1>
+    <p>O conteúdo antigo que você procurou foi movido. Você está sendo encaminhado para a página certa…</p>
+    <div class="links">
+      <a href="/servicos.html">Serviços</a>
+      <a href="/portfolio.html">Portfólio</a>
+      <a href="/blog/">Blog</a>
+      <a href="/">Início</a>
+    </div>
+  </div>
+</body>
+</html>

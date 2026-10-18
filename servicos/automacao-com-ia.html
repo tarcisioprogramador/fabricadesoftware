@@ -30,6 +30,7 @@
     "url": "https://www.fabricadesoftwarerj.com/servicos/automacao-com-ia.html",
     "provider": {
       "@type": "LocalBusiness",
+      "@id": "https://www.fabricadesoftwarerj.com/#organization",
       "name": "Fábrica de Software",
       "url": "https://www.fabricadesoftwarerj.com/"
     },
@@ -76,7 +77,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css">
   <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css">
@@ -102,7 +104,7 @@
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.fabricadesoftwarerj.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://www.fabricadesoftwarerj.com/Serviços/" },
+      { "@type": "ListItem", "position": 2, "name": "Serviços", "item": "https://www.fabricadesoftwarerj.com/servicos.html" },
       { "@type": "ListItem", "position": 3, "name": "Automação com Inteligência Artificial", "item": "https://www.fabricadesoftwarerj.com/servicos/automacao-com-ia.html" }
     ]
   }</script>
@@ -400,26 +402,27 @@
     <section class="section">
       <div class="container">
         <div class="center">
-          <span class="section-label">Cases de Sucesso</span>
-          <h2 class="section-title">IA que <span class="gradient-text">gerou resultado real</span></h2>
+          <span class="section-label">Escopos demonstrativos</span>
+          <h2 class="section-title">Como funciona uma <span class="gradient-text">automação com IA</span></h2>
+          <p class="section-sub">Os exemplos abaixo ilustram processos típicos e prazos usuais de implantação — não são resultados medidos de clientes. Cases publicados estão no <a href="../portfolio.html" style="color:var(--accent-hover);">portfólio</a>.</p>
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-top:48px;">
           <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
             <div style="font-size:0.6875rem;font-weight:600;padding:4px 12px;border-radius:100px;background:rgba(37,99,235,0.1);color:var(--accent-hover);display:inline-block;margin-bottom:16px;">CHATBOT WHATSAPP</div>
-            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">Clínica Saúde+</h3>
+            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">Atendimento de clínica no WhatsApp (demonstração)</h3>
             <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;margin-bottom:16px;">Chatbot no WhatsApp para agendamento, confirmação e triagem de pacientes.</p>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
-              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">+200</div><div style="font-size:0.6875rem;color:var(--muted);">Atendimentos/dia</div></div>
-              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">2 semanas</div><div style="font-size:0.6875rem;color:var(--muted);">Para lançar</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">Agenda</div><div style="font-size:0.6875rem;color:var(--muted);">Agendamento + confirmação integrados</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">2–4 sem.</div><div style="font-size:0.6875rem;color:var(--muted);">Implantação típica</div></div>
             </div>
           </div>
           <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;">
             <div style="font-size:0.6875rem;font-weight:600;padding:4px 12px;border-radius:100px;background:rgba(124,58,237,0.1);color:var(--purple-neon);display:inline-block;margin-bottom:16px;">RPA COMERCIAL</div>
-            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">E-commerce XYZ</h3>
+            <h3 style="font-family:var(--font-title);font-size:1.125rem;font-weight:700;color:var(--white);margin-bottom:12px;">Operação de e-commerce com RPA (demonstração)</h3>
             <p style="font-size:0.875rem;color:var(--muted);line-height:1.7;margin-bottom:16px;">Automação de processamento de pedidos, envio de NF e atualização de estoque.</p>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
-              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">-80%</div><div style="font-size:0.6875rem;color:var(--muted);">Tempo manual</div></div>
-              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">1 mês</div><div style="font-size:0.6875rem;color:var(--muted);">Deploy</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">RPA</div><div style="font-size:0.6875rem;color:var(--muted);">Pedidos, NF e estoque automatizados</div></div>
+              <div style="background:rgba(37,99,235,0.04);border:1px solid rgba(37,99,235,0.08);border-radius:8px;padding:12px;text-align:center;"><div style="font-size:1.25rem;font-weight:800;color:var(--accent);">4–5 sem.</div><div style="font-size:0.6875rem;color:var(--muted);">Implantação típica</div></div>
             </div>
           </div>
         </div>

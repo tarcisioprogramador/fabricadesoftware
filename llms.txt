@@ -19,6 +19,9 @@ Fábrica de Software é uma empresa de desenvolvimento de software baseada no Ri
 - Instagram: https://www.instagram.com/fabricadesoftwarerj/
 - Localização: Rio de Janeiro, RJ
 
+## Case real publicado
+Estudo de caso do site do Júlio Segurança Eletrônica (RJ): https://www.fabricadesoftwarerj.com/cases/julio-seguranca-eletronica.html
+
 ## Site
 https://www.fabricadesoftwarerj.com
 
