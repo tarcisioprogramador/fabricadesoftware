@@ -12,9 +12,10 @@ AddDefaultCharset UTF-8
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# ---------- 1. Padronização de host: todo host que não seja o principal vai para www.fabricadesoftwarerj.com preservando o caminho ----------
-# Cobre apex sem www, domínio legado fabricadesoftware.com e aliases antigos.
-RewriteCond %{HTTP_HOST} !^(www\.)?fabricadesoftwarerj\.com$ [NC]
+# ---------- 1. Padronização de host: apex sem www e qualquer host antigo vão para www.fabricadesoftwarerj.com preservando o caminho ----------
+# O apex também é redirecionado (evita versão duplicada servindo 200 em fabricadesoftwarerj.com).
+# Cobre o domínio legado fabricadesoftware.com e aliases antigos.
+RewriteCond %{HTTP_HOST} !^www\.fabricadesoftwarerj\.com$ [NC]
 RewriteRule ^(.*)$ https://www.fabricadesoftwarerj.com/$1 [R=301,L]
 
 # ---------- 2. /index.html → raiz (evita duplicata do canonical) ----------
